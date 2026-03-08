@@ -1,14 +1,29 @@
 import type { ProductRecord } from "./site-data";
 import type { ReviewRecord } from "./review-data";
 
-const fallbackImage = "/placeholder/generated-product.jpg";
+const fallbackImage = "/placeholder/generated-product.svg";
+
+function normalizeImageValue(value?: string) {
+  const imageValue = value?.trim() ?? "";
+
+  if (!imageValue) {
+    return fallbackImage;
+  }
+
+  // Older fallback records still point to deleted placeholder JPGs.
+  if (imageValue.startsWith("/placeholder/") && imageValue !== fallbackImage) {
+    return fallbackImage;
+  }
+
+  return imageValue;
+}
 
 export function resolveProductImageUrl(product: Pick<ProductRecord, "imageUrl" | "image">) {
-  return product.imageUrl ?? product.image ?? fallbackImage;
+  return normalizeImageValue(product.imageUrl ?? product.image);
 }
 
 export function resolveReviewImageUrl(review: Pick<ReviewRecord, "imageUrl" | "heroImage">) {
-  return review.imageUrl ?? review.heroImage ?? fallbackImage;
+  return normalizeImageValue(review.imageUrl ?? review.heroImage);
 }
 
 export function normalizeProductRecord<T extends ProductRecord | (Partial<ProductRecord> & { image?: string; imageUrl?: string })>(product: T) {

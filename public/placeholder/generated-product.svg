@@ -1,0 +1,21 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#F2EEE8"/>
+  <rect x="78" y="78" width="1044" height="1344" rx="36" fill="url(#bg)"/>
+  <rect x="170" y="170" width="860" height="1160" rx="28" fill="rgba(255,255,255,0.72)"/>
+  <rect x="320" y="228" width="560" height="820" rx="80" fill="#E5DDD1"/>
+  <rect x="372" y="294" width="456" height="620" rx="52" fill="#FBF8F4"/>
+  <rect x="438" y="968" width="324" height="42" rx="21" fill="#B59773"/>
+  <rect x="302" y="1106" width="596" height="28" rx="14" fill="#D3C3AF"/>
+  <rect x="360" y="1160" width="480" height="28" rx="14" fill="#DCCFBF"/>
+  <rect x="414" y="1214" width="372" height="28" rx="14" fill="#E7DDD2"/>
+  <circle cx="600" cy="604" r="126" fill="#D8C7B0"/>
+  <path d="M538 574C538 539.758 565.758 512 600 512C634.242 512 662 539.758 662 574V640C662 674.242 634.242 702 600 702C565.758 702 538 674.242 538 640V574Z" fill="#B08C67"/>
+  <path d="M676 560H724C767.078 560 802 594.922 802 638C802 681.078 767.078 716 724 716H694" stroke="#B08C67" stroke-width="34" stroke-linecap="round"/>
+  <text x="600" y="1364" text-anchor="middle" fill="#6E5C49" font-family="Arial, sans-serif" font-size="54" letter-spacing="7">PRODUCT IMAGE</text>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="96" x2="1066" y2="1372" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7DDD0"/>
+      <stop offset="1" stop-color="#C6AD8B"/>
+    </linearGradient>
+  </defs>
+</svg>
