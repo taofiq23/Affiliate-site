@@ -2,19 +2,19 @@
   "slug": "top-picks",
   "title": "Best Home Appliances and Coffee Gear: Top Picks",
   "description": "A ranked shortlist of home appliances, coffee gear, air treatment devices, and comfort picks built for affiliate SEO.",
-  "intro": "This page is the main shortlist for the site. It is built around home appliances, kitchen gear, coffee tools, air treatment products, and comfort devices that show a strong blend of bestseller proof, search demand, evergreen appeal, and realistic affiliate upside.",
+  "intro": "This page is the main shortlist for the site. It is built around home appliances, kitchen gear, coffee tools, air treatment products, and comfort devices that show a strong blend of bestseller proof, search demand, evergreen appeal, and realistic affiliate upside. It is meant for buyers who want the fastest path from broad product research into a tighter shortlist of pages worth opening next.",
   "highlights": [
     "Primary niche only: home appliances, coffee gear, air treatment, comfort, and cleaning devices",
     "Rankings blend bestseller proof, trend velocity, Google demand, evergreen value, and affiliate potential",
     "Use this page to narrow the field before opening individual review pages"
   ],
   "productSlugs": [
+    "levoit-air-purifier",
+    "keurig-k-elite-single-serve-k-cup-pod",
     "hamilton-beach-2-way-programmable-coffee-maker",
     "black-decker-12-cup-digital-coffee-maker-washable",
     "mueller-home-12-cup-red-coffee-maker",
-    "black-decker-one-touch-coffee-grinder-2-3",
-    "nostalgia-3-in-1-breakfast-station",
-    "trendplain-16oz-470ml-glass-olive-oil-sprayer"
+    "magic-bullet-blender-small-silver"
   ],
   "faq": [
     {
@@ -32,13 +32,13 @@
     "how-to-choose-kitchen-appliances"
   ],
   "relatedReviews": [
+    "levoit-air-purifier",
+    "keurig-k-elite-single-serve-k-cup-pod",
     "hamilton-beach-2-way-programmable-coffee-maker",
     "black-decker-12-cup-digital-coffee-maker-washable",
-    "mueller-home-12-cup-red-coffee-maker",
-    "black-decker-one-touch-coffee-grinder-2-3",
-    "nostalgia-3-in-1-breakfast-station"
+    "mueller-home-12-cup-red-coffee-maker"
   ],
   "relatedComparisons": [
-    "hamilton-beach-2-way-programmable-coffee-maker-vs-black-decker-12-cup-digital-coffee-maker-washable"
+    "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
   ]
 }

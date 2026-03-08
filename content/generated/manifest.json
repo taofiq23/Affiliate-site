@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-08T17:20:58.733Z",
+  "generatedAt": "2026-03-08T17:40:20.664Z",
   "counts": {
-    "products": 8,
-    "reviews": 8,
+    "products": 13,
+    "reviews": 13,
     "bestLists": 3,
     "comparisons": 1,
-    "guides": 3,
+    "guides": 4,
     "categories": 2,
-    "keywordClusters": 17,
-    "seoBriefs": 17,
-    "publishQueue": 17,
+    "keywordClusters": 25,
+    "seoBriefs": 25,
+    "publishQueue": 25,
     "qaFailures": 0,
     "productQaFailures": 0
   }

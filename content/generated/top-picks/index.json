@@ -3,19 +3,19 @@
     "slug": "top-picks",
     "title": "Best Home Appliances and Coffee Gear: Top Picks",
     "description": "A ranked shortlist of home appliances, coffee gear, air treatment devices, and comfort picks built for affiliate SEO.",
-    "intro": "This page is the main shortlist for the site. It is built around home appliances, kitchen gear, coffee tools, air treatment products, and comfort devices that show a strong blend of bestseller proof, search demand, evergreen appeal, and realistic affiliate upside.",
+    "intro": "This page is the main shortlist for the site. It is built around home appliances, kitchen gear, coffee tools, air treatment products, and comfort devices that show a strong blend of bestseller proof, search demand, evergreen appeal, and realistic affiliate upside. It is meant for buyers who want the fastest path from broad product research into a tighter shortlist of pages worth opening next.",
     "highlights": [
       "Primary niche only: home appliances, coffee gear, air treatment, comfort, and cleaning devices",
       "Rankings blend bestseller proof, trend velocity, Google demand, evergreen value, and affiliate potential",
       "Use this page to narrow the field before opening individual review pages"
     ],
     "productSlugs": [
+      "levoit-air-purifier",
+      "keurig-k-elite-single-serve-k-cup-pod",
       "hamilton-beach-2-way-programmable-coffee-maker",
       "black-decker-12-cup-digital-coffee-maker-washable",
       "mueller-home-12-cup-red-coffee-maker",
-      "black-decker-one-touch-coffee-grinder-2-3",
-      "nostalgia-3-in-1-breakfast-station",
-      "trendplain-16oz-470ml-glass-olive-oil-sprayer"
+      "magic-bullet-blender-small-silver"
     ],
     "faq": [
       {
@@ -33,32 +33,32 @@
       "how-to-choose-kitchen-appliances"
     ],
     "relatedReviews": [
+      "levoit-air-purifier",
+      "keurig-k-elite-single-serve-k-cup-pod",
       "hamilton-beach-2-way-programmable-coffee-maker",
       "black-decker-12-cup-digital-coffee-maker-washable",
-      "mueller-home-12-cup-red-coffee-maker",
-      "black-decker-one-touch-coffee-grinder-2-3",
-      "nostalgia-3-in-1-breakfast-station"
+      "mueller-home-12-cup-red-coffee-maker"
     ],
     "relatedComparisons": [
-      "hamilton-beach-2-way-programmable-coffee-maker-vs-black-decker-12-cup-digital-coffee-maker-washable"
+      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
     ]
   },
   {
     "slug": "best-coffee-gear",
     "title": "Best Coffee Gear: Reviews, Value Picks, and Buying Advice",
     "description": "A shortlist of the best coffee gear with buyer-focused recommendations and links into full reviews.",
-    "intro": "This page is built for searchers who already know the category they want but still need help narrowing the field. It focuses on coffee gear that combine strong marketplace proof with a clean buyer story and realistic affiliate conversion potential.",
+    "intro": "This page is built for searchers who already know the category they want but still need help narrowing the field. It focuses on coffee gear that combine strong marketplace proof, clearer buyer fit, better value positioning, and a cleaner path into individual review pages.",
     "highlights": [
       "Built around coffee gear with the strongest current niche-fit scores",
       "Designed to send readers into review pages and direct product comparisons",
       "Optimized for shortlist traffic, not broad generic browsing"
     ],
     "productSlugs": [
+      "keurig-k-elite-single-serve-k-cup-pod",
       "hamilton-beach-2-way-programmable-coffee-maker",
       "black-decker-12-cup-digital-coffee-maker-washable",
       "mueller-home-12-cup-red-coffee-maker",
-      "black-decker-one-touch-coffee-grinder-2-3",
-      "coffee-mug-warmer-fastest-heating"
+      "black-decker-one-touch-coffee-grinder-2-3"
     ],
     "faq": [
       {
@@ -75,29 +75,31 @@
       "product-buying-guide"
     ],
     "relatedReviews": [
+      "keurig-k-elite-single-serve-k-cup-pod",
       "hamilton-beach-2-way-programmable-coffee-maker",
       "black-decker-12-cup-digital-coffee-maker-washable",
-      "mueller-home-12-cup-red-coffee-maker",
-      "black-decker-one-touch-coffee-grinder-2-3"
+      "mueller-home-12-cup-red-coffee-maker"
     ],
     "relatedComparisons": [
-      "hamilton-beach-2-way-programmable-coffee-maker-vs-black-decker-12-cup-digital-coffee-maker-washable"
+      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
     ]
   },
   {
     "slug": "best-kitchen-appliances",
     "title": "Best Kitchen Appliances: Reviews, Value Picks, and Buying Advice",
     "description": "A shortlist of the best kitchen appliances with buyer-focused recommendations and links into full reviews.",
-    "intro": "This page is built for searchers who already know the category they want but still need help narrowing the field. It focuses on kitchen appliances that combine strong marketplace proof with a clean buyer story and realistic affiliate conversion potential.",
+    "intro": "This page is built for searchers who already know the category they want but still need help narrowing the field. It focuses on kitchen appliances that combine strong marketplace proof, clearer buyer fit, better value positioning, and a cleaner path into individual review pages.",
     "highlights": [
       "Built around kitchen appliances with the strongest current niche-fit scores",
       "Designed to send readers into review pages and direct product comparisons",
       "Optimized for shortlist traffic, not broad generic browsing"
     ],
     "productSlugs": [
+      "magic-bullet-blender-small-silver",
+      "crock-pot-7-quart-oval-manual-slow",
       "nostalgia-3-in-1-breakfast-station",
       "trendplain-16oz-470ml-glass-olive-oil-sprayer",
-      "extra-large-expandable-silverware-organizer-bpa-free"
+      "bella-2-slice-slim-toaster-kitchenware"
     ],
     "faq": [
       {
@@ -114,9 +116,10 @@
       "product-buying-guide"
     ],
     "relatedReviews": [
+      "magic-bullet-blender-small-silver",
+      "crock-pot-7-quart-oval-manual-slow",
       "nostalgia-3-in-1-breakfast-station",
-      "trendplain-16oz-470ml-glass-olive-oil-sprayer",
-      "extra-large-expandable-silverware-organizer-bpa-free"
+      "trendplain-16oz-470ml-glass-olive-oil-sprayer"
     ],
     "relatedComparisons": []
   }

@@ -2,8 +2,9 @@
   "slug": "coffee",
   "title": "Coffee Gear Reviews, Comparisons, and Buying Guides",
   "description": "A category hub for coffee gear linking review pages, best lists, and informational guides.",
-  "intro": "This hub keeps the site's main niche organized around coffee gear. Use it to move from broad category interest into the pages with the strongest commercial intent: best lists, comparison pages, and individual reviews.",
+  "intro": "This hub keeps the site's main niche organized around coffee gear. Use it to move from broad category interest into the pages with the strongest commercial intent: best lists, comparison pages, and individual reviews that answer the last buying questions before checkout.",
   "productSlugs": [
+    "keurig-k-elite-single-serve-k-cup-pod",
     "hamilton-beach-2-way-programmable-coffee-maker",
     "black-decker-12-cup-digital-coffee-maker-washable",
     "mueller-home-12-cup-red-coffee-maker",
@@ -19,7 +20,7 @@
     "how-to-choose-coffee-gear"
   ],
   "comparisonSlugs": [
-    "hamilton-beach-2-way-programmable-coffee-maker-vs-black-decker-12-cup-digital-coffee-maker-washable"
+    "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
   ],
   "faq": [
     {
