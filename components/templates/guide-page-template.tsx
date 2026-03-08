@@ -1,8 +1,8 @@
 import { JsonLd } from "@/components/json-ld";
-import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
-import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
+import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { getBestLists, getComparisons, getProducts, type GuideRecord } from "@/lib/content-store";
+import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
 
 type Props = {
   page: GuideRecord;
@@ -20,22 +20,26 @@ export function GuidePageTemplate({ page }: Props) {
 
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Guides", href: `/guides/${page.slug}` }, { label: page.title }]} />
-        <div className="grid gap-12 md:grid-cols-2 md:items-start">
-          <div className="luxe-image sticky top-24">
-            <div className="aspect-[4/5] bg-gradient-to-b from-[#dfd2be] via-[#c3ab80] to-[#7b6540]" />
-          </div>
-          <div>
-            <p className="kicker">Guide Template</p>
-            <h1 className="section-title mt-4">{page.title}</h1>
-            <p className="mt-6 text-sm uppercase leading-relaxed tracking-[0.14em] text-secondary/72">{page.intro}</p>
 
-            <div className="mt-10 space-y-10 border-t border-black/10 pt-10">
+        <article className="mx-auto mt-6 max-w-4xl">
+          <p className="kicker">Buying Guide</p>
+          <h1 className="section-title mt-4">{page.title}</h1>
+          <p className="mt-6 max-w-3xl text-base leading-8 text-secondary/82 md:text-lg">
+            {page.description}
+          </p>
+
+          <div className="mt-8 rounded-[2rem] border border-black/10 bg-white/55 p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] md:p-10">
+            <p className="text-base leading-8 text-secondary/84 md:text-lg">{page.intro}</p>
+          </div>
+
+          <div className="mt-12 border-t border-black/10 pt-12">
+            <div className="space-y-12">
               {page.sections.map((section) => (
-                <section key={section.heading}>
-                  <h2 className="font-display text-3xl leading-[0.95] md:text-4xl">{section.heading}</h2>
-                  <div className="mt-5 space-y-4">
+                <section key={section.heading} className="space-y-6">
+                  <h2 className="font-display text-3xl leading-tight md:text-4xl">{section.heading}</h2>
+                  <div className="space-y-5">
                     {section.body.map((paragraph) => (
-                      <p key={paragraph} className="text-sm leading-relaxed text-secondary/80">
+                      <p key={paragraph} className="text-base leading-8 text-secondary/82 md:text-[1.04rem]">
                         {paragraph}
                       </p>
                     ))}
@@ -43,20 +47,22 @@ export function GuidePageTemplate({ page }: Props) {
                 </section>
               ))}
             </div>
+          </div>
 
-            <div className="mt-12 border-t border-black/10 pt-10">
-              <p className="text-xs uppercase tracking-[0.16em] text-black/45">FAQ</p>
-              <div className="mt-6 border-t border-black/10">
-                {page.faq.map((item) => (
-                  <details key={item.question} className="border-b border-black/10 py-4">
-                    <summary className="cursor-pointer text-xs uppercase tracking-[0.2em] text-secondary/75">{item.question}</summary>
-                    <p className="mt-3 max-w-3xl text-sm leading-relaxed text-secondary/80">{item.answer}</p>
-                  </details>
-                ))}
-              </div>
+          <div className="mt-14 border-t border-black/10 pt-10">
+            <p className="text-xs uppercase tracking-[0.16em] text-black/45">Frequently Asked Questions</p>
+            <div className="mt-6 divide-y divide-black/10 rounded-[2rem] border border-black/10 bg-white/45 px-6 md:px-8">
+              {page.faq.map((item) => (
+                <details key={item.question} className="group py-5">
+                  <summary className="cursor-pointer list-none pr-8 text-base font-medium leading-7 text-secondary marker:hidden md:text-[1.03rem]">
+                    {item.question}
+                  </summary>
+                  <p className="mt-3 max-w-3xl text-base leading-8 text-secondary/80">{item.answer}</p>
+                </details>
+              ))}
             </div>
           </div>
-        </div>
+        </article>
       </div>
 
       <InternalLinkGrid
