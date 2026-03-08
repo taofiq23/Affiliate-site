@@ -33,25 +33,19 @@ function readGeneratedJsonFromCandidates<T>(relativePaths: string[]) {
   return undefined;
 }
 
-function mergeBySlug<T extends { slug: string }>(primary: T[], secondary: T[]) {
-  return Array.from(new Map([...secondary, ...primary].map((item) => [item.slug, item])).values());
-}
-
 const generatedReviews = readGeneratedJsonFromCandidates<ReviewRecord[]>(["content/generated/reviews/index.json", "automation/output/reviews/index.json"]) ?? [];
+const hasGeneratedReviews = generatedReviews.length > 0;
 
-export const reviews = mergeBySlug(
-  generatedReviews.map(normalizeReviewRecord),
-  fallbackReviews.map(normalizeReviewRecord)
-);
+export const reviews = (hasGeneratedReviews ? generatedReviews : fallbackReviews).map(normalizeReviewRecord);
 export const reviewMap = Object.fromEntries(reviews.map((review) => [review.slug, review])) as Record<string, ReviewRecord>;
 
 export function getReview(slug: string) {
-  return reviewMap[slug] ?? getFallbackReview(slug);
+  return reviewMap[slug] ?? (!hasGeneratedReviews ? getFallbackReview(slug) : undefined);
 }
 
 export function getReviews(slugs: string[]) {
   const resolved = slugs.map((slug) => reviewMap[slug]).filter((review): review is ReviewRecord => Boolean(review));
-  return resolved.length > 0 ? resolved : getFallbackReviews(slugs);
+  return resolved.length > 0 ? resolved : !hasGeneratedReviews ? getFallbackReviews(slugs) : [];
 }
 
 export { fallbackReviewMap };

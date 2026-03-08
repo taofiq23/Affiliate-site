@@ -6,16 +6,16 @@ const footerSections = [
     title: "Best",
     links: [
       { href: "/best/top-picks", label: "Top Picks" },
-      { href: "/best/best-value-products", label: "Best Value" },
-      { href: "/category/tools", label: "Categories" }
+      { href: "/collection", label: "Collection" },
+      { href: "/story", label: "Guide Overview" }
     ]
   },
   {
     title: "Guides",
     links: [
-      { href: "/guides/how-to-choose-a-product", label: "How To Choose" },
       { href: "/guides/product-buying-guide", label: "Buying Guide" },
-      { href: "/compare/atlas-one-vs-northstar-pro", label: "Popular Comparison" }
+      { href: "/story", label: "Guide Overview" },
+      { href: "/contact", label: "Contact" }
     ]
   },
   {

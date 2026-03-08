@@ -10,5 +10,5 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default function StoryPage() {
-  return <GuidePageTemplate page={getGuide("how-to-choose-a-product")!} />;
+  return <GuidePageTemplate page={getGuide("product-buying-guide")!} />;
 }

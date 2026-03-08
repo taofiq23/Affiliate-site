@@ -32,7 +32,7 @@ export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription }: Prop
             <Link href="/best/top-picks" className="btn-primary">
               Explore Top Picks
             </Link>
-            <Link href="/guides/how-to-choose-a-product" className="btn-outline">
+            <Link href="/guides/product-buying-guide" className="btn-outline">
               Open Buying Guide
             </Link>
           </div>

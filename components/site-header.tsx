@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site-data";
 const links = [
   { href: "/", label: "Home" },
   { href: "/best/top-picks", label: "Best" },
-  { href: "/guides/how-to-choose-a-product", label: "Guides" },
+  { href: "/guides/product-buying-guide", label: "Guides" },
   { href: "/disclosure", label: "Disclosure" }
 ];
 
@@ -97,8 +97,8 @@ export function SiteHeader() {
             <span className="tracking-[0.2em]">{siteConfig.shortName.toUpperCase()}</span>
           </Link>
           <div className="flex items-center gap-6">
-            <Link href="/reviews/atlas-one" className="hidden md:inline-flex">
-              Featured Review
+            <Link href="/best/top-picks" className="hidden md:inline-flex">
+              Top Picks
             </Link>
             <button
               className="inline md:hidden"
@@ -187,11 +187,11 @@ export function SiteHeader() {
             <p className="text-xs uppercase tracking-[0.16em] text-black/50">Quick Access</p>
             <div className="mt-3 grid gap-2">
               <Link
-                href="/compare/atlas-one-vs-northstar-pro"
+                href="/guides/product-buying-guide"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm uppercase tracking-[0.12em] text-black/80 hover:text-black"
               >
-                Compare
+                Buying Guide
               </Link>
               <Link
                 href="/contact"
