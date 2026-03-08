@@ -9,13 +9,12 @@ type Props = {
   images: string[];
 };
 
-export function ProductMediaGallery({ tone, title, images }: Props) {
+export function ProductMediaGallery({ tone: _tone, title, images }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [imageUnavailable, setImageUnavailable] = useState(false);
   const gallery = (images.length > 0 ? images : [""]).slice(0, 3).map((image, index) => ({
     image,
     title: `Product View ${index + 1}`,
-    tone: [tone, "from-[#d9d5cf] to-[#969084]", "from-[#ece7dc] to-[#c4b49c]"][index] ?? tone,
     chip: String(index + 1).padStart(2, "0")
   }));
 
@@ -31,7 +30,7 @@ export function ProductMediaGallery({ tone, title, images }: Props) {
                 selectedIndex === index ? "opacity-100 scale-100" : "pointer-events-none opacity-0 scale-105"
               }`}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
+              <div className="absolute inset-0 bg-white" />
               {slide.image && !imageUnavailable ? (
                 <div className="absolute inset-0 flex items-center justify-center p-8 md:p-12">
                   <Image
@@ -49,7 +48,7 @@ export function ProductMediaGallery({ tone, title, images }: Props) {
               <div
                 className={`absolute inset-0 ${
                   slide.image && !imageUnavailable
-                    ? "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.12),rgba(255,255,255,0.04))]"
+                    ? "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.08),rgba(255,255,255,0.02))]"
                     : "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.75),rgba(0,0,0,0.08))]"
                 }`}
               />
@@ -80,7 +79,7 @@ export function ProductMediaGallery({ tone, title, images }: Props) {
                 }`}
                 aria-label={`View ${slide.title}`}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
+                <div className="absolute inset-0 bg-white" />
                 {slide.image && !imageUnavailable ? (
                   <div className="absolute inset-0 flex items-center justify-center p-3 xl:p-4">
                     <Image
@@ -94,7 +93,7 @@ export function ProductMediaGallery({ tone, title, images }: Props) {
                     />
                   </div>
                 ) : null}
-                <div className="absolute inset-0 bg-white/35 transition-opacity duration-300 group-hover:opacity-20" />
+                <div className="absolute inset-0 bg-white/12 transition-opacity duration-300 group-hover:opacity-0" />
                 <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between xl:bottom-3 xl:left-3 xl:right-3">
                   <span className="text-[9px] uppercase tracking-[0.2em] text-black/70">{slide.chip}</span>
                   <span className="text-[9px] uppercase tracking-[0.14em] text-black/70">{active ? "Active" : "View"}</span>
