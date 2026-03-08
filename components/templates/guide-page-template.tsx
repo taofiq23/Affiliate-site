@@ -21,7 +21,7 @@ export function GuidePageTemplate({ page }: Props) {
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Guides", href: `/guides/${page.slug}` }, { label: page.title }]} />
 
-        <article className="mx-auto mt-6 max-w-5xl">
+        <article className="mx-auto mt-6 max-w-5xl" style={{ color: "#171717" }}>
           <div className="grid gap-10 md:grid-cols-[minmax(320px,0.86fr)_minmax(0,1.14fr)] md:items-center">
             <div className="luxe-image relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#efe8dc] via-[#ddc9aa] to-[#9b7a4b]">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.75),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.18),rgba(0,0,0,0.08))]" />
@@ -44,14 +44,14 @@ export function GuidePageTemplate({ page }: Props) {
             <div>
               <p className="kicker">Buying Guide</p>
               <h1 className="section-title mt-4">{page.title}</h1>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-[#2a2622] md:text-lg">
+              <p className="mt-6 max-w-3xl text-base leading-8 text-black md:text-lg" style={{ color: "#171717" }}>
                 {page.description}
               </p>
             </div>
           </div>
 
           <div className="mt-10 rounded-[2rem] border border-black/10 bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] md:p-10">
-            <p className="text-base leading-8 text-[#2a2622] md:text-lg">{page.intro}</p>
+            <p className="text-base leading-8 text-black md:text-lg" style={{ color: "#171717" }}>{page.intro}</p>
           </div>
 
           <div className="mt-12 border-t border-black/10 pt-12">
@@ -61,7 +61,7 @@ export function GuidePageTemplate({ page }: Props) {
                   <h2 className="font-display text-3xl leading-tight md:text-4xl">{section.heading}</h2>
                   <div className="space-y-5">
                     {section.body.map((paragraph) => (
-                      <p key={paragraph} className="text-base leading-8 text-[#2f2a25] md:text-[1.04rem]">
+                      <p key={paragraph} className="text-base leading-8 text-black md:text-[1.04rem]" style={{ color: "#171717" }}>
                         {paragraph}
                       </p>
                     ))}
@@ -76,10 +76,10 @@ export function GuidePageTemplate({ page }: Props) {
             <div className="mt-6 divide-y divide-black/10 rounded-[2rem] border border-black/10 bg-white px-6 md:px-8">
               {page.faq.map((item) => (
                 <details key={item.question} className="group py-5">
-                  <summary className="cursor-pointer list-none pr-8 text-base font-medium leading-7 text-[#1f1f1f] marker:hidden md:text-[1.03rem]">
+                  <summary className="cursor-pointer list-none pr-8 text-base font-medium leading-7 text-black marker:hidden md:text-[1.03rem]" style={{ color: "#171717" }}>
                     {item.question}
                   </summary>
-                  <p className="mt-3 max-w-3xl text-base leading-8 text-[#2f2a25]">{item.answer}</p>
+                  <p className="mt-3 max-w-3xl text-base leading-8 text-black" style={{ color: "#171717" }}>{item.answer}</p>
                 </details>
               ))}
             </div>
