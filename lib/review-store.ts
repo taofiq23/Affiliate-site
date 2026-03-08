@@ -21,7 +21,28 @@ function readGeneratedJson<T>(relativePath: string) {
   }
 }
 
-export const reviews = (readGeneratedJson<ReviewRecord[]>("automation/output/reviews/index.json") ?? fallbackReviews).map(normalizeReviewRecord);
+function readGeneratedJsonFromCandidates<T>(relativePaths: string[]) {
+  for (const relativePath of relativePaths) {
+    const data = readGeneratedJson<T>(relativePath);
+
+    if (data !== undefined) {
+      return data;
+    }
+  }
+
+  return undefined;
+}
+
+function mergeBySlug<T extends { slug: string }>(primary: T[], secondary: T[]) {
+  return Array.from(new Map([...secondary, ...primary].map((item) => [item.slug, item])).values());
+}
+
+const generatedReviews = readGeneratedJsonFromCandidates<ReviewRecord[]>(["content/generated/reviews/index.json", "automation/output/reviews/index.json"]) ?? [];
+
+export const reviews = mergeBySlug(
+  generatedReviews.map(normalizeReviewRecord),
+  fallbackReviews.map(normalizeReviewRecord)
+);
 export const reviewMap = Object.fromEntries(reviews.map((review) => [review.slug, review])) as Record<string, ReviewRecord>;
 
 export function getReview(slug: string) {

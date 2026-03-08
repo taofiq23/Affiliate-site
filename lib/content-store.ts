@@ -30,7 +30,16 @@ import { normalizeProductRecord } from "./generated-content-normalizers";
 
 export type { BestListRecord, CategoryRecord, ComparisonRecord, GuideRecord, ProductRecord } from "./site-data";
 
-type HomepageData = typeof fallbackHomepageData;
+type HomepageData = {
+  heroTitle: string;
+  heroKicker: string;
+  heroDescription: string;
+  featuredReviewSlugs: string[];
+  featuredBestSlug: string;
+  popularComparisonSlugs: string[];
+  featuredGuideSlugs: string[];
+  categorySlugs: string[];
+};
 
 function readGeneratedJson<T>(relativePath: string) {
   const filePath = path.join(process.cwd(), relativePath);
@@ -47,12 +56,58 @@ function readGeneratedJson<T>(relativePath: string) {
   }
 }
 
-export const products = (readGeneratedJson<ProductRecord[]>("automation/output/products.json") ?? fallbackProducts).map(normalizeProductRecord);
-export const bestLists = readGeneratedJson<BestListRecord[]>("automation/output/top-picks/index.json") ?? fallbackBestLists;
-export const comparisons = readGeneratedJson<ComparisonRecord[]>("automation/output/comparisons/index.json") ?? fallbackComparisons;
-export const guides = readGeneratedJson<GuideRecord[]>("automation/output/guides/index.json") ?? fallbackGuides;
-export const categories = readGeneratedJson<CategoryRecord[]>("automation/output/categories/index.json") ?? fallbackCategories;
-export const homepageData = readGeneratedJson<HomepageData>("automation/output/homepage.json") ?? fallbackHomepageData;
+function readGeneratedJsonFromCandidates<T>(relativePaths: string[]) {
+  for (const relativePath of relativePaths) {
+    const data = readGeneratedJson<T>(relativePath);
+
+    if (data !== undefined) {
+      return data;
+    }
+  }
+
+  return undefined;
+}
+
+function mergeBySlug<T extends { slug: string }>(primary: T[], secondary: T[]) {
+  return Array.from(new Map([...secondary, ...primary].map((item) => [item.slug, item])).values());
+}
+
+function mergeHomepageData(generatedHomepageData: HomepageData | undefined) {
+  if (!generatedHomepageData) {
+    return fallbackHomepageData;
+  }
+
+  const mergeSlugs = (generatedSlugs: string[], fallbackSlugs: readonly string[]) =>
+    Array.from(new Set([...generatedSlugs, ...fallbackSlugs]));
+
+  return {
+    ...fallbackHomepageData,
+    featuredReviewSlugs: mergeSlugs(generatedHomepageData.featuredReviewSlugs, fallbackHomepageData.featuredReviewSlugs),
+    featuredBestSlug: generatedHomepageData.featuredBestSlug || fallbackHomepageData.featuredBestSlug,
+    popularComparisonSlugs: mergeSlugs(generatedHomepageData.popularComparisonSlugs, fallbackHomepageData.popularComparisonSlugs),
+    featuredGuideSlugs: mergeSlugs(generatedHomepageData.featuredGuideSlugs, fallbackHomepageData.featuredGuideSlugs),
+    categorySlugs: mergeSlugs(generatedHomepageData.categorySlugs, fallbackHomepageData.categorySlugs)
+  } satisfies HomepageData;
+}
+
+const generatedProducts = readGeneratedJsonFromCandidates<ProductRecord[]>(["content/generated/products.json", "automation/output/products.json"]) ?? [];
+const generatedBestLists = readGeneratedJsonFromCandidates<BestListRecord[]>(["content/generated/top-picks/index.json", "automation/output/top-picks/index.json"]) ?? [];
+const generatedComparisons =
+  readGeneratedJsonFromCandidates<ComparisonRecord[]>(["content/generated/comparisons/index.json", "automation/output/comparisons/index.json"]) ?? [];
+const generatedGuides = readGeneratedJsonFromCandidates<GuideRecord[]>(["content/generated/guides/index.json", "automation/output/guides/index.json"]) ?? [];
+const generatedCategories =
+  readGeneratedJsonFromCandidates<CategoryRecord[]>(["content/generated/categories/index.json", "automation/output/categories/index.json"]) ?? [];
+const generatedHomepageData = readGeneratedJsonFromCandidates<HomepageData>(["content/generated/homepage.json", "automation/output/homepage.json"]);
+
+export const products = mergeBySlug(
+  generatedProducts.map(normalizeProductRecord),
+  fallbackProducts.map(normalizeProductRecord)
+);
+export const bestLists = mergeBySlug(fallbackBestLists, generatedBestLists);
+export const comparisons = mergeBySlug(fallbackComparisons, generatedComparisons);
+export const guides = mergeBySlug(fallbackGuides, generatedGuides);
+export const categories = mergeBySlug(fallbackCategories, generatedCategories);
+export const homepageData = mergeHomepageData(generatedHomepageData);
 
 export const productMap = Object.fromEntries(products.map((product) => [product.slug, product])) as Record<string, ProductRecord>;
 export const bestListMap = Object.fromEntries(bestLists.map((page) => [page.slug, page])) as Record<string, BestListRecord>;

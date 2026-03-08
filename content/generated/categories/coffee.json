@@ -1,0 +1,28 @@
+{
+  "slug": "coffee",
+  "title": "Coffee Gear Reviews & Buying Guides: Find Your Perfect Setup",
+  "description": "Stop guessing. Our detailed coffee gear reviews, head-to-head comparisons, and expert buying guides help you find the right equipment for your home or office, from budget mug warmers to premium brewers.",
+  "intro": "This hub keeps the site's main niche organized around coffee gear. Use it to move from broad category interest into the pages with the strongest commercial intent: best lists, comparison pages, and individual reviews.",
+  "productSlugs": [
+    "coffee-mug-warmer-fastest-heating"
+  ],
+  "bestSlugs": [
+    "top-picks",
+    "best-coffee-gear"
+  ],
+  "guideSlugs": [
+    "product-buying-guide",
+    "how-to-choose-coffee-gear"
+  ],
+  "comparisonSlugs": [],
+  "faq": [
+    {
+      "question": "Why have a coffee gear category page at all?",
+      "answer": "It groups the key informational and commercial pages together so readers and search engines can move through the topic cluster more clearly."
+    },
+    {
+      "question": "What should readers click first from the coffee gear hub?",
+      "answer": "Most readers should open the category best-list page first, then validate finalists with reviews and comparison pages."
+    }
+  ]
+}

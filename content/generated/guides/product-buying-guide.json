@@ -1,0 +1,56 @@
+{
+  "slug": "product-buying-guide",
+  "title": "Coffee Gear Buying Guide: How To Choose The Right Mug Warmer & More",
+  "description": "Learn how to choose the right coffee gear. Our buying guide covers key features like budget, complexity, and proof signals to help you avoid common mistakes.",
+  "intro": "This guide is designed to bring broad search traffic into the main commercial pages of the site. It explains how to compare appliances and gear before moving into ranked lists, head-to-head comparisons, and final review pages.",
+  "sections": [
+    {
+      "heading": "Start With The Job The Product Needs To Do",
+      "body": [
+        "Strong affiliate content works best when the buyer starts with the real job to be done. In this niche, that usually means faster coffee at home, better air quality, easier meal prep, cleaner floors, or more comfort in a specific room.",
+        "Once the job is clear, the shortlist becomes much smaller. That is why category and best-list pages convert better when they are built around buyer problems instead of vague product features."
+      ]
+    },
+    {
+      "heading": "Compare Price Against Daily Friction",
+      "body": [
+        "A higher price is only justified when it removes real friction from the buyer's routine. For coffee gear that might mean more consistency or better workflow. For robot vacuums it might mean less manual cleanup. For air treatment it might mean quieter long-run use and easier upkeep.",
+        "This is the easiest way to avoid bad purchases. Compare the extra spend against the extra convenience you will actually use."
+      ]
+    },
+    {
+      "heading": "Use Best Lists Before You Commit To A Review",
+      "body": [
+        "Best pages do the heavy lifting of narrowing a large market into a realistic shortlist. That is especially important in appliance categories where dozens of similar-looking products compete on Amazon.",
+        "The right flow is guide to best page to review. That structure keeps readers from wasting time on products that were never a strong fit to begin with."
+      ]
+    },
+    {
+      "heading": "Use Review Pages To Validate The Final Choice",
+      "body": [
+        "A review page should answer the final questions: who the product is best for, who should skip it, what the main drawback is, and what alternative deserves one more look before the affiliate click.",
+        "That final validation step matters because it is where buyer confidence and monetization finally meet."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What should readers do after a buying guide?",
+      "answer": "Move into a best-list page for the category you care about, then open the two or three finalists in separate review tabs."
+    },
+    {
+      "question": "Why do broad guides still matter for affiliate SEO?",
+      "answer": "They capture early research intent, build topical authority, and push readers into the higher-converting review and comparison pages."
+    }
+  ],
+  "relatedBest": [
+    "top-picks",
+    "best-coffee-gear",
+    "best-kitchen-appliances",
+    "best-air-treatment"
+  ],
+  "relatedReviews": [
+    "coffee-mug-warmer-fastest-heating"
+  ],
+  "relatedComparisons": []
+}
