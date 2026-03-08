@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
 import type { ProductRecord } from "@/lib/site-data";
@@ -16,13 +17,13 @@ export function AffiliateProductCard({ product, href = `/reviews/${product.slug}
       <div className="relative overflow-hidden">
         <Link href={href} className="luxe-image block">
           <div className={`relative aspect-[4/5] bg-gradient-to-b ${product.tone} transition-all duration-500 md:group-hover:scale-105`}>
-            <img
+            <Image
               src={imageUrl}
               alt={product.name}
-              className="absolute inset-0 h-full w-full object-contain p-6"
-              loading="lazy"
-              decoding="async"
-              referrerPolicy="no-referrer"
+              fill
+              sizes="(min-width: 1024px) 28vw, (min-width: 768px) 40vw, 90vw"
+              quality={95}
+              className="absolute inset-0 object-contain p-6"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 type Props = {
@@ -33,13 +34,14 @@ export function ProductMediaGallery({ tone, title, images }: Props) {
               <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
               {slide.image && !imageUnavailable ? (
                 <div className="absolute inset-0 flex items-center justify-center p-8 md:p-12">
-                  <img
+                  <Image
                     src={slide.image}
                     alt={`${title} ${slide.title.toLowerCase()}`}
-                    className="h-full w-full object-contain"
-                    loading="eager"
-                    decoding="async"
-                    referrerPolicy="no-referrer"
+                    fill
+                    sizes="(min-width: 1536px) 1200px, (min-width: 1280px) calc(100vw - 320px), 100vw"
+                    quality={100}
+                    priority={index === 0}
+                    className="object-contain p-8 md:p-12"
                     onError={() => setImageUnavailable(true)}
                   />
                 </div>
@@ -47,7 +49,7 @@ export function ProductMediaGallery({ tone, title, images }: Props) {
               <div
                 className={`absolute inset-0 ${
                   slide.image && !imageUnavailable
-                    ? "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.36),rgba(255,255,255,0.18))]"
+                    ? "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.12),rgba(255,255,255,0.04))]"
                     : "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.75),rgba(0,0,0,0.08))]"
                 }`}
               />
@@ -81,13 +83,13 @@ export function ProductMediaGallery({ tone, title, images }: Props) {
                 <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
                 {slide.image && !imageUnavailable ? (
                   <div className="absolute inset-0 flex items-center justify-center p-3 xl:p-4">
-                    <img
+                    <Image
                       src={slide.image}
                       alt={`${title} thumbnail ${index + 1}`}
-                      className="h-full w-full object-contain"
-                      loading="lazy"
-                      decoding="async"
-                      referrerPolicy="no-referrer"
+                      fill
+                      sizes="(min-width: 1280px) 220px, 33vw"
+                      quality={95}
+                      className="object-contain p-3 xl:p-4"
                       onError={() => setImageUnavailable(true)}
                     />
                   </div>

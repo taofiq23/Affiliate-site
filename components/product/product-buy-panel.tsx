@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { affiliateLinkRel, sortRetailerOffers } from "@/lib/review-utils";
 import { resolveReviewImageUrl } from "@/lib/generated-content-normalizers";
 import type { ReviewRecord } from "@/lib/review-data";
@@ -18,13 +19,20 @@ export function ProductBuyPanel({ review }: Props) {
     <div className="h-fit border border-black/10 bg-white p-5 md:sticky md:top-24 md:p-7">
       <div className="relative overflow-hidden border border-black/10 bg-[#f1eee7]">
         <div className={`absolute inset-0 bg-gradient-to-br ${review.tone}`} />
-        <div
-          className="absolute inset-0 bg-center bg-cover opacity-20"
-          style={{ backgroundImage: `url(${imageUrl})` }}
-          aria-hidden="true"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.72),rgba(255,255,255,0.12))]" />
-        <div className="relative flex min-h-[200px] flex-col justify-between p-5">
+        {imageUrl ? (
+          <div className="absolute inset-y-0 right-0 w-[48%]">
+            <Image
+              src={imageUrl}
+              alt={review.name}
+              fill
+              sizes="(min-width: 1536px) 220px, (min-width: 1280px) 26vw, 40vw"
+              quality={100}
+              className="object-contain object-right-bottom p-4 md:p-5"
+            />
+          </div>
+        ) : null}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.9),rgba(255,255,255,0.76)_45%,rgba(255,255,255,0.18)_80%)]" />
+        <div className="relative flex min-h-[220px] flex-col justify-between p-5">
           <div className="flex items-center justify-between gap-3">
             <span className="border border-black/15 bg-white/70 px-3 py-1 text-[9px] uppercase tracking-[0.22em] text-black/60">
               Editor Review
