@@ -1,1 +1,1 @@
-Scent Picks affiliate fragrance site built with Next.js.
+PickStack generic affiliate SEO framework built with Next.js.

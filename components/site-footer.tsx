@@ -1,27 +1,29 @@
 import Link from "next/link";
+import { siteConfig } from "@/lib/site-data";
 
 const footerSections = [
   {
-    title: "Picks",
+    title: "Best",
     links: [
-      { href: "/collection", label: "Top Picks" },
-      { href: "/product/velvet-oud", label: "Featured Review" },
-      { href: "/faq", label: "FAQ" }
+      { href: "/best/top-picks", label: "Top Picks" },
+      { href: "/best/best-value-products", label: "Best Value" },
+      { href: "/category/tools", label: "Categories" }
     ]
   },
   {
     title: "Guides",
     links: [
-      { href: "/story", label: "Buying Guide" },
-      { href: "/contact", label: "Contact" },
-      { href: "/disclosure", label: "Affiliate Disclosure" }
+      { href: "/guides/how-to-choose-a-product", label: "How To Choose" },
+      { href: "/guides/product-buying-guide", label: "Buying Guide" },
+      { href: "/compare/atlas-one-vs-northstar-pro", label: "Popular Comparison" }
     ]
   },
   {
     title: "Legal",
     links: [
       { href: "/privacy-policy", label: "Privacy Policy" },
-      { href: "/terms", label: "Terms & Conditions" }
+      { href: "/terms", label: "Terms & Conditions" },
+      { href: "/disclosure", label: "Affiliate Disclosure" }
     ]
   }
 ];
@@ -35,11 +37,10 @@ export function SiteFooter() {
         <div className="grid gap-10 border-b border-base-2/20 pb-10 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-8">
           <div>
             <p className="font-display text-2xl">
-              <span className="tracking-[0.24em]">SCENT</span>
-              <span className="ml-2 tracking-[0.18em] text-accent/90">PICKS</span>
+              <span className="tracking-[0.24em]">{siteConfig.shortName.toUpperCase()}</span>
             </p>
             <p className="mt-4 max-w-xs text-xs uppercase leading-relaxed tracking-[0.12em] text-base-2/70">
-              Editorial fragrance picks, partner offers, and practical buying notes for people who want the right scent faster.
+              Generic affiliate architecture for reviews, comparisons, best lists, guide pages, and high-intent internal linking.
             </p>
           </div>
 
@@ -62,7 +63,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-6 flex flex-col gap-3 text-xs uppercase tracking-[0.12em] text-base-2/60 md:flex-row md:items-center md:justify-between">
-          <p>Copyright {year} Scent Picks. All rights reserved.</p>
+          <p>Copyright {year} {siteConfig.name}. All rights reserved.</p>
           <p>Affiliate links may earn a commission at no extra cost to the visitor.</p>
         </div>
       </div>

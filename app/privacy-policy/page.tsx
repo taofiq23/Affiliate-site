@@ -1,10 +1,19 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Privacy Policy",
+  description: "Privacy policy for the generic affiliate SEO framework.",
+  pathname: "/privacy-policy"
+});
+
 export default function PrivacyPolicyPage() {
   return (
     <section className="container-luxe py-16 md:py-24">
       <p className="kicker">Legal</p>
       <h1 className="mt-4 font-display text-5xl leading-[0.95] md:text-6xl">Privacy Policy</h1>
       <p className="mt-6 max-w-3xl text-sm uppercase leading-relaxed tracking-[0.12em] text-secondary/70">
-        This policy explains how Scent Picks collects, uses, and protects visitor information.
+        This policy explains how PickStack collects, uses, and protects visitor information.
       </p>
 
       <div className="mt-10 space-y-6">

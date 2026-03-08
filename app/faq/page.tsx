@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Affiliate Framework FAQ",
+  description: "Frequently asked questions about affiliate links, pricing, and how the framework handles content-driven recommendations.",
+  pathname: "/faq"
+});
+
 export default function FaqPage() {
   return (
     <section className="container-luxe py-16 md:py-24">
@@ -37,7 +46,7 @@ export default function FaqPage() {
             Do you sell products directly?
           </summary>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-secondary/80">
-            No. Scent Picks is a content and referral site. All transactions happen on the retailer's website.
+            No. PickStack is a content and referral site. All transactions happen on the retailer's website.
           </p>
         </details>
       </div>

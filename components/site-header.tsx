@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { siteConfig } from "@/lib/site-data";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/collection", label: "Top Picks" },
-  { href: "/story", label: "Buying Guide" },
+  { href: "/best/top-picks", label: "Best" },
+  { href: "/guides/how-to-choose-a-product", label: "Guides" },
   { href: "/disclosure", label: "Disclosure" }
 ];
 
@@ -80,7 +81,7 @@ export function SiteHeader() {
           }`}
         >
           <div className="container-luxe flex h-9 items-center justify-between text-[11px] uppercase tracking-[0.2em] text-secondary/60">
-            <p>Fragrance Affiliate Guide / Updated Weekly</p>
+            <p>Generic Affiliate Framework / Updated Weekly</p>
             <div className="flex items-center gap-6">
               <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>
@@ -93,12 +94,11 @@ export function SiteHeader() {
             Menu
           </button>
           <Link href="/" className="font-display text-[22px] font-semibold text-black md:text-[30px]">
-            <span className="tracking-[0.2em]">SCENT</span>
-            <span className="ml-2 tracking-[0.14em]">PICKS</span>
+            <span className="tracking-[0.2em]">{siteConfig.shortName.toUpperCase()}</span>
           </Link>
           <div className="flex items-center gap-6">
-            <Link href="/product/velvet-oud" className="hidden md:inline-flex">
-              Featured Pick
+            <Link href="/reviews/atlas-one" className="hidden md:inline-flex">
+              Featured Review
             </Link>
             <button
               className="inline md:hidden"
@@ -146,8 +146,7 @@ export function SiteHeader() {
         >
           <div className="mb-6 flex items-center justify-between border-b border-black/10 pb-4">
             <p className="font-display text-xl font-semibold text-black">
-              <span className="tracking-[0.22em]">SCENT</span>
-              <span className="ml-2 tracking-[0.16em]">PICKS</span>
+              <span className="tracking-[0.22em]">{siteConfig.shortName.toUpperCase()}</span>
             </p>
             <button
               onClick={() => setMenuOpen(false)}
@@ -188,11 +187,11 @@ export function SiteHeader() {
             <p className="text-xs uppercase tracking-[0.16em] text-black/50">Quick Access</p>
             <div className="mt-3 grid gap-2">
               <Link
-                href="/faq"
+                href="/compare/atlas-one-vs-northstar-pro"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm uppercase tracking-[0.12em] text-black/80 hover:text-black"
               >
-                FAQ
+                Compare
               </Link>
               <Link
                 href="/contact"

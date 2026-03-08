@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { homepageData } from "@/lib/site-data";
+
 export function CapsulePageFlow() {
   return (
     <>
@@ -8,14 +11,12 @@ export function CapsulePageFlow() {
         </div>
         <div className="absolute bottom-6 left-0 right-0 md:bottom-10">
           <div className="container-luxe">
-            <p className="kicker text-base/82">Affiliate Fragrance Guide</p>
+            <p className="kicker text-base/82">{homepageData.heroKicker}</p>
             <h1 className="mt-4 max-w-4xl font-display text-[40px] leading-[0.94] text-base md:text-[86px]">
-              Scent Picks
-              <br className="hidden md:block" />
-              Worth Clicking
+              {homepageData.heroTitle}
             </h1>
-            <p className="mt-4 max-w-xl text-[10px] uppercase tracking-[0.28em] text-base/82 md:text-[11px]">
-              Updated March 2026
+            <p className="mt-4 max-w-2xl text-[11px] uppercase tracking-[0.22em] text-base/82 md:text-[12px]">
+              Reviews, best lists, comparison pages, guides, and category hubs built for scalable affiliate SEO.
             </p>
           </div>
         </div>
@@ -23,10 +24,15 @@ export function CapsulePageFlow() {
 
       <section className="border-b border-black/10 bg-base-2 py-10 md:py-12">
         <div className="container-luxe text-center">
-          <p className="mx-auto max-w-5xl text-sm leading-relaxed text-secondary/80 md:text-[15px]">
-            We review standout perfumes, compare partner pricing, and explain who each scent fits before sending visitors to a retailer.
-            The result is a cleaner affiliate experience built around trust, not catalog bloat.
-          </p>
+          <p className="mx-auto max-w-5xl text-sm leading-relaxed text-secondary/80 md:text-[15px]">{homepageData.heroDescription}</p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link href="/best/top-picks" className="btn-primary">
+              Explore Top Picks
+            </Link>
+            <Link href="/guides/how-to-choose-a-product" className="btn-outline">
+              Open Buying Guide
+            </Link>
+          </div>
         </div>
       </section>
     </>

@@ -9,9 +9,9 @@ type Props = {
 export function ProductMediaGallery({ tone }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const gallery = [
-    { title: "Hero Composition", tone, chip: "01" },
-    { title: "Bottle Detail", tone: "from-[#d9d5cf] to-[#969084]", chip: "02" },
-    { title: "Material Mood", tone: "from-[#ece7dc] to-[#c4b49c]", chip: "03" }
+    { title: "Overview View", tone, chip: "01" },
+    { title: "Feature Snapshot", tone: "from-[#d9d5cf] to-[#969084]", chip: "02" },
+    { title: "Use Context", tone: "from-[#ece7dc] to-[#c4b49c]", chip: "03" }
   ];
 
   return (

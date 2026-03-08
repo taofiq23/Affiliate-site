@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Terms and Conditions",
+  description: "Terms covering editorial content, retailer responsibility, and affiliate relationships.",
+  pathname: "/terms"
+});
+
 export default function TermsPage() {
   return (
     <section className="container-luxe py-16 md:py-24">
