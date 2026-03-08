@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { GuidePageTemplate } from "@/components/templates/guide-page-template";
 import { buildMetadata } from "@/lib/seo";
-import { getGuide } from "@/lib/site-data";
+import { getGuide } from "@/lib/content-store";
 
 export const metadata: Metadata = buildMetadata({
   title: "Guide Overview",

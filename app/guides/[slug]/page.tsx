@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { GuidePageTemplate } from "@/components/templates/guide-page-template";
 import { buildMetadata } from "@/lib/seo";
-import { getGuide, guides } from "@/lib/site-data";
+import { getGuide, guides } from "@/lib/content-store";
 
 type Props = {
   params: { slug: string };

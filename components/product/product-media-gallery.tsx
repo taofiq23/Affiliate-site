@@ -4,14 +4,17 @@ import { useState } from "react";
 
 type Props = {
   tone: string;
+  title: string;
+  image: string;
 };
 
-export function ProductMediaGallery({ tone }: Props) {
+export function ProductMediaGallery({ tone, title, image }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [imageUnavailable, setImageUnavailable] = useState(false);
   const gallery = [
     { title: "Overview View", tone, chip: "01" },
     { title: "Feature Snapshot", tone: "from-[#d9d5cf] to-[#969084]", chip: "02" },
-    { title: "Use Context", tone: "from-[#ece7dc] to-[#c4b49c]", chip: "03" }
+    { title: "Buyer Fit", tone: "from-[#ece7dc] to-[#c4b49c]", chip: "03" }
   ];
 
   return (
@@ -27,7 +30,31 @@ export function ProductMediaGallery({ tone }: Props) {
               }`}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
-              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.75),rgba(0,0,0,0.08))]" />
+              {index === 0 && image && !imageUnavailable ? (
+                <div className="absolute inset-0 flex items-center justify-center p-8 md:p-12">
+                  <img
+                    src={image}
+                    alt={title}
+                    className="h-full w-full object-contain"
+                    loading="eager"
+                    decoding="async"
+                    referrerPolicy="no-referrer"
+                    onError={() => setImageUnavailable(true)}
+                  />
+                </div>
+              ) : null}
+              <div
+                className={`absolute inset-0 ${
+                  index === 0 && image && !imageUnavailable
+                    ? "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.36),rgba(255,255,255,0.18))]"
+                    : "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.75),rgba(0,0,0,0.08))]"
+                }`}
+              />
+              <div className="absolute left-4 top-4 md:left-6 md:top-6">
+                <span className="inline-flex border border-black/15 bg-white/70 px-3 py-1 text-[9px] uppercase tracking-[0.22em] text-black/60">
+                  {title}
+                </span>
+              </div>
               <div className="absolute bottom-4 left-4 flex items-center gap-3 md:bottom-6 md:left-6">
                 <span className="inline-flex h-8 w-8 items-center justify-center border border-black/20 bg-white/70 text-[10px] tracking-[0.14em]">
                   {slide.chip}
@@ -51,6 +78,19 @@ export function ProductMediaGallery({ tone }: Props) {
                 aria-label={`View ${slide.title}`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
+                {index === 0 && image && !imageUnavailable ? (
+                  <div className="absolute inset-0 flex items-center justify-center p-3 xl:p-4">
+                    <img
+                      src={image}
+                      alt={`${title} thumbnail`}
+                      className="h-full w-full object-contain"
+                      loading="lazy"
+                      decoding="async"
+                      referrerPolicy="no-referrer"
+                      onError={() => setImageUnavailable(true)}
+                    />
+                  </div>
+                ) : null}
                 <div className="absolute inset-0 bg-white/35 transition-opacity duration-300 group-hover:opacity-20" />
                 <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between xl:bottom-3 xl:left-3 xl:right-3">
                   <span className="text-[9px] uppercase tracking-[0.2em] text-black/70">{slide.chip}</span>

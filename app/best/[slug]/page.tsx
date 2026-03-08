@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { BestListPageTemplate } from "@/components/templates/best-list-page-template";
 import { buildMetadata } from "@/lib/seo";
-import { bestLists, getBestList } from "@/lib/site-data";
+import { bestLists, getBestList } from "@/lib/content-store";
 
 type Props = {
   params: { slug: string };

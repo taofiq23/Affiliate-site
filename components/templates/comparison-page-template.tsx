@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
-import { getGuides, getProducts, type ComparisonRecord } from "@/lib/site-data";
+import { getGuides, getProducts, type ComparisonRecord } from "@/lib/content-store";
 
 type Props = {
   page: ComparisonRecord;

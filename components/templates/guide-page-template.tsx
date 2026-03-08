@@ -2,7 +2,7 @@ import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
-import { getBestLists, getComparisons, getProducts, type GuideRecord } from "@/lib/site-data";
+import { getBestLists, getComparisons, getProducts, type GuideRecord } from "@/lib/content-store";
 
 type Props = {
   page: GuideRecord;

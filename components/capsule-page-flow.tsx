@@ -1,7 +1,12 @@
 import Link from "next/link";
-import { homepageData } from "@/lib/site-data";
 
-export function CapsulePageFlow() {
+type Props = {
+  heroKicker: string;
+  heroTitle: string;
+  heroDescription: string;
+};
+
+export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription }: Props) {
   return (
     <>
       <section className="relative border-b border-black/10">
@@ -11,10 +16,8 @@ export function CapsulePageFlow() {
         </div>
         <div className="absolute bottom-6 left-0 right-0 md:bottom-10">
           <div className="container-luxe">
-            <p className="kicker text-base/82">{homepageData.heroKicker}</p>
-            <h1 className="mt-4 max-w-4xl font-display text-[40px] leading-[0.94] text-base md:text-[86px]">
-              {homepageData.heroTitle}
-            </h1>
+            <p className="kicker text-base/82">{heroKicker}</p>
+            <h1 className="mt-4 max-w-4xl font-display text-[40px] leading-[0.94] text-base md:text-[86px]">{heroTitle}</h1>
             <p className="mt-4 max-w-2xl text-[11px] uppercase tracking-[0.22em] text-base/82 md:text-[12px]">
               Reviews, best lists, comparison pages, guides, and category hubs built for scalable affiliate SEO.
             </p>
@@ -24,7 +27,7 @@ export function CapsulePageFlow() {
 
       <section className="border-b border-black/10 bg-base-2 py-10 md:py-12">
         <div className="container-luxe text-center">
-          <p className="mx-auto max-w-5xl text-sm leading-relaxed text-secondary/80 md:text-[15px]">{homepageData.heroDescription}</p>
+          <p className="mx-auto max-w-5xl text-sm leading-relaxed text-secondary/80 md:text-[15px]">{heroDescription}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link href="/best/top-picks" className="btn-primary">
               Explore Top Picks

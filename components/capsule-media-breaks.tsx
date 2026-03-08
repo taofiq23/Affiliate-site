@@ -1,17 +1,15 @@
 import Link from "next/link";
-import { getCategory, getComparison, getGuide, homepageData } from "@/lib/site-data";
+import type { CategoryRecord, ComparisonRecord, GuideRecord } from "@/lib/site-data";
 
-const comparisons = homepageData.popularComparisonSlugs
-  .map((slug) => getComparison(slug))
-  .filter((item): item is NonNullable<ReturnType<typeof getComparison>> => Boolean(item));
-const guides = homepageData.featuredGuideSlugs
-  .map((slug) => getGuide(slug))
-  .filter((item): item is NonNullable<ReturnType<typeof getGuide>> => Boolean(item));
-const categories = homepageData.categorySlugs
-  .map((slug) => getCategory(slug))
-  .filter((item): item is NonNullable<ReturnType<typeof getCategory>> => Boolean(item));
+type Props = {
+  comparisons: ComparisonRecord[];
+  guides: GuideRecord[];
+  categories: CategoryRecord[];
+};
 
-export function CapsuleMediaBreaks() {
+export function CapsuleMediaBreaks({ comparisons, guides, categories }: Props) {
+  const leadComparisonHref = comparisons[0] ? `/compare/${comparisons[0].slug}` : "/best/top-picks";
+
   return (
     <>
       <section className="border-y border-black/10">
@@ -26,10 +24,7 @@ export function CapsuleMediaBreaks() {
                 <br className="hidden md:block" />
                 Best Lists Feed Reviews.
               </h2>
-              <Link
-                href="/compare/atlas-one-vs-northstar-pro"
-                className="mt-8 inline-flex h-11 items-center justify-center border border-base/80 px-6 text-[10px] uppercase tracking-[0.24em] text-base"
-              >
+              <Link href={leadComparisonHref} className="mt-8 inline-flex h-11 items-center justify-center border border-base/80 px-6 text-[10px] uppercase tracking-[0.24em] text-base">
                 View Popular Comparison
               </Link>
             </div>

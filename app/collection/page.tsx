@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { BestListPageTemplate } from "@/components/templates/best-list-page-template";
 import { buildMetadata } from "@/lib/seo";
-import { getBestList } from "@/lib/site-data";
+import { getBestList } from "@/lib/content-store";
 
 export const metadata: Metadata = buildMetadata({
   title: "Top Picks Collection",

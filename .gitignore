@@ -9,3 +9,5 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
+automation/data/amazon-profile/
+automation/

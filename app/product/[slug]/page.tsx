@@ -1,5 +1,5 @@
 import { permanentRedirect } from "next/navigation";
-import { products } from "@/lib/site-data";
+import { products } from "@/lib/content-store";
 
 type Props = {
   params: { slug: string };

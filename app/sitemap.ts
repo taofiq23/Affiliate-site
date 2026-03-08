@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { bestLists, categories, comparisons, guides, products, siteConfig } from "@/lib/site-data";
+import { bestLists, categories, comparisons, guides, products, siteConfig } from "@/lib/content-store";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [

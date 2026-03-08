@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { buildArticleSchema, buildBreadcrumbSchema, buildItemListSchema } from "@/lib/seo";
-import { getComparisons, getGuides, getProducts, type BestListRecord } from "@/lib/site-data";
+import { getComparisons, getGuides, getProducts, type BestListRecord } from "@/lib/content-store";
 
 type Props = {
   page: BestListRecord;

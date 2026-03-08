@@ -11,10 +11,12 @@ export type ContentFaq = {
 };
 
 export type ProductRecord = {
+  asin?: string;
   name: string;
   slug: string;
   brand: string;
-  image: string;
+  imageUrl?: string;
+  image?: string;
   summary: string;
   quickVerdict: string;
   features: string[];

@@ -2,13 +2,14 @@
 
 import { useMemo, useState } from "react";
 import { AffiliateProductCard } from "@/components/affiliate-product-card";
-import { getProducts, homepageData } from "@/lib/site-data";
+import type { ProductRecord } from "@/lib/site-data";
 
 type Filter = "all" | "featured" | "value" | "premium";
+type Props = {
+  products: ProductRecord[];
+};
 
-const products = getProducts([...homepageData.featuredReviewSlugs]);
-
-export function CapsuleCollection() {
+export function CapsuleCollection({ products }: Props) {
   const [activeTab, setActiveTab] = useState<Filter>("all");
 
   const visibleProducts = useMemo(() => {
@@ -25,7 +26,7 @@ export function CapsuleCollection() {
     }
 
     return products.filter((item) => item.tags.includes("premium") || item.tags.includes("performance"));
-  }, [activeTab]);
+  }, [activeTab, products]);
 
   return (
     <section className="py-16 md:py-24">

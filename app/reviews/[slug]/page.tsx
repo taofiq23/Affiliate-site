@@ -1,37 +1,40 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ReviewPageTemplate } from "@/components/templates/review-page-template";
+import { resolveReviewImageUrl } from "@/lib/generated-content-normalizers";
 import { buildMetadata } from "@/lib/seo";
-import { getProduct, products } from "@/lib/site-data";
+import { getReview, reviews } from "@/lib/review-store";
 
 type Props = {
   params: { slug: string };
 };
 
 export function generateStaticParams() {
-  return products.map((product) => ({ slug: product.slug }));
+  return reviews.map((review) => ({ slug: review.slug }));
 }
 
 export function generateMetadata({ params }: Props): Metadata {
-  const product = getProduct(params.slug);
+  const review = getReview(params.slug);
 
-  if (!product) {
+  if (!review) {
     return {};
   }
 
   return buildMetadata({
-    title: `${product.name} Review`,
-    description: product.summary,
-    pathname: `/reviews/${product.slug}`
+    title: `${review.name} Review`,
+    description: review.summary,
+    pathname: `/reviews/${review.slug}`,
+    imagePath: resolveReviewImageUrl(review),
+    openGraphType: "article"
   });
 }
 
 export default function ReviewPage({ params }: Props) {
-  const product = getProduct(params.slug);
+  const review = getReview(params.slug);
 
-  if (!product) {
+  if (!review) {
     notFound();
   }
 
-  return <ReviewPageTemplate product={product} />;
+  return <ReviewPageTemplate review={review} />;
 }

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ComparisonPageTemplate } from "@/components/templates/comparison-page-template";
 import { buildMetadata } from "@/lib/seo";
-import { comparisons, getComparison } from "@/lib/site-data";
+import { comparisons, getComparison } from "@/lib/content-store";
 
 type Props = {
   params: { slug: string };

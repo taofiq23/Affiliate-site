@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
 import type { ProductRecord } from "@/lib/site-data";
 
 type Props = {
@@ -8,11 +9,21 @@ type Props = {
 };
 
 export function AffiliateProductCard({ product, href = `/reviews/${product.slug}`, ctaLabel = "Read Review" }: Props) {
+  const imageUrl = resolveProductImageUrl(product);
+
   return (
     <article className="group relative">
       <div className="relative overflow-hidden">
         <Link href={href} className="luxe-image block">
           <div className={`relative aspect-[4/5] bg-gradient-to-b ${product.tone} transition-all duration-500 md:group-hover:scale-105`}>
+            <img
+              src={imageUrl}
+              alt={product.name}
+              className="absolute inset-0 h-full w-full object-contain p-6"
+              loading="lazy"
+              decoding="async"
+              referrerPolicy="no-referrer"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
               <div className="flex items-center justify-between gap-3">

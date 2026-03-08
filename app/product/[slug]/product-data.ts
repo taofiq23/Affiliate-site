@@ -1,2 +1,2 @@
-export { getProduct, productMap, products, topRatedOrder } from "@/lib/site-data";
-export type { ProductRecord as ProductDetails } from "@/lib/site-data";
+export { getProduct, productMap, products, topRatedOrder } from "@/lib/content-store";
+export type { ProductRecord as ProductDetails } from "@/lib/content-store";

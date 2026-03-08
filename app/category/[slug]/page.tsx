@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { CategoryPageTemplate } from "@/components/templates/category-page-template";
 import { buildMetadata } from "@/lib/seo";
-import { categories, getCategory } from "@/lib/site-data";
+import { categories, getCategory } from "@/lib/content-store";
 
 type Props = {
   params: { slug: string };
