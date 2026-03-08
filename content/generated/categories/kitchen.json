@@ -1,0 +1,30 @@
+{
+  "slug": "kitchen",
+  "title": "Kitchen Appliances Reviews, Comparisons, and Buying Guides",
+  "description": "A category hub for kitchen appliances linking review pages, best lists, and informational guides.",
+  "intro": "This hub keeps the site's main niche organized around kitchen appliances. Use it to move from broad category interest into the pages with the strongest commercial intent: best lists, comparison pages, and individual reviews.",
+  "productSlugs": [
+    "nostalgia-3-in-1-breakfast-station",
+    "trendplain-16oz-470ml-glass-olive-oil-sprayer",
+    "extra-large-expandable-silverware-organizer-bpa-free"
+  ],
+  "bestSlugs": [
+    "top-picks",
+    "best-kitchen-appliances"
+  ],
+  "guideSlugs": [
+    "product-buying-guide",
+    "how-to-choose-kitchen-appliances"
+  ],
+  "comparisonSlugs": [],
+  "faq": [
+    {
+      "question": "Why have a kitchen appliances category page at all?",
+      "answer": "It groups the key informational and commercial pages together so readers and search engines can move through the topic cluster more clearly."
+    },
+    {
+      "question": "What should readers click first from the kitchen appliances hub?",
+      "answer": "Most readers should open the category best-list page first, then validate finalists with reviews and comparison pages."
+    }
+  ]
+}

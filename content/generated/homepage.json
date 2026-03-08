@@ -3,15 +3,24 @@
   "heroKicker": "Niche-First Automation Engine",
   "heroDescription": "This site now prioritizes home appliances, kitchen gear, coffee equipment, air treatment, cleaning devices, and home comfort products. A small skincare test bucket exists only to validate engine diversity without taking over the site direction.",
   "featuredReviewSlugs": [
-    "coffee-mug-warmer-fastest-heating"
+    "hamilton-beach-2-way-programmable-coffee-maker",
+    "black-decker-12-cup-digital-coffee-maker-washable",
+    "mueller-home-12-cup-red-coffee-maker",
+    "black-decker-one-touch-coffee-grinder-2-3",
+    "nostalgia-3-in-1-breakfast-station",
+    "trendplain-16oz-470ml-glass-olive-oil-sprayer"
   ],
   "featuredBestSlug": "top-picks",
-  "popularComparisonSlugs": [],
+  "popularComparisonSlugs": [
+    "hamilton-beach-2-way-programmable-coffee-maker-vs-black-decker-12-cup-digital-coffee-maker-washable"
+  ],
   "featuredGuideSlugs": [
     "product-buying-guide",
-    "how-to-choose-coffee-gear"
+    "how-to-choose-coffee-gear",
+    "how-to-choose-kitchen-appliances"
   ],
   "categorySlugs": [
-    "coffee"
+    "coffee",
+    "kitchen"
   ]
 }

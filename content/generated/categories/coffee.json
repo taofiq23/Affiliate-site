@@ -1,9 +1,13 @@
 {
   "slug": "coffee",
-  "title": "Coffee Gear Reviews & Buying Guides: Find Your Perfect Setup",
-  "description": "Stop guessing. Our detailed coffee gear reviews, head-to-head comparisons, and expert buying guides help you find the right equipment for your home or office, from budget mug warmers to premium brewers.",
+  "title": "Coffee Gear Reviews & Buying Guides: Find Your Perfect Brew Setup",
+  "description": "Unbiased reviews and expert buying guides for coffee makers, grinders, and accessories. Compare top-rated models from Hamilton Beach, BLACK+DECKER, Mueller, and more to find the best coffee gear for your home.",
   "intro": "This hub keeps the site's main niche organized around coffee gear. Use it to move from broad category interest into the pages with the strongest commercial intent: best lists, comparison pages, and individual reviews.",
   "productSlugs": [
+    "hamilton-beach-2-way-programmable-coffee-maker",
+    "black-decker-12-cup-digital-coffee-maker-washable",
+    "mueller-home-12-cup-red-coffee-maker",
+    "black-decker-one-touch-coffee-grinder-2-3",
     "coffee-mug-warmer-fastest-heating"
   ],
   "bestSlugs": [
@@ -14,7 +18,9 @@
     "product-buying-guide",
     "how-to-choose-coffee-gear"
   ],
-  "comparisonSlugs": [],
+  "comparisonSlugs": [
+    "hamilton-beach-2-way-programmable-coffee-maker-vs-black-decker-12-cup-digital-coffee-maker-washable"
+  ],
   "faq": [
     {
       "question": "Why have a coffee gear category page at all?",
