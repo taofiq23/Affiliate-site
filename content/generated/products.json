@@ -5,11 +5,16 @@
     "slug": "coffee-mug-warmer-fastest-heating",
     "brand": "Coffee",
     "imageUrl": "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SX679_.jpg",
-    "summary": "Coffee Mug Warmer Fastest Heating is a budget-conscious mug warmers option for buyers who want a lower-risk first purchase and a simpler entry price. It is selling currently around $23 and carries a 4.7 rating from 4,836 reviews.",
+    "imageGallery": [
+      "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SY355_.jpg"
+    ],
+    "summary": "Coffee Mug Warmer Fastest Heating is a budget-conscious mug warmers option for buyers who want a lower-risk first purchase and a simpler entry price. It is selling currently around $23 and carries a 4.7 rating from 4,842 reviews.",
     "quickVerdict": "A budget-conscious shortlist pick for buyers researching mug warmers.",
     "features": [
       "Mug Warmers focus for keeping coffee and tea warm at a desk or home workspace.",
-      "4.7/5 rating from 4,836 shopper reviews",
+      "4.7/5 rating from 4,842 shopper reviews",
       "Budget price band with budget-conscious buying intent",
       "Evergreen demand profile with search-demand, viral, bestseller, evergreen signals"
     ],
@@ -24,7 +29,7 @@
       "Lower-priced picks can be easier to outgrow or dismiss too quickly"
     ],
     "rating": 4.4,
-    "reviewCount": 4836,
+    "reviewCount": 4842,
     "priceRange": "$19-$27",
     "category": "coffee",
     "tags": [

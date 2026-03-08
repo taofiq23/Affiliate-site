@@ -6,11 +6,16 @@
     "brand": "Coffee",
     "category": "coffee",
     "imageUrl": "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SX679_.jpg",
+    "imageGallery": [
+      "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/618IaAUvESL._AC_SY355_.jpg"
+    ],
     "canonicalProductUrl": "https://www.amazon.com/dp/B0CC8DS2S5",
     "canonicalAffiliateUrl": "https://www.amazon.com/dp/B0CC8DS2S5?tag=smartpickgu05-20",
     "shortAffiliateUrl": "https://amzn.to/4ljOqOr",
     "preferredAffiliateUrl": "https://amzn.to/4ljOqOr",
-    "summary": "Our review of the Coffee Mug Warmer Fastest Heating covers its 4.7-star rating from 4,836 users, its $23 price, and who it's best for. We also compare alternatives. This review focuses on the real buying decision: whether Coffee Mug Warmer Fastest Heating is the right fit for keeping coffee and tea warm at a desk or home workspace., which tradeoffs matter most before checkout, and which alternative deserves one more look.",
+    "summary": "A buyer-focused Coffee Mug Warmer Fastest Heating review covering price, performance, alternatives, and the best retailer click path. This review focuses on the real buying decision: whether Coffee Mug Warmer Fastest Heating is the right fit for keeping coffee and tea warm at a desk or home workspace., which tradeoffs matter most before checkout, and which alternative deserves one more look.",
     "quickVerdict": "Coffee Mug Warmer Fastest Heating is worth shortlisting if you want a budget-conscious option for keeping coffee and tea warm at a desk or home workspace. and you care about brew quality, workflow consistency, cleanup effort, and counter-space fit before making the final click.",
     "editorScore": 4.4,
     "priceMin": 20,
@@ -23,7 +28,7 @@
     "mainDrawback": "The lower entry price usually means the product needs a clearer comparison against stronger alternatives before buying.",
     "keyFeatures": [
       "Mug Warmers focus for keeping coffee and tea warm at a desk or home workspace.",
-      "4.7/5 rating from 4,836 shopper reviews",
+      "4.7/5 rating from 4,842 shopper reviews",
       "Budget price band with budget-conscious buying intent",
       "Evergreen demand profile with search-demand, viral, bestseller, evergreen signals"
     ],
@@ -70,7 +75,7 @@
       }
     ],
     "pros": [
-      "The product has enough marketplace proof to justify a serious shortlist look, with 4,836 reviews and a 4.7 rating.",
+      "The product has enough marketplace proof to justify a serious shortlist look, with 4,842 reviews and a 4.7 rating.",
       "Its buyer fit is clear: the product is best matched to keeping coffee and tea warm at a desk or home workspace. instead of vague catch-all use.",
       "Within the site's scoring system, it performs well on search-demand, viral, bestseller, evergreen signals and fits the coffee niche direction."
     ],
@@ -124,8 +129,8 @@
     ],
     "relatedGuides": [
       {
-        "title": "Coffee Gear Buying Guide: How To Choose The Right Mug Warmer & More",
-        "summary": "Learn how to choose the right coffee gear. Our buying guide covers key features like budget, complexity, and proof signals to help you avoid common mistakes.",
+        "title": "Home Appliance Buying Guide: How To Choose The Right Product",
+        "summary": "A reusable buying guide for home appliances, kitchen gear, coffee equipment, and comfort products.",
         "url": "/guides/product-buying-guide"
       },
       {

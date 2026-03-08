@@ -5,17 +5,18 @@ import { useState } from "react";
 type Props = {
   tone: string;
   title: string;
-  image: string;
+  images: string[];
 };
 
-export function ProductMediaGallery({ tone, title, image }: Props) {
+export function ProductMediaGallery({ tone, title, images }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [imageUnavailable, setImageUnavailable] = useState(false);
-  const gallery = [
-    { title: "Overview View", tone, chip: "01" },
-    { title: "Feature Snapshot", tone: "from-[#d9d5cf] to-[#969084]", chip: "02" },
-    { title: "Buyer Fit", tone: "from-[#ece7dc] to-[#c4b49c]", chip: "03" }
-  ];
+  const gallery = (images.length > 0 ? images : [""]).slice(0, 3).map((image, index) => ({
+    image,
+    title: `Product View ${index + 1}`,
+    tone: [tone, "from-[#d9d5cf] to-[#969084]", "from-[#ece7dc] to-[#c4b49c]"][index] ?? tone,
+    chip: String(index + 1).padStart(2, "0")
+  }));
 
   return (
     <div className="relative w-full overflow-hidden border-y border-black/10 bg-[#f1eee7]">
@@ -30,11 +31,11 @@ export function ProductMediaGallery({ tone, title, image }: Props) {
               }`}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
-              {index === 0 && image && !imageUnavailable ? (
+              {slide.image && !imageUnavailable ? (
                 <div className="absolute inset-0 flex items-center justify-center p-8 md:p-12">
                   <img
-                    src={image}
-                    alt={title}
+                    src={slide.image}
+                    alt={`${title} ${slide.title.toLowerCase()}`}
                     className="h-full w-full object-contain"
                     loading="eager"
                     decoding="async"
@@ -45,7 +46,7 @@ export function ProductMediaGallery({ tone, title, image }: Props) {
               ) : null}
               <div
                 className={`absolute inset-0 ${
-                  index === 0 && image && !imageUnavailable
+                  slide.image && !imageUnavailable
                     ? "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.36),rgba(255,255,255,0.18))]"
                     : "bg-[linear-gradient(to_bottom,rgba(255,255,255,0.75),rgba(0,0,0,0.08))]"
                 }`}
@@ -78,11 +79,11 @@ export function ProductMediaGallery({ tone, title, image }: Props) {
                 aria-label={`View ${slide.title}`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${slide.tone}`} />
-                {index === 0 && image && !imageUnavailable ? (
+                {slide.image && !imageUnavailable ? (
                   <div className="absolute inset-0 flex items-center justify-center p-3 xl:p-4">
                     <img
-                      src={image}
-                      alt={`${title} thumbnail`}
+                      src={slide.image}
+                      alt={`${title} thumbnail ${index + 1}`}
                       className="h-full w-full object-contain"
                       loading="lazy"
                       decoding="async"

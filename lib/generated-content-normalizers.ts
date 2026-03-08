@@ -18,24 +18,32 @@ function normalizeImageValue(value?: string) {
   return imageValue;
 }
 
-export function resolveProductImageUrl(product: Pick<ProductRecord, "imageUrl" | "image">) {
-  return normalizeImageValue(product.imageUrl ?? product.image);
+function normalizeImageGallery(values?: string[]) {
+  const gallery = Array.from(new Set((values ?? []).map((value) => normalizeImageValue(value)).filter(Boolean)));
+
+  return gallery.filter((value) => value !== fallbackImage || gallery.length === 1);
 }
 
-export function resolveReviewImageUrl(review: Pick<ReviewRecord, "imageUrl" | "heroImage">) {
-  return normalizeImageValue(review.imageUrl ?? review.heroImage);
+export function resolveProductImageUrl(product: Pick<ProductRecord, "imageUrl" | "image" | "imageGallery">) {
+  return normalizeImageValue(product.imageGallery?.[0] ?? product.imageUrl ?? product.image);
 }
 
-export function normalizeProductRecord<T extends ProductRecord | (Partial<ProductRecord> & { image?: string; imageUrl?: string })>(product: T) {
+export function resolveReviewImageUrl(review: Pick<ReviewRecord, "imageUrl" | "heroImage" | "imageGallery">) {
+  return normalizeImageValue(review.imageGallery?.[0] ?? review.imageUrl ?? review.heroImage);
+}
+
+export function normalizeProductRecord<T extends ProductRecord | (Partial<ProductRecord> & { image?: string; imageUrl?: string; imageGallery?: string[] })>(product: T) {
   return {
     ...product,
-    imageUrl: resolveProductImageUrl(product)
+    imageUrl: resolveProductImageUrl(product),
+    imageGallery: normalizeImageGallery(product.imageGallery ?? [product.imageUrl ?? product.image ?? ""])
   } as ProductRecord;
 }
 
-export function normalizeReviewRecord<T extends ReviewRecord | (Partial<ReviewRecord> & { imageUrl?: string; heroImage?: string })>(review: T) {
+export function normalizeReviewRecord<T extends ReviewRecord | (Partial<ReviewRecord> & { imageUrl?: string; heroImage?: string; imageGallery?: string[] })>(review: T) {
   return {
     ...review,
-    imageUrl: resolveReviewImageUrl(review)
+    imageUrl: resolveReviewImageUrl(review),
+    imageGallery: normalizeImageGallery(review.imageGallery ?? [review.imageUrl ?? review.heroImage ?? ""])
   } as ReviewRecord;
 }

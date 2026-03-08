@@ -42,6 +42,7 @@ export type ReviewRecord = {
   category: string;
   imageUrl?: string;
   heroImage?: string;
+  imageGallery?: string[];
   canonicalProductUrl?: string;
   canonicalAffiliateUrl?: string;
   shortAffiliateUrl?: string;

@@ -19,6 +19,7 @@ export function ReviewPageTemplate({ review }: Props) {
   const sortedOffers = sortRetailerOffers(review.retailerOffers);
   const lowerPageOffer = sortedOffers[0];
   const imageUrl = resolveReviewImageUrl(review);
+  const galleryImages = review.imageGallery && review.imageGallery.length > 0 ? review.imageGallery : [imageUrl];
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: review.category, href: `/category/${review.category.toLowerCase()}` },
@@ -48,7 +49,7 @@ export function ReviewPageTemplate({ review }: Props) {
       </div>
 
       <div className="mt-8">
-        <ProductMediaGallery tone={review.tone} title={review.name} image={imageUrl} />
+        <ProductMediaGallery tone={review.tone} title={review.name} images={galleryImages} />
       </div>
 
       <div className="mx-auto w-full max-w-[1580px] px-4 py-10 md:px-8 md:py-12 xl:px-12">

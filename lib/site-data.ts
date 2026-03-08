@@ -17,6 +17,7 @@ export type ProductRecord = {
   brand: string;
   imageUrl?: string;
   image?: string;
+  imageGallery?: string[];
   summary: string;
   quickVerdict: string;
   features: string[];
