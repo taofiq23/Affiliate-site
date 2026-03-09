@@ -10,9 +10,9 @@ export function FeatureSnapshotTable({ review }: Props) {
       <div className="mb-6 border border-black/10 bg-[#faf9f5] p-5">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
           <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-black/80">Feature Snapshot</p>
+            <p className="text-sm uppercase tracking-[0.2em] text-black/80">Quick Specs</p>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-black/68">
-              A clean overview of the main product details, similar to the summary and spec sections used on major ecommerce pages.
+              A quick read on pricing, setup, buyer fit, and the most useful product details.
             </p>
           </div>
 

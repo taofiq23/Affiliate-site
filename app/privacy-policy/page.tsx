@@ -3,7 +3,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
-  description: "Privacy policy for the generic affiliate SEO framework.",
+  description: "Privacy policy for HomeSelect Daily.",
   pathname: "/privacy-policy"
 });
 
@@ -11,9 +11,9 @@ export default function PrivacyPolicyPage() {
   return (
     <section className="container-luxe py-16 md:py-24">
       <p className="kicker">Legal</p>
-      <h1 className="mt-4 font-display text-5xl leading-[0.95] md:text-6xl">Privacy Policy</h1>
-      <p className="mt-6 max-w-3xl text-sm uppercase leading-relaxed tracking-[0.12em] text-secondary/70">
-        This policy explains how PickStack collects, uses, and protects visitor information.
+      <h1 className="mt-4 font-display text-[2.35rem] leading-[0.96] sm:text-5xl md:text-6xl">Privacy Policy</h1>
+      <p className="mt-5 max-w-3xl text-[12px] uppercase leading-relaxed tracking-[0.08em] text-secondary/70 md:mt-6 md:text-sm md:tracking-[0.12em]">
+        This policy explains how HomeSelect Daily collects, uses, and protects visitor information.
       </p>
 
       <div className="mt-10 space-y-6">

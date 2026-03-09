@@ -22,15 +22,15 @@ export function CategoryPageTemplate({ page }: Props) {
 
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Category", href: `/category/${page.slug}` }, { label: page.title }]} />
-        <div className="mb-16 text-center">
-          <p className="kicker text-xs tracking-[0.3em] text-black/60">CATEGORY HUB</p>
-          <h1 className="mt-6 font-display text-6xl leading-[0.9] md:text-8xl">{page.title}</h1>
-          <p className="mx-auto mt-8 max-w-3xl text-sm uppercase leading-relaxed tracking-[0.1em] text-black/50">{page.intro}</p>
+        <div className="mb-12 text-center md:mb-16">
+          <p className="kicker text-xs tracking-[0.3em] text-black/70">CATEGORY HUB</p>
+          <h1 className="mt-5 font-display text-[2.5rem] leading-[0.94] sm:text-5xl md:mt-6 md:text-8xl">{page.title}</h1>
+          <p className="mx-auto mt-6 max-w-3xl text-[15px] leading-7 text-black/74 md:mt-8 md:text-base md:leading-8">{page.intro}</p>
         </div>
 
         <div className="mb-16">
           <div className="mb-8 border-b border-black/10 pb-6">
-            <p className="text-xs uppercase tracking-[0.16em] text-black/45">Featured Reviews</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-black/60">Featured Reviews</p>
             <h2 className="mt-3 font-display text-3xl leading-[0.95] md:text-4xl">Products In This Category</h2>
           </div>
 
@@ -43,15 +43,15 @@ export function CategoryPageTemplate({ page }: Props) {
 
         <div className="mb-16">
           <div className="mb-8 border-b border-black/10 pb-6">
-            <p className="text-xs uppercase tracking-[0.16em] text-black/45">FAQ</p>
+            <p className="text-xs uppercase tracking-[0.16em] text-black/60">FAQ</p>
             <h2 className="mt-3 font-display text-3xl leading-[0.95] md:text-4xl">Common Questions</h2>
           </div>
 
           <div className="border-t border-black/10">
             {page.faq.map((item) => (
               <details key={item.question} className="border-b border-black/10 py-4">
-                <summary className="cursor-pointer text-xs uppercase tracking-[0.2em] text-secondary/75">{item.question}</summary>
-                <p className="mt-3 max-w-3xl text-sm leading-relaxed text-secondary/80">{item.answer}</p>
+                <summary className="cursor-pointer text-xs uppercase tracking-[0.2em] text-black/86">{item.question}</summary>
+                <p className="mt-3 max-w-3xl text-[15px] leading-7 text-black/78">{item.answer}</p>
               </details>
             ))}
           </div>
@@ -60,7 +60,7 @@ export function CategoryPageTemplate({ page }: Props) {
 
       <InternalLinkGrid
         title="Best Lists"
-        kicker="Shortlist Paths"
+        kicker="Top Picks"
         items={bestLists.map((item) => ({
           title: item.title,
           description: item.description,
@@ -71,7 +71,7 @@ export function CategoryPageTemplate({ page }: Props) {
 
       <InternalLinkGrid
         title="Buying Guides"
-        kicker="Guide Paths"
+        kicker="Helpful Guides"
         items={guides.map((guide) => ({
           title: guide.title,
           description: guide.description,
@@ -82,7 +82,7 @@ export function CategoryPageTemplate({ page }: Props) {
 
       <InternalLinkGrid
         title="Comparisons"
-        kicker="Decision Paths"
+        kicker="Compare Options"
         items={comparisons.map((comparison) => ({
           title: comparison.title,
           description: comparison.description,

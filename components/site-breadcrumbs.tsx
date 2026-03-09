@@ -11,7 +11,7 @@ type Props = {
 
 export function SiteBreadcrumbs({ items }: Props) {
   return (
-    <nav className="mb-4 flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.16em] text-black/62" aria-label="Breadcrumb">
+    <nav className="mb-4 flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.16em] text-black/72" aria-label="Breadcrumb">
       {items.map((item, index) => (
         <span
           key={`${item.label}-${index}`}
@@ -22,7 +22,7 @@ export function SiteBreadcrumbs({ items }: Props) {
         >
           {index > 0 ? <span>/</span> : null}
           {item.href ? (
-            <Link href={item.href} className="text-black/68 transition-colors hover:text-black" itemProp="item">
+            <Link href={item.href} className="text-black/78 transition-colors hover:text-black" itemProp="item">
               <span itemProp="name">{item.label}</span>
             </Link>
           ) : (

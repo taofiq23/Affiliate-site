@@ -34,13 +34,13 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-black/10 bg-secondary text-base-2">
       <div className="container-luxe py-12 md:py-16">
-        <div className="grid gap-10 border-b border-base-2/20 pb-10 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-8">
+        <div className="grid gap-8 border-b border-base-2/20 pb-10 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-8">
           <div>
             <p className="font-display text-2xl">
               <span className="tracking-[0.24em]">{siteConfig.shortName.toUpperCase()}</span>
             </p>
             <p className="mt-4 max-w-xs text-xs uppercase leading-relaxed tracking-[0.12em] text-base-2/70">
-              Generic affiliate architecture for reviews, comparisons, best lists, guide pages, and high-intent internal linking.
+              Coffee maker reviews, kitchen appliance guides, product comparisons, and practical shortlist pages for smarter home buying.
             </p>
           </div>
 

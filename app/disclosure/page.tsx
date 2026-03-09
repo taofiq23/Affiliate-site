@@ -11,8 +11,8 @@ export default function DisclosurePage() {
   return (
     <section className="container-luxe py-16 md:py-24">
       <p className="kicker">Disclosure</p>
-      <h1 className="mt-4 font-display text-5xl leading-[0.95] md:text-6xl">Affiliate Disclosure</h1>
-      <p className="mt-6 max-w-3xl text-sm uppercase leading-relaxed tracking-[0.12em] text-secondary/70">
+      <h1 className="mt-4 font-display text-[2.35rem] leading-[0.96] sm:text-5xl md:text-6xl">Affiliate Disclosure</h1>
+      <p className="mt-5 max-w-3xl text-[12px] uppercase leading-relaxed tracking-[0.08em] text-secondary/70 md:mt-6 md:text-sm md:tracking-[0.12em]">
         Some outbound links on this site are affiliate links.
       </p>
 
@@ -20,7 +20,7 @@ export default function DisclosurePage() {
         <article className="border border-black/10 p-6">
           <h2 className="text-xs uppercase tracking-[0.2em] text-secondary/70">What It Means</h2>
           <p className="mt-3 text-sm leading-relaxed text-secondary/80">
-            If a visitor clicks a qualifying retailer link and makes a purchase, PickStack may receive a commission from that retailer.
+            If a visitor clicks a qualifying retailer link and makes a purchase, HomeSelect Daily may receive a commission from that retailer.
           </p>
         </article>
         <article className="border border-black/10 p-6">

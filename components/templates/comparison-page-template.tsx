@@ -3,6 +3,7 @@ import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
+import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
 import { getGuides, getProducts, type ComparisonRecord } from "@/lib/content-store";
 
 type Props = {
@@ -20,10 +21,10 @@ export function ComparisonPageTemplate({ page }: Props) {
 
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Compare", href: `/compare/${page.slug}` }, { label: page.title }]} />
-        <div className="mb-16 text-center">
-          <p className="kicker text-xs tracking-[0.3em] text-black/60">COMPARISON TEMPLATE</p>
-          <h1 className="mt-6 font-display text-5xl leading-[0.9] md:text-7xl">{page.title}</h1>
-          <p className="mx-auto mt-8 max-w-3xl text-sm uppercase leading-relaxed tracking-[0.1em] text-black/50">{page.intro}</p>
+        <div className="mb-12 text-center md:mb-16">
+          <p className="kicker text-xs tracking-[0.3em] text-black/60">COMPARISON</p>
+          <h1 className="mt-5 font-display text-[2.35rem] leading-[0.94] sm:text-5xl md:mt-6 md:text-7xl">{page.title}</h1>
+          <p className="mx-auto mt-6 max-w-3xl text-[12px] uppercase leading-relaxed tracking-[0.08em] text-black/58 md:mt-8 md:text-sm md:tracking-[0.1em]">{page.intro}</p>
         </div>
 
         <div className="mb-16 overflow-x-auto border border-black/10">
@@ -80,11 +81,11 @@ export function ComparisonPageTemplate({ page }: Props) {
           </article>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
+        <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-2">
           {[left, right].map((product) => (
-            <article key={product.slug} className="border border-black/10 bg-white p-6">
+            <article key={product.slug} className="border border-black/10 bg-white p-5 sm:p-6">
               <p className="text-xs uppercase tracking-[0.16em] text-black/45">{product.highlightLabel}</p>
-              <h2 className="mt-3 font-display text-3xl leading-[0.95]">{product.name}</h2>
+              <h2 className="mt-3 font-display text-[2rem] leading-[0.96] sm:text-3xl">{product.name}</h2>
               <p className="mt-4 text-sm leading-relaxed text-black/68">{product.summary}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {product.features.slice(0, 3).map((feature) => (
@@ -135,18 +136,24 @@ export function ComparisonPageTemplate({ page }: Props) {
 
       <InternalLinkGrid
         title="Related Reviews"
-        kicker="Review Paths"
+        kicker="More Reviews"
         items={[left, right].map((product) => ({
           title: `${product.name} Review`,
           description: product.summary,
           href: `/reviews/${product.slug}`,
-          label: "Review"
+          label: "Review",
+          imageUrl: resolveProductImageUrl(product),
+          tone: product.tone,
+          priceText: product.priceRange,
+          stockText: "Usually in stock",
+          rating: product.rating,
+          reviewCount: product.reviewCount
         }))}
       />
 
       <InternalLinkGrid
         title="Related Guides"
-        kicker="Guide Paths"
+        kicker="Helpful Guides"
         items={relatedGuides.map((guide) => ({
           title: guide.title,
           description: guide.description,

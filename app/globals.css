@@ -33,7 +33,7 @@ a {
 }
 
 .container-luxe {
-  @apply mx-auto w-full max-w-[1480px] px-5 md:px-14;
+  @apply mx-auto w-full max-w-[1480px] px-4 sm:px-5 md:px-14;
 }
 
 .headline {
@@ -49,21 +49,41 @@ a {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center border border-secondary bg-secondary px-6 py-3 text-[11px] font-medium uppercase tracking-[0.23em] text-base-2 transition duration-300 hover:opacity-90;
+  @apply inline-flex min-h-[46px] items-center justify-center border border-secondary bg-secondary px-5 py-3 text-[10px] font-medium uppercase tracking-[0.2em] text-base-2 transition duration-300 hover:opacity-90 sm:px-6 sm:text-[11px] sm:tracking-[0.23em];
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center border border-secondary px-6 py-3 text-[11px] font-medium uppercase tracking-[0.23em] transition duration-300 hover:bg-secondary hover:text-base-2;
+  @apply inline-flex min-h-[46px] items-center justify-center border border-secondary px-5 py-3 text-[10px] font-medium uppercase tracking-[0.2em] transition duration-300 hover:bg-secondary hover:text-base-2 sm:px-6 sm:text-[11px] sm:tracking-[0.23em];
 }
 
 .kicker {
-  @apply text-[10px] uppercase tracking-[0.32em] text-secondary/60;
+  @apply text-[10px] uppercase tracking-[0.32em];
+  color: rgb(16 16 16 / 0.74);
 }
 
 .hero-overlay {
   background:
     linear-gradient(to top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.38) 35%, rgba(0, 0, 0, 0.1) 66%, rgba(0, 0, 0, 0) 84%),
     linear-gradient(to right, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.2) 36%, rgba(0, 0, 0, 0) 70%);
+}
+
+.hero-rail-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.hero-rail-track-top {
+  animation: heroDriftLeft 20s ease-in-out infinite alternate;
+}
+
+.hero-rail-track-bottom {
+  animation: heroDriftRight 23s ease-in-out infinite alternate;
+}
+
+.hero-rail-card {
+  transition: transform 500ms ease, opacity 500ms ease;
 }
 
 .media-overlay-soft {
@@ -111,12 +131,36 @@ a {
   }
 }
 
+@keyframes heroDriftLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-110px);
+  }
+}
+
+@keyframes heroDriftRight {
+  from {
+    transform: translateX(-80px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     animation: none;
   }
 
+  .hero-rail-track-top,
+  .hero-rail-track-bottom {
+    animation: none;
+  }
+
   .luxe-image > div,
+  .hero-rail-card,
   .btn-primary,
   .btn-outline {
     transition: none;

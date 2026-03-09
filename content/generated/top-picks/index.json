@@ -2,7 +2,7 @@
   {
     "slug": "top-picks",
     "title": "Best Home Appliances and Coffee Gear: Top Picks",
-    "description": "A ranked shortlist of home appliances, coffee gear, air treatment devices, and comfort picks built for affiliate SEO.",
+    "description": "A ranked shortlist of home appliances, coffee gear, air treatment devices, and comfort picks built to help buyers narrow the field faster.",
     "intro": "This page is the main shortlist for the site. It is built around home appliances, kitchen gear, coffee tools, air treatment products, and comfort devices that show a strong blend of bestseller proof, search demand, evergreen appeal, and realistic affiliate upside. It is meant for buyers who want the fastest path from broad product research into a tighter shortlist of pages worth opening next.",
     "highlights": [
       "Primary niche only: home appliances, coffee gear, air treatment, comfort, and cleaning devices",
@@ -12,13 +12,18 @@
     "productSlugs": [
       "levoit-air-purifier",
       "keurig-k-elite-single-serve-k-cup-pod",
+      "keurig-k-duo-hot-and-iced-coffee-maker",
       "hamilton-beach-2-way-programmable-coffee-maker",
+      "keurig-k-mini-single-serve-coffee-maker",
       "black-decker-12-cup-digital-coffee-maker-washable",
       "mueller-home-12-cup-red-coffee-maker",
       "magic-bullet-blender-small-silver",
+      "fullstar-original-pro-chopper",
       "black-decker-one-touch-coffee-grinder-2-3",
+      "etekcity-food-kitchen-scale",
       "crock-pot-7-quart-oval-manual-slow",
       "nostalgia-3-in-1-breakfast-station",
+      "huggiegems-magnetic-spice-rack-organizer",
       "trendplain-16oz-470ml-glass-olive-oil-sprayer",
       "coffee-mug-warmer-fastest-heating",
       "bella-2-slice-slim-toaster-kitchenware",
@@ -62,10 +67,13 @@
     ],
     "productSlugs": [
       "keurig-k-elite-single-serve-k-cup-pod",
+      "keurig-k-duo-hot-and-iced-coffee-maker",
       "hamilton-beach-2-way-programmable-coffee-maker",
+      "keurig-k-mini-single-serve-coffee-maker",
       "black-decker-12-cup-digital-coffee-maker-washable",
       "mueller-home-12-cup-red-coffee-maker",
-      "black-decker-one-touch-coffee-grinder-2-3"
+      "black-decker-one-touch-coffee-grinder-2-3",
+      "coffee-mug-warmer-fastest-heating"
     ],
     "faq": [
       {
@@ -103,10 +111,14 @@
     ],
     "productSlugs": [
       "magic-bullet-blender-small-silver",
+      "fullstar-original-pro-chopper",
       "crock-pot-7-quart-oval-manual-slow",
       "nostalgia-3-in-1-breakfast-station",
+      "etekcity-food-kitchen-scale",
+      "huggiegems-magnetic-spice-rack-organizer",
       "trendplain-16oz-470ml-glass-olive-oil-sprayer",
-      "bella-2-slice-slim-toaster-kitchenware"
+      "bella-2-slice-slim-toaster-kitchenware",
+      "extra-large-expandable-silverware-organizer-bpa-free"
     ],
     "faq": [
       {

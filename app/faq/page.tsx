@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Affiliate Framework FAQ",
-  description: "Frequently asked questions about affiliate links, pricing, and how the framework handles content-driven recommendations.",
+  title: "Frequently Asked Questions",
+  description: "Questions about recommendations, pricing, retailer links, and how HomeSelect Daily reviews products.",
   pathname: "/faq"
 });
 
@@ -11,8 +11,8 @@ export default function FaqPage() {
   return (
     <section className="container-luxe py-16 md:py-24">
       <p className="kicker">FAQ</p>
-      <h1 className="mt-4 font-display text-5xl leading-[0.95] md:text-6xl">Frequently Asked Questions</h1>
-      <p className="mt-6 max-w-3xl text-sm uppercase leading-relaxed tracking-[0.12em] text-secondary/70">
+      <h1 className="mt-4 font-display text-[2.35rem] leading-[0.96] sm:text-5xl md:text-6xl">Frequently Asked Questions</h1>
+      <p className="mt-5 max-w-3xl text-[12px] uppercase leading-relaxed tracking-[0.08em] text-secondary/70 md:mt-6 md:text-sm md:tracking-[0.12em]">
         Quick answers about our recommendations, affiliate links, and how prices are shown.
       </p>
 
@@ -46,7 +46,7 @@ export default function FaqPage() {
             Do you sell products directly?
           </summary>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-secondary/80">
-            No. PickStack is a content and referral site. All transactions happen on the retailer's website.
+            No. HomeSelect Daily is a content and referral site. All transactions happen on the retailer's website.
           </p>
         </details>
       </div>

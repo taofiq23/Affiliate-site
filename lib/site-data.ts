@@ -99,9 +99,9 @@ export type CategoryRecord = {
 };
 
 export const siteConfig = {
-  name: "PickStack",
-  shortName: "PickStack",
-  description: "A reusable affiliate content framework for reviews, comparisons, best lists, and buying guides.",
+  name: "HomeSelect Daily",
+  shortName: "HomeSelect",
+  description: "HomeSelect Daily publishes coffee maker reviews, kitchen appliance guides, air purifier comparisons, and home product buying advice.",
   url: "https://affiliate-site-dusky.vercel.app"
 } as const;
 
@@ -309,7 +309,7 @@ export const bestLists: BestListRecord[] = [
   {
     slug: "top-picks",
     title: "Best Products: Top Picks",
-    description: "A ranked shortlist of the strongest all-around picks in this generic affiliate framework.",
+    description: "A ranked shortlist of the strongest all-around picks for readers narrowing down their best options.",
     intro: "This page acts as the main shortlist. It balances rating, value, support, and upgrade headroom so buyers can move from broad research to a tighter decision set.",
     highlights: ["Balanced picks for most buyers", "Fast scan of price ranges and strengths", "Built to feed readers into full reviews and affiliate offers"],
     productSlugs: ["atlas-one", "northstar-pro", "summit-core", "relay-max"],
@@ -379,8 +379,8 @@ export const guides: GuideRecord[] = [
   {
     slug: "how-to-choose-a-product",
     title: "How To Choose A Product",
-    description: "A generic buying guide for readers deciding between multiple options in any affiliate-driven niche.",
-    intro: "This guide is intentionally niche-agnostic. It focuses on the buying framework rather than on one market, which makes it reusable across future content verticals.",
+    description: "A buying guide for readers deciding between multiple options before they commit to a shortlist.",
+    intro: "This guide focuses on the core buying questions that matter before you compare individual products.",
     sections: [
       {
         heading: "Start With The Main Use Case",
@@ -513,7 +513,7 @@ export const categories: CategoryRecord[] = [
     slug: "tools",
     title: "Tools",
     description: "A category hub for tool-style products with direct links into reviews, comparisons, and best lists.",
-    intro: "Category pages help organize commercial-intent content around a reusable structure. This one focuses on general-purpose tool products inside the affiliate framework.",
+    intro: "Category pages help organize commercial-intent content so readers can move naturally into reviews, comparisons, and top picks.",
     productSlugs: ["atlas-one", "northstar-pro", "relay-max"],
     bestSlugs: ["top-picks"],
     guideSlugs: ["how-to-choose-a-product", "when-to-upgrade-your-current-solution"],
@@ -606,10 +606,10 @@ export function getComparisons(slugs: string[]) {
 }
 
 export const homepageData = {
-  heroTitle: "Affiliate Pages Built For Search Intent",
-  heroKicker: "Reusable Affiliate Framework",
+  heroTitle: "Better Home Product Picks, Without The Guesswork",
+  heroKicker: "Reviews, Comparisons, And Buying Advice",
   heroDescription:
-    "A generic content engine for reviews, comparisons, best lists, guides, and category hubs. The niche can change later without changing the core conversion flow.",
+    "Explore product reviews, comparisons, buying guides, and top picks built to help shoppers research smarter and choose with more confidence.",
   featuredReviewSlugs: ["atlas-one", "northstar-pro", "summit-core", "vector-lite", "harbor-plus", "relay-max"],
   featuredBestSlug: "top-picks",
   popularComparisonSlugs: ["atlas-one-vs-northstar-pro", "summit-core-vs-vector-lite"],

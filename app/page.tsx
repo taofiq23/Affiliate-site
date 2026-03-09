@@ -6,8 +6,8 @@ import { getCategory, getComparison, getGuide, getProducts, homepageData } from 
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Affiliate SEO Framework Home",
-  description: "Homepage for a reusable affiliate framework covering reviews, comparisons, best lists, guides, and category pages.",
+  title: "Coffee Maker Reviews, Kitchen Appliance Guides & Home Product Picks",
+  description: "Compare coffee makers, kitchen appliances, air purifiers, and everyday home products with practical reviews, guides, and shortlist pages.",
   pathname: "/"
 });
 
@@ -25,7 +25,12 @@ export default function HomePage() {
 
   return (
     <>
-      <CapsulePageFlow heroKicker={homepageData.heroKicker} heroTitle={homepageData.heroTitle} heroDescription={homepageData.heroDescription} />
+      <CapsulePageFlow
+        heroKicker={homepageData.heroKicker}
+        heroTitle={homepageData.heroTitle}
+        heroDescription={homepageData.heroDescription}
+        products={featuredProducts}
+      />
       <CapsuleCollection products={featuredProducts} />
       <CapsuleMediaBreaks comparisons={comparisons} guides={guides} categories={categories} />
     </>

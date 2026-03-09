@@ -17,7 +17,7 @@ const googleVerificationMeta = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Affiliate SEO Framework`,
+    default: `${siteConfig.name} | Coffee Maker Reviews, Kitchen Appliance Guides & Home Product Picks`,
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,

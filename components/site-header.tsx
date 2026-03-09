@@ -80,8 +80,8 @@ export function SiteHeader() {
             compact ? "max-h-0 opacity-0" : "max-h-12 opacity-100"
           }`}
         >
-          <div className="container-luxe flex h-9 items-center justify-between text-[11px] uppercase tracking-[0.2em] text-secondary/60">
-            <p>Generic Affiliate Framework / Updated Weekly</p>
+          <div className="container-luxe flex h-9 items-center justify-between text-[11px] uppercase tracking-[0.2em] text-secondary/78">
+            <p>Home Product Reviews / Updated Weekly</p>
             <div className="flex items-center gap-6">
               <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>
@@ -121,7 +121,7 @@ export function SiteHeader() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs uppercase tracking-[0.24em] text-secondary/72 transition hover:text-secondary"
+                className="text-xs uppercase tracking-[0.24em] text-secondary/82 transition hover:text-secondary"
               >
                 {link.label}
               </Link>
@@ -130,20 +130,10 @@ export function SiteHeader() {
         </div>
       </header>
 
-      <div
-        className={`fixed inset-0 z-[70] transition-all duration-500 ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
-        aria-hidden={!menuOpen}
-      >
-        <button
-          className={`absolute inset-0 bg-black/25 backdrop-blur-sm transition-opacity duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${menuOpen ? "opacity-100" : "opacity-0"}`}
-          onClick={() => setMenuOpen(false)}
-          aria-label="Close menu overlay"
-        />
-        <aside
-          className={`absolute left-0 top-0 h-full w-[92vw] max-w-[440px] overflow-y-auto border-r border-black/10 bg-[#f8f6f1] p-5 shadow-2xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:p-7 ${
-            menuOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-90"
-          }`}
-        >
+      {menuOpen ? (
+        <div className="fixed inset-0 z-[70] transition-all duration-500">
+          <button className="absolute inset-0 bg-black/25 backdrop-blur-sm" onClick={() => setMenuOpen(false)} aria-label="Close menu overlay" />
+          <aside className="absolute left-0 top-0 h-full w-[92vw] max-w-[440px] overflow-y-auto border-r border-black/10 bg-[#f8f6f1] p-5 shadow-2xl md:p-7">
           <div className="mb-6 flex items-center justify-between border-b border-black/10 pb-4">
             <p className="font-display text-xl font-semibold text-black">
               <span className="tracking-[0.22em]">{siteConfig.shortName.toUpperCase()}</span>
@@ -169,13 +159,11 @@ export function SiteHeader() {
                       key={`${section.title}-${link.label}`}
                       href={link.href}
                       onClick={() => setMenuOpen(false)}
-                      className={`group flex items-center justify-between border-b border-black/10 py-3 text-sm uppercase tracking-[0.12em] text-black/80 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-black ${
-                        menuOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
-                      }`}
-                      style={{ transitionDelay: menuOpen ? `${70 + linkIndex * 35}ms` : "0ms" }}
+                      className="group flex items-center justify-between border-b border-black/10 py-3 text-sm uppercase tracking-[0.12em] text-black/88 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-black"
+                      style={{ transitionDelay: `${70 + linkIndex * 35}ms` }}
                     >
                       <span>{link.label}</span>
-                      <span className="translate-x-0 text-black/40 transition-transform duration-200 group-hover:translate-x-1">-&gt;</span>
+                      <span className="translate-x-0 text-black/55 transition-transform duration-200 group-hover:translate-x-1">-&gt;</span>
                     </Link>
                   ))}
                 </div>
@@ -189,21 +177,22 @@ export function SiteHeader() {
               <Link
                 href="/guides/product-buying-guide"
                 onClick={() => setMenuOpen(false)}
-                className="text-sm uppercase tracking-[0.12em] text-black/80 hover:text-black"
+                className="text-sm uppercase tracking-[0.12em] text-black/88 hover:text-black"
               >
                 Buying Guide
               </Link>
               <Link
                 href="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="text-sm uppercase tracking-[0.12em] text-black/80 hover:text-black"
+                className="text-sm uppercase tracking-[0.12em] text-black/88 hover:text-black"
               >
                 Contact
               </Link>
             </div>
           </div>
-        </aside>
-      </div>
+          </aside>
+        </div>
+      ) : null}
     </>
   );
 }

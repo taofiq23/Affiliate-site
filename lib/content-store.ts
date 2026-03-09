@@ -26,7 +26,7 @@ import {
   type GuideRecord,
   type ProductRecord
 } from "./site-data";
-import { normalizeProductRecord } from "./generated-content-normalizers";
+import { normalizeBestListRecord, normalizeCategoryRecord, normalizeComparisonRecord, normalizeGuideRecord, normalizeProductRecord } from "./generated-content-normalizers";
 
 export type { BestListRecord, CategoryRecord, ComparisonRecord, GuideRecord, ProductRecord } from "./site-data";
 
@@ -84,10 +84,10 @@ const hasGeneratedContent =
   generatedCategories.length > 0;
 
 export const products = (hasGeneratedContent ? generatedProducts : fallbackProducts).map(normalizeProductRecord);
-export const bestLists = hasGeneratedContent ? generatedBestLists : fallbackBestLists;
-export const comparisons = hasGeneratedContent ? generatedComparisons : fallbackComparisons;
-export const guides = hasGeneratedContent ? generatedGuides : fallbackGuides;
-export const categories = hasGeneratedContent ? generatedCategories : fallbackCategories;
+export const bestLists = (hasGeneratedContent ? generatedBestLists : fallbackBestLists).map(normalizeBestListRecord);
+export const comparisons = (hasGeneratedContent ? generatedComparisons : fallbackComparisons).map(normalizeComparisonRecord);
+export const guides = (hasGeneratedContent ? generatedGuides : fallbackGuides).map(normalizeGuideRecord);
+export const categories = (hasGeneratedContent ? generatedCategories : fallbackCategories).map(normalizeCategoryRecord);
 export const homepageData = hasGeneratedContent ? generatedHomepageData ?? fallbackHomepageData : fallbackHomepageData;
 
 export const productMap = Object.fromEntries(products.map((product) => [product.slug, product])) as Record<string, ProductRecord>;

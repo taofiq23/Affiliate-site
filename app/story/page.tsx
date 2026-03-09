@@ -5,7 +5,7 @@ import { getGuide } from "@/lib/content-store";
 
 export const metadata: Metadata = buildMetadata({
   title: "Guide Overview",
-  description: "Legacy story alias that renders the main generic buying guide.",
+  description: "Guide overview page that routes readers to the main buying guide.",
   pathname: "/story"
 });
 
