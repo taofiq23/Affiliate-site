@@ -69,8 +69,8 @@ a {
 
 .hero-surface {
   background:
-    radial-gradient(circle at 72% 18%, rgba(246, 245, 242, 0.9) 0%, rgba(246, 245, 242, 0.35) 34%, transparent 58%),
-    linear-gradient(135deg, #efede8 0%, #d7d0c3 56%, #8a7350 100%);
+    radial-gradient(circle at 76% 18%, rgba(246, 245, 242, 0.92) 0%, rgba(246, 245, 242, 0.5) 32%, transparent 58%),
+    linear-gradient(135deg, #f6f5f2 0%, #e7e1d7 52%, #d2c6b4 82%, #8a7350 100%);
 }
 
 .hero-rail-track {

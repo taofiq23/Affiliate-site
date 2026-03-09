@@ -23,8 +23,9 @@ type ClickInput = {
   affiliateUrl: string;
 };
 
+// Default salt is intentionally non-secret and only used for local hashing.
 function hashIp(rawIp: string) {
-  const salt = process.env.CLICK_HASH_SALT ?? "affiliate-clicks";
+  const salt = process.env.CLICK_HASH_SALT ?? "affiliate-clicks-v2";
   return createHash("sha256").update(`${salt}:${rawIp}`).digest("hex").slice(0, 16);
 }
 
