@@ -9,12 +9,15 @@ import { RetailerOffersBlock } from "@/components/review/retailer-offers-block";
 import { resolveReviewImageUrl } from "@/lib/generated-content-normalizers";
 import { buildBreadcrumbSchema, buildFaqSchema, buildProductSchema, buildReviewSchema } from "@/lib/seo";
 import type { ReviewRecord } from "@/lib/review-data";
+import { sortRetailerOffers } from "@/lib/review-utils";
 
 type Props = {
   review: ReviewRecord;
 };
 
 export function ReviewPageTemplate({ review }: Props) {
+  const sortedOffers = sortRetailerOffers(review.retailerOffers);
+  const lowerPageOffer = sortedOffers[0];
   const imageUrl = resolveReviewImageUrl(review);
   const galleryImages = review.imageGallery && review.imageGallery.length > 0 ? review.imageGallery : [imageUrl];
   const breadcrumbItems = [
@@ -45,16 +48,13 @@ export function ReviewPageTemplate({ review }: Props) {
         <p className="mt-4 max-w-4xl text-sm leading-relaxed text-black/70">{review.summary}</p>
       </div>
 
-      <div className="mx-auto w-full max-w-[1580px] px-4 py-8 md:px-8 md:py-10 xl:px-12">
-        <div className="grid gap-8 xl:grid-cols-[minmax(0,1fr)_420px] 2xl:grid-cols-[minmax(0,1fr)_440px]">
-          <ProductMediaGallery compact tone={review.tone} title={review.name} images={galleryImages} />
-          <ProductBuyPanel review={review} />
-        </div>
+      <div className="mt-8">
+        <ProductMediaGallery tone={review.tone} title={review.name} images={galleryImages} />
       </div>
 
-      <div className="border-t border-black/10 bg-white">
-        <div className="mx-auto w-full max-w-[1580px] px-4 py-10 md:px-8 md:py-12 xl:px-12">
-          <div className="max-w-[980px]">
+      <div className="mx-auto w-full max-w-[1580px] px-4 py-10 md:px-8 md:py-12 xl:px-12">
+        <div className="grid gap-10 xl:grid-cols-[minmax(0,1fr)_440px] 2xl:grid-cols-[minmax(0,1fr)_460px]">
+          <div>
             <section className="border-t border-black/10 pt-8">
               <p className="text-sm uppercase tracking-[0.2em] text-black/80">Quick Verdict</p>
               <div className="mt-5 border border-black/10 bg-[#faf9f5] p-5">
@@ -133,6 +133,8 @@ export function ReviewPageTemplate({ review }: Props) {
               </article>
             </section>
           </div>
+
+          <ProductBuyPanel review={review} />
         </div>
       </div>
 
@@ -163,6 +165,30 @@ export function ReviewPageTemplate({ review }: Props) {
             </div>
           </div>
         </div>
+      ) : null}
+
+      {lowerPageOffer ? (
+        <section className="border-t border-black/10 bg-[#f8f6f1]">
+          <div className="mx-auto w-full max-w-[1580px] px-4 py-10 md:px-8 md:py-12 xl:px-12">
+            <div className="flex flex-col gap-5 border border-black/10 bg-white p-6 md:flex-row md:items-center md:justify-between">
+              <div className="max-w-3xl">
+                <p className="text-xs uppercase tracking-[0.16em] text-black/45">Ready To Check The Current Offer?</p>
+                <h2 className="mt-3 font-display text-3xl leading-[0.95] md:text-4xl">{review.name} Buying Shortcut</h2>
+                <p className="mt-3 text-sm leading-relaxed text-black/68">
+                  If this review matches what you need, use the current lead offer to confirm the latest price, stock, and shipping details.
+                </p>
+              </div>
+              <a
+                href={lowerPageOffer.affiliateUrl}
+                rel="nofollow sponsored noopener noreferrer"
+                target="_blank"
+                className="inline-flex min-h-[52px] items-center justify-center border border-black bg-black px-6 text-center text-[10px] uppercase tracking-[0.22em] text-white transition-colors hover:bg-black/90"
+              >
+                {lowerPageOffer.ctaLabel} | {lowerPageOffer.priceText}
+              </a>
+            </div>
+          </div>
+        </section>
       ) : null}
 
       {review.comparisons.length > 0 ? (
