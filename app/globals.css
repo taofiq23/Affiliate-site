@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 :root {
-  --base: #efede8;
-  --base-2: #f6f5f2;
-  --secondary: #101010;
-  --accent: #8a7350;
+  --base: #f7f3ee;
+  --base-2: #e6ded2;
+  --secondary: #151515;
+  --accent: #b56e2e;
 }
 
 * {
@@ -69,8 +69,8 @@ a {
 
 .hero-surface {
   background:
-    radial-gradient(circle at 76% 18%, rgba(246, 245, 242, 0.92) 0%, rgba(246, 245, 242, 0.5) 32%, transparent 58%),
-    linear-gradient(135deg, #f6f5f2 0%, #e7e1d7 52%, #d2c6b4 82%, #8a7350 100%);
+    radial-gradient(circle at 76% 14%, rgba(255, 255, 255, 0.92) 0%, rgba(247, 243, 238, 0.55) 32%, transparent 62%),
+    linear-gradient(135deg, #f7f3ee 0%, #f7f3ee 54%, #e6ded2 80%, #b56e2e 100%);
 }
 
 .hero-rail-track {
