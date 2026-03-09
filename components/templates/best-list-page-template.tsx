@@ -4,7 +4,7 @@ import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
-import { buildArticleSchema, buildBreadcrumbSchema, buildItemListSchema } from "@/lib/seo";
+import { buildArticleSchema, buildBreadcrumbSchema, buildFaqSchema, buildItemListSchema } from "@/lib/seo";
 import { getComparisons, getGuides, getProducts, type BestListRecord } from "@/lib/content-store";
 
 type Props = {
@@ -30,12 +30,14 @@ export function BestListPageTemplate({ page }: Props) {
   const relatedGuides = getGuides(page.relatedGuides);
   const relatedComparisons = getComparisons(page.relatedComparisons);
   const reviewCountFormatter = new Intl.NumberFormat("en-US");
+  const leadProduct = rankedProducts[0];
 
   return (
     <section className="min-h-screen bg-white py-16 md:py-24">
       <JsonLd data={buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: "Best", path: "/best/top-picks" }, { name: page.title, path: `/best/${page.slug}` }])} />
-      <JsonLd data={buildArticleSchema(page.title, page.description, `/best/${page.slug}`)} />
+      <JsonLd data={buildArticleSchema(page.title, page.description, `/best/${page.slug}`, leadProduct ? resolveProductImageUrl(leadProduct) : undefined)} />
       <JsonLd data={buildItemListSchema(page.title, rankedProducts.map((product) => `/reviews/${product.slug}`))} />
+      <JsonLd data={buildFaqSchema(page.faq)} />
 
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Best", href: "/best/top-picks" }, { label: page.title }]} />

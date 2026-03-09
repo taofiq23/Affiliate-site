@@ -2,7 +2,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
-import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
+import { buildArticleSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/lib/seo";
 import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
 import { getGuides, getProducts, type ComparisonRecord } from "@/lib/content-store";
 
@@ -13,11 +13,13 @@ type Props = {
 export function ComparisonPageTemplate({ page }: Props) {
   const [left, right] = getProducts(page.productSlugs);
   const relatedGuides = getGuides(page.relatedGuides);
+  const leadProduct = left;
 
   return (
     <section className="min-h-screen bg-white py-16 md:py-24">
       <JsonLd data={buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: "Compare", path: `/compare/${page.slug}` }, { name: page.title, path: `/compare/${page.slug}` }])} />
-      <JsonLd data={buildArticleSchema(page.title, page.description, `/compare/${page.slug}`)} />
+      <JsonLd data={buildArticleSchema(page.title, page.description, `/compare/${page.slug}`, leadProduct ? resolveProductImageUrl(leadProduct) : undefined)} />
+      <JsonLd data={buildFaqSchema(page.faq)} />
 
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Compare", href: `/compare/${page.slug}` }, { label: page.title }]} />

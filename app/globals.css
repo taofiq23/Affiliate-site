@@ -67,6 +67,12 @@ a {
     linear-gradient(to right, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.2) 36%, rgba(0, 0, 0, 0) 70%);
 }
 
+.hero-surface {
+  background:
+    radial-gradient(circle at 72% 18%, rgba(246, 245, 242, 0.9) 0%, rgba(246, 245, 242, 0.35) 34%, transparent 58%),
+    linear-gradient(135deg, #efede8 0%, #d7d0c3 56%, #8a7350 100%);
+}
+
 .hero-rail-track {
   display: flex;
   gap: 1rem;
@@ -75,11 +81,11 @@ a {
 }
 
 .hero-rail-track-top {
-  animation: heroDriftLeft 20s ease-in-out infinite alternate;
+  animation: heroMarqueeLeft 26s linear infinite;
 }
 
 .hero-rail-track-bottom {
-  animation: heroDriftRight 23s ease-in-out infinite alternate;
+  animation: heroMarqueeRight 30s linear infinite;
 }
 
 .hero-rail-card {
@@ -131,18 +137,18 @@ a {
   }
 }
 
-@keyframes heroDriftLeft {
+@keyframes heroMarqueeLeft {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-110px);
+    transform: translateX(-240px);
   }
 }
 
-@keyframes heroDriftRight {
+@keyframes heroMarqueeRight {
   from {
-    transform: translateX(-80px);
+    transform: translateX(-180px);
   }
   to {
     transform: translateX(0);

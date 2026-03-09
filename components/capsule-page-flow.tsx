@@ -75,7 +75,7 @@ export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription, produc
     <>
       <section className="relative border-b border-black/10">
         <div className="relative h-[54vh] min-h-[380px] w-full sm:h-[58vh] sm:min-h-[420px] md:h-[68vh] md:min-h-[530px]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,#6d6354_0%,transparent_42%),linear-gradient(135deg,#2e2a24_0%,#141311_40%,#5c4f3a_100%)]" />
+          <div className="hero-surface absolute inset-0" />
           <HeroImageRail products={products} />
           <div className="hero-overlay absolute inset-0" />
         </div>

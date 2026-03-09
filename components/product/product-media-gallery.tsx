@@ -13,7 +13,8 @@ export function ProductMediaGallery({ tone: _tone, title, images }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [imageUnavailable, setImageUnavailable] = useState(false);
   const [isAutoPaused, setIsAutoPaused] = useState(false);
-  const gallery = (images.length > 0 ? images : [""]).slice(0, 3).map((image, index) => ({
+  const uniqueImages = Array.from(new Set((images.length > 0 ? images : [""]).filter(Boolean)));
+  const gallery = (uniqueImages.length > 0 ? uniqueImages : [""]).slice(0, 5).map((image, index) => ({
     image,
     title: index === 0 ? "Main image" : `Gallery image ${index + 1}`,
     chip: String(index + 1).padStart(2, "0")
@@ -98,14 +99,14 @@ export function ProductMediaGallery({ tone: _tone, title, images }: Props) {
           ))}
         </div>
 
-        <div className="grid grid-cols-3 gap-2 sm:gap-3 xl:grid-cols-1">
+        <div className="grid grid-cols-3 gap-2 sm:grid-cols-5 sm:gap-3 xl:grid-cols-1">
           {gallery.map((slide, index) => {
             const active = selectedIndex === index;
             return (
               <button
                 key={`thumb-${slide.chip}`}
                 onClick={() => setSelectedIndex(index)}
-                className={`group relative h-[78px] overflow-hidden border text-left transition-all duration-300 sm:h-[96px] xl:h-[154px] ${
+                className={`group relative h-[78px] overflow-hidden border text-left transition-all duration-300 sm:h-[84px] xl:h-[88px] ${
                   active ? "border-black shadow-[0_10px_25px_rgba(0,0,0,0.1)]" : "border-black/10 hover:border-black/35"
                 }`}
                 aria-label={`View ${slide.title}`}

@@ -7,8 +7,10 @@
   "imageUrl": "https://m.media-amazon.com/images/I/71Vu01K-dvL._SL1500_.jpg",
   "imageGallery": [
     "https://m.media-amazon.com/images/I/71Vu01K-dvL._SL1500_.jpg",
-    "https://m.media-amazon.com/images/I/719iUHFAJ7L._SL1500_.jpg",
-    "https://m.media-amazon.com/images/I/71zoapzXfjL._SL1500_.jpg"
+    "https://m.media-amazon.com/images/I/71zoapzXfjL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/711GGB7OpVL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71xqz7eDFYL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81qUL+1+-BL._SL1500_.jpg"
   ],
   "canonicalProductUrl": "https://www.amazon.com/dp/B0DJRN24YK",
   "canonicalAffiliateUrl": "https://www.amazon.com/dp/B0DJRN24YK?tag=smartpickgu05-20",
@@ -179,5 +181,6 @@
   ],
   "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",
   "reviewMethodology": "This page blends trend, bestseller, search-demand, evergreen, profit, and niche-fit signals. It does not pretend to be hands-on lab testing. Instead, it is built to help readers make a cleaner buying decision with better structure, better alternatives, and better internal linking.",
-  "tone": "from-[#ddd5c6] to-[#8f7752]"
+  "tone": "from-[#ddd5c6] to-[#8f7752]",
+  "heroImage": "https://m.media-amazon.com/images/I/71Vu01K-dvL._SL1500_.jpg"
 }

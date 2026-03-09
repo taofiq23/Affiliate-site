@@ -21,6 +21,7 @@ export function ReviewPageTemplate({ review }: Props) {
   const sortedOffers = sortRetailerOffers(review.retailerOffers);
   const lowerPageOffer = sortedOffers[0];
   const imageUrl = resolveReviewImageUrl(review);
+  const currentProduct = getProduct(review.slug);
   const galleryImages = review.imageGallery && review.imageGallery.length > 0 ? review.imageGallery : [imageUrl];
   const compactAlternativeSummary = (summary: string) => {
     const sentences = summary.split(/(?<=[.!?])\s+/).filter(Boolean);
@@ -87,107 +88,93 @@ export function ReviewPageTemplate({ review }: Props) {
           { name: review.name, path: `/reviews/${review.slug}` }
         ])}
       />
-      <JsonLd data={buildProductSchema(review)} />
-      <JsonLd data={buildReviewSchema(review)} />
+      <JsonLd data={buildProductSchema(review, { shopperRating: currentProduct?.rating, shopperReviewCount: currentProduct?.reviewCount })} />
+      <JsonLd data={buildReviewSchema(review, { shopperRating: currentProduct?.rating, shopperReviewCount: currentProduct?.reviewCount })} />
       <JsonLd data={buildFaqSchema(review.faq)} />
 
       <div className="mx-auto w-full max-w-[1580px] px-4 pt-5 md:px-8 xl:px-12">
         <SiteBreadcrumbs items={breadcrumbItems} />
       </div>
 
-      <div className="mx-auto w-full max-w-[1580px] px-4 pt-2 md:px-8 xl:px-12">
-        <h1 className="font-display text-[2.35rem] leading-[0.96] sm:text-4xl md:text-5xl">{review.name} Review</h1>
-        <p className="mt-4 max-w-4xl text-[14px] leading-6 text-black/78 sm:text-[15px] sm:leading-7">{review.summary}</p>
-      </div>
-
       <div className="mt-8">
         <ProductMediaGallery tone={review.tone} title={review.name} images={galleryImages} />
       </div>
 
+      <ProductBuyPanel review={review} shopperRating={currentProduct?.rating} shopperReviewCount={currentProduct?.reviewCount} />
+
       <div className="mx-auto w-full max-w-[1580px] px-4 py-10 md:px-8 md:py-12 xl:px-12">
-        <div className="grid gap-8 xl:grid-cols-[minmax(0,1fr)_440px] xl:gap-10 2xl:grid-cols-[minmax(0,1fr)_460px]">
-          <div>
-            <section className="border-t border-black/10 pt-8">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Quick Verdict</p>
-              <div className="mt-5 border border-black/10 bg-[#faf9f5] p-5">
-                <p className="text-[15px] leading-7 text-black/80">{review.quickVerdict}</p>
-              </div>
-            </section>
+        <section className="border-t border-black/10 pt-8">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Full Review Summary</p>
+          <div className="mt-5 border border-black/10 bg-[#faf9f5] p-5 md:p-7">
+            <div className="max-w-5xl space-y-5">
+              <p className="text-[15px] leading-7 text-black/80">{review.summary}</p>
+              <p className="text-[15px] leading-7 text-black/80">{review.quickVerdict}</p>
+              <p className="text-[15px] leading-7 text-black/80">
+                <span className="font-semibold text-black">Why buy it:</span> {review.whyBuy}
+              </p>
+              <p className="text-[15px] leading-7 text-black/80">
+                <span className="font-semibold text-black">Main drawback:</span> {review.mainDrawback}
+              </p>
+              <p className="text-[15px] leading-7 text-black/80">
+                <span className="font-semibold text-black">Skip it if:</span> {review.avoidIf}
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <section className="mt-10 border-t border-black/10 pt-8">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">At A Glance</p>
-              <div className="mt-5 grid gap-px border border-black/10 bg-black/10 md:grid-cols-2">
-                <article className="bg-[#faf9f5] p-5">
-                  <p className="text-xs uppercase tracking-[0.16em] text-black/60">Best For</p>
-                  <p className="mt-3 text-[15px] leading-7 text-black/80">{review.bestFor}</p>
-                </article>
-                <article className="bg-white p-5">
-                  <p className="text-xs uppercase tracking-[0.16em] text-black/60">Avoid If</p>
-                  <p className="mt-3 text-[15px] leading-7 text-black/80">{review.avoidIf}</p>
-                </article>
-                <article className="bg-white p-5">
-                  <p className="text-xs uppercase tracking-[0.16em] text-black/60">Why Buy</p>
-                  <p className="mt-3 text-[15px] leading-7 text-black/80">{review.whyBuy}</p>
-                </article>
-                <article className="bg-[#faf9f5] p-5">
-                  <p className="text-xs uppercase tracking-[0.16em] text-black/60">Main Drawback</p>
-                  <p className="mt-3 text-[15px] leading-7 text-black/80">{review.mainDrawback}</p>
-                </article>
-              </div>
-            </section>
+        <section className="mt-10 grid gap-6 border-t border-black/10 pt-8 md:grid-cols-2">
+          <article>
+            <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Pros</h2>
+            <div className="mt-4 border border-black/10 bg-[#faf9f5] p-5">
+              <ul className="space-y-3 text-[15px] leading-7 text-black/80">
+                {review.pros.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-black/55" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </article>
+          <article>
+            <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Cons</h2>
+            <div className="mt-4 border border-black/10 bg-white p-5">
+              <ul className="space-y-3 text-[15px] leading-7 text-black/80">
+                {review.cons.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-black/55" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </article>
+        </section>
 
-            <FeatureSnapshotTable review={review} />
+        <FeatureSnapshotTable review={review} />
 
-            <section className="mt-10 grid gap-6 border-t border-black/10 pt-8 md:grid-cols-2">
-              <article>
-                <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Pros</h2>
-                <div className="mt-4 border border-black/10 bg-[#faf9f5] p-5">
-                  <ul className="space-y-3 text-[15px] leading-7 text-black/80">
-                    {review.pros.map((item) => (
-                      <li key={item} className="flex gap-3">
-                        <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-black/55" aria-hidden="true" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
-              <article>
-                <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Cons</h2>
-                <div className="mt-4 border border-black/10 bg-white p-5">
-                  <ul className="space-y-3 text-[15px] leading-7 text-black/80">
-                    {review.cons.map((item) => (
-                      <li key={item} className="flex gap-3">
-                        <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-black/55" aria-hidden="true" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
-            </section>
+        <section className="mt-10 border-t border-black/10 pt-8">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Performance / Real Use Assessment</p>
+          <div className="mt-5 max-w-5xl border border-black/10 bg-white p-5 md:p-6">
+            <p className="text-[15px] leading-7 text-black/80">{review.performanceText}</p>
+          </div>
+        </section>
 
-            <section className="mt-10 border-t border-black/10 pt-8">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Performance / Real Use Assessment</p>
-              <div className="mt-5 max-w-4xl border border-black/10 bg-white p-5">
-                <p className="text-[15px] leading-7 text-black/80">{review.performanceText}</p>
-              </div>
-            </section>
-
-            <section className="mt-10 grid gap-6 border-t border-black/10 pt-8 md:grid-cols-2">
-              <article className="border border-black/10 bg-[#faf9f5] p-5">
+        <section className="mt-10 border-t border-black/10 pt-8">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-black/88">Buyer Fit</p>
+          <div className="mt-5 border border-black/10 bg-white p-5 md:p-6">
+            <div className="grid gap-6 md:grid-cols-2">
+              <div>
                 <p className="text-xs uppercase tracking-[0.16em] text-black/60">Who Should Buy</p>
                 <p className="mt-3 text-[15px] leading-7 text-black/80">{review.whoShouldBuy}</p>
-              </article>
-              <article className="border border-black/10 bg-white p-5">
+              </div>
+              <div>
                 <p className="text-xs uppercase tracking-[0.16em] text-black/60">Who Should Skip</p>
                 <p className="mt-3 text-[15px] leading-7 text-black/80">{review.whoShouldSkip}</p>
-              </article>
-            </section>
+              </div>
+            </div>
           </div>
-
-          <ProductBuyPanel review={review} />
-        </div>
+        </section>
       </div>
 
       <RetailerOffersBlock review={review} />

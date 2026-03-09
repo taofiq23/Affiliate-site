@@ -3,7 +3,7 @@ import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { getBestLists, getComparisons, getProducts, type GuideRecord } from "@/lib/content-store";
 import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
-import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
+import { buildArticleSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/lib/seo";
 
 type Props = {
   page: GuideRecord;
@@ -13,11 +13,13 @@ export function GuidePageTemplate({ page }: Props) {
   const relatedBest = getBestLists(page.relatedBest);
   const relatedReviews = getProducts(page.relatedReviews);
   const relatedComparisons = getComparisons(page.relatedComparisons);
+  const leadProduct = relatedReviews[0];
 
   return (
     <section className="bg-base-2 py-16 md:py-24">
       <JsonLd data={buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: "Guides", path: `/guides/${page.slug}` }, { name: page.title, path: `/guides/${page.slug}` }])} />
-      <JsonLd data={buildArticleSchema(page.title, page.description, `/guides/${page.slug}`)} />
+      <JsonLd data={buildArticleSchema(page.title, page.description, `/guides/${page.slug}`, leadProduct ? resolveProductImageUrl(leadProduct) : undefined)} />
+      <JsonLd data={buildFaqSchema(page.faq)} />
 
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Guides", href: `/guides/${page.slug}` }, { label: page.title }]} />

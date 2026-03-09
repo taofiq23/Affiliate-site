@@ -1,14 +1,16 @@
 {
-  "asin": "B07YFDM4V7",
+  "asin": "B00LS7VOCC",
   "name": "Nostalgia 3-in-1 Breakfast Station",
   "slug": "nostalgia-3-in-1-breakfast-station",
   "brand": "Nostalgia",
   "category": "kitchen",
-  "imageUrl": "https://m.media-amazon.com/images/I/813lCdjl5eL._SL1500_.jpg",
+  "imageUrl": "https://m.media-amazon.com/images/I/91-euLR-sxL._SL1500_.jpg",
   "imageGallery": [
-    "https://m.media-amazon.com/images/I/813lCdjl5eL._SL1500_.jpg",
-    "https://m.media-amazon.com/images/I/71gON1EUb8L._SL1500_.jpg",
-    "https://m.media-amazon.com/images/I/81PJUa1vkEL._SL1500_.jpg"
+    "https://m.media-amazon.com/images/I/91-euLR-sxL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71WaoLwArYL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/91f8KT-vKhL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51F9+dOHq1L._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61CJv8iJZlL._SL1500_.jpg"
   ],
   "canonicalProductUrl": "https://www.amazon.com/dp/B07YFDM4V7",
   "canonicalAffiliateUrl": "https://www.amazon.com/dp/B07YFDM4V7?tag=smartpickgu05-20",
@@ -186,5 +188,6 @@
   ],
   "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",
   "reviewMethodology": "This page blends trend, bestseller, search-demand, evergreen, profit, and niche-fit signals. It does not pretend to be hands-on lab testing. Instead, it is built to help readers make a cleaner buying decision with better structure, better alternatives, and better internal linking.",
-  "tone": "from-[#eadfda] to-[#b58e78]"
+  "tone": "from-[#eadfda] to-[#b58e78]",
+  "heroImage": "https://m.media-amazon.com/images/I/91-euLR-sxL._SL1500_.jpg"
 }

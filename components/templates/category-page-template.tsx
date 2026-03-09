@@ -2,7 +2,8 @@ import { AffiliateProductCard } from "@/components/affiliate-product-card";
 import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
-import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo";
+import { buildArticleSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/lib/seo";
+import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
 import { getBestLists, getComparisons, getGuides, getProducts, type CategoryRecord } from "@/lib/content-store";
 
 type Props = {
@@ -14,11 +15,13 @@ export function CategoryPageTemplate({ page }: Props) {
   const bestLists = getBestLists(page.bestSlugs);
   const guides = getGuides(page.guideSlugs);
   const comparisons = getComparisons(page.comparisonSlugs);
+  const leadProduct = products[0];
 
   return (
     <section className="min-h-screen bg-white py-16 md:py-24">
       <JsonLd data={buildBreadcrumbSchema([{ name: "Home", path: "/" }, { name: "Category", path: `/category/${page.slug}` }, { name: page.title, path: `/category/${page.slug}` }])} />
-      <JsonLd data={buildArticleSchema(page.title, page.description, `/category/${page.slug}`)} />
+      <JsonLd data={buildArticleSchema(page.title, page.description, `/category/${page.slug}`, leadProduct ? resolveProductImageUrl(leadProduct) : undefined)} />
+      <JsonLd data={buildFaqSchema(page.faq)} />
 
       <div className="container-luxe">
         <SiteBreadcrumbs items={[{ label: "Home", href: "/" }, { label: "Category", href: `/category/${page.slug}` }, { label: page.title }]} />

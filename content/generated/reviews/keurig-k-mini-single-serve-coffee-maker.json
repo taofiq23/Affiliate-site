@@ -1,0 +1,192 @@
+{
+  "asin": "B07GV2S1GS",
+  "name": "Keurig K-Mini Single Serve Coffee Maker",
+  "slug": "keurig-k-mini-single-serve-coffee-maker",
+  "brand": "Keurig",
+  "category": "coffee",
+  "imageUrl": "https://m.media-amazon.com/images/I/61UTFJux1pL._SL1500_.jpg",
+  "imageGallery": [
+    "https://m.media-amazon.com/images/I/61UTFJux1pL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61MTgYZf7AL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71tYACPicQL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61paJ6waPIL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61YnhNiuh4L._SL1500_.jpg"
+  ],
+  "canonicalProductUrl": "https://www.amazon.com/dp/B07GV2S1GS",
+  "canonicalAffiliateUrl": "https://www.amazon.com/dp/B07GV2S1GS?tag=smartpickgu05-20",
+  "shortAffiliateUrl": "https://amzn.to/4aZ0XmZ",
+  "preferredAffiliateUrl": "https://amzn.to/4aZ0XmZ",
+  "summary": "The best Keurig K-Mini review should focus less on features and more on fit. This machine is built for buyers who care about one thing above everything else: keeping coffee simple without giving away too much counter space. That makes it a strong dorm, office, apartment, or small-kitchen pick, but also means it is easy to outgrow if you want larger water capacity, faster back-to-back brewing, or more flexibility than a very compact single-serve machine can offer.",
+  "quickVerdict": "Best for buyers who care more about minimal footprint and simple single-cup brewing than extra features or batch flexibility.",
+  "editorScore": 4.3,
+  "priceMin": 50,
+  "priceMax": 70,
+  "priceText": "$50-$70",
+  "lastChecked": "March 9, 2026",
+  "bestFor": "Dorm rooms, offices, RV setups, studio kitchens, and any coffee setup where every inch of counter space matters.",
+  "avoidIf": "You brew several cups back to back, want a large water reservoir, or need one machine to serve multiple people easily.",
+  "whyBuy": "It solves the small-space coffee problem cleanly. You get Keurig convenience in a format that is much easier to live with on a crowded counter.",
+  "mainDrawback": "The compact design means fewer extras and more manual refill routine than larger Keurig machines.",
+  "keyFeatures": [
+    "Ultra-compact single-serve coffee maker built for small spaces.",
+    "4.2/5 rating from 106,413 Amazon reviews.",
+    "Six-to-twelve-ounce brew sizing with cord storage for tight counters.",
+    "Affordable Keurig entry point for buyers who prioritize footprint over feature depth."
+  ],
+  "featureSnapshot": [
+    {
+      "label": "Category",
+      "value": "Coffee Gear"
+    },
+    {
+      "label": "Subcategory",
+      "value": "Coffee Makers"
+    },
+    {
+      "label": "Price range",
+      "value": "$50-$70"
+    },
+    {
+      "label": "Editor score",
+      "value": "4.3/5"
+    },
+    {
+      "label": "Brew size",
+      "value": "6 to 12 ounces per cup"
+    },
+    {
+      "label": "Reservoir",
+      "value": "Single-cup refill design"
+    },
+    {
+      "label": "Best for",
+      "value": "Dorms, apartments, offices, and compact counters"
+    },
+    {
+      "label": "Footprint",
+      "value": "Very small and easy to tuck into narrow spaces"
+    },
+    {
+      "label": "Use case",
+      "value": "Make simple single cups without sacrificing precious counter space."
+    },
+    {
+      "label": "Best alternative",
+      "value": "Keurig K-Duo Hot & Iced Coffee Maker"
+    }
+  ],
+  "pros": [
+    "Its compact footprint is the main advantage and genuinely makes a difference in small kitchens, offices, and dorm setups.",
+    "The huge review count gives it strong marketplace proof for a simple single-serve machine.",
+    "It is easy to understand, easy to place, and easy to recommend when a buyer wants convenience more than flexibility."
+  ],
+  "cons": [
+    "You refill water for each brew, which becomes less convenient if several people use the machine or you make multiple cups in a row.",
+    "It does not give you the flexibility of carafe brewing or the extra features of larger Keurig models.",
+    "The compact design is the point, but it also means you may outgrow it once your coffee routine becomes more demanding."
+  ],
+  "performanceText": "The K-Mini performs exactly how a strong small-space coffee maker should: it stays simple, takes up very little room, and makes single-cup brewing easy to live with. That clarity is why it keeps selling. The tradeoff is equally clear. If you want to brew multiple cups in a row, skip repeated refills, or serve more than yourself regularly, the convenience starts fading fast. Buyers who match its single-user, small-space purpose usually end up much happier than buyers who expect it to act like a full-size coffee station.",
+  "whoShouldBuy": "Buy it if you want straightforward Keurig convenience in the smallest footprint possible and usually brew one cup at a time.",
+  "whoShouldSkip": "Skip it if you need a household coffee maker, prefer larger reservoirs, or want more flexibility than a basic single-serve machine offers.",
+  "retailerOffers": [
+    {
+      "offerSlug": "amazon-preferred",
+      "retailerName": "Amazon",
+      "affiliateUrl": "https://amzn.to/4aZ0XmZ",
+      "priceText": "Current listing around $59.99",
+      "offerLabel": "Manual affiliate link verified",
+      "stockNote": "Availability changes often on Amazon seller pages",
+      "shippingNote": "Prime timing depends on listing and location",
+      "ctaLabel": "Check Amazon",
+      "priority": 1
+    },
+    {
+      "offerSlug": "amazon-canonical",
+      "retailerName": "Amazon",
+      "affiliateUrl": "https://www.amazon.com/dp/B07GV2S1GS?tag=smartpickgu05-20",
+      "priceText": "Open the direct Amazon listing",
+      "offerLabel": "Fallback direct listing",
+      "stockNote": "Useful if the short link rotates or expires",
+      "shippingNote": "Compare sellers before checkout",
+      "ctaLabel": "Open Listing",
+      "priority": 2
+    }
+  ],
+  "alternatives": [
+    {
+      "label": "Feature-rich alternative",
+      "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker",
+      "summary": "A better fit if you want a stronger single-serve setup and have enough room for a larger machine.",
+      "priceText": "$119-$161",
+      "reviewUrl": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
+    },
+    {
+      "label": "Flexible household alternative",
+      "title": "Keurig K-Duo Hot & Iced Coffee Maker",
+      "summary": "The smarter move if your kitchen needs both single cups and larger-batch brewing from the same machine.",
+      "priceText": "$130-$170",
+      "reviewUrl": "/reviews/keurig-k-duo-hot-and-iced-coffee-maker"
+    },
+    {
+      "label": "Value brewing alternative",
+      "title": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup",
+      "summary": "Worth comparing if you want a less compact but more flexible coffee routine at a competitive price.",
+      "priceText": "$76-$102",
+      "reviewUrl": "/reviews/hamilton-beach-2-way-programmable-coffee-maker"
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "Keurig K-Elite vs Hamilton Beach 2-Way Programmable Coffee Maker",
+      "summary": "Use this existing coffee-maker comparison as a category benchmark if you still need help choosing between convenience, capacity, and daily workflow.",
+      "url": "/compare/keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is the Keurig K-Mini good for a dorm or office?",
+      "answer": "Yes. That is one of its best use cases because the machine keeps the footprint small and the routine simple."
+    },
+    {
+      "question": "Should you choose the K-Mini or the K-Duo?",
+      "answer": "Choose the K-Mini for one-person, space-limited setups. Choose the K-Duo if your routine includes multiple users or both single cups and larger brews."
+    },
+    {
+      "question": "What is the biggest downside of the K-Mini?",
+      "answer": "Its small size is also the limitation. Refill-per-cup brewing becomes less convenient when you want more volume or more features."
+    }
+  ],
+  "relatedGuides": [
+    {
+      "title": "Home Appliance Buying Guide: How To Choose The Right Product",
+      "summary": "A practical buying guide for home appliances, coffee gear, kitchen tools, and comfort products.",
+      "url": "/guides/product-buying-guide"
+    },
+    {
+      "title": "How To Choose Coffee Gear: What Matters Before You Buy",
+      "summary": "A practical guide for coffee buyers who want to narrow the field before opening full reviews.",
+      "url": "/guides/how-to-choose-coffee-gear"
+    }
+  ],
+  "relatedReviews": [
+    {
+      "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker Review",
+      "summary": "Open this next if you like the Keurig ecosystem but want a stronger single-serve machine with more room to grow.",
+      "url": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
+    },
+    {
+      "title": "Keurig K-Duo Hot & Iced Coffee Maker Review",
+      "summary": "Read this if you are deciding whether extra size and multi-format brewing are worth the step up from the K-Mini.",
+      "url": "/reviews/keurig-k-duo-hot-and-iced-coffee-maker"
+    },
+    {
+      "title": "BLACK+DECKER One Touch Coffee Grinder 2/3 Cup Review",
+      "summary": "A useful companion read if you are building a simple coffee setup and still need a low-cost grinder.",
+      "url": "/reviews/black-decker-one-touch-coffee-grinder-2-3"
+    }
+  ],
+  "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",
+  "reviewMethodology": "This page is written manually for buyers who are comparing real Amazon listings, not generated from a one-click AI draft. The goal is to explain where each product fits, where it falls short, and what to compare before you leave for the retailer page.",
+  "tone": "from-[#e8ddd4] to-[#a47c66]",
+  "heroImage": "https://m.media-amazon.com/images/I/61UTFJux1pL._SL1500_.jpg"
+}

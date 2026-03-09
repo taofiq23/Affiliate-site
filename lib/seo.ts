@@ -8,6 +8,7 @@ type MetaInput = {
   description: string;
   pathname: string;
   imagePath?: string;
+  keywords?: string[];
   openGraphType?: "website" | "article";
 };
 
@@ -15,14 +16,51 @@ export function absoluteUrl(pathname: string) {
   return `${siteConfig.url}${pathname}`;
 }
 
-export function buildMetadata({ title, description, pathname, imagePath, openGraphType = "website" }: MetaInput): Metadata {
+function toAbsoluteImageUrl(imagePath: string) {
+  return imagePath.startsWith("http") ? imagePath : absoluteUrl(imagePath);
+}
+
+function resolveReviewImageUrls(review: Pick<ReviewRecord, "imageGallery" | "imageUrl" | "heroImage">) {
+  const gallery = Array.from(
+    new Set(
+      (review.imageGallery ?? [])
+        .map((value) => value?.trim() ?? "")
+        .filter(Boolean)
+        .map((value) => toAbsoluteImageUrl(value))
+    )
+  );
+
+  if (gallery.length > 0) {
+    return gallery;
+  }
+
+  const fallback = resolveReviewImageUrl(review);
+  return fallback ? [toAbsoluteImageUrl(fallback)] : [];
+}
+
+export function buildMetadata({ title, description, pathname, imagePath, keywords, openGraphType = "website" }: MetaInput): Metadata {
   const ogImage = imagePath ? (imagePath.startsWith("http") ? imagePath : absoluteUrl(imagePath)) : undefined;
 
   return {
     title,
     description,
+    keywords,
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1
+      }
+    },
+    authors: [{ name: siteConfig.name }],
+    creator: siteConfig.name,
+    publisher: siteConfig.name,
     alternates: {
-      canonical: pathname
+      canonical: absoluteUrl(pathname)
     },
     openGraph: {
       title,
@@ -67,12 +105,13 @@ export function buildItemListSchema(title: string, paths: string[]) {
   };
 }
 
-export function buildArticleSchema(title: string, description: string, pathname: string) {
+export function buildArticleSchema(title: string, description: string, pathname: string, imagePath?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
+    image: imagePath ? [toAbsoluteImageUrl(imagePath)] : undefined,
     mainEntityOfPage: absoluteUrl(pathname),
     publisher: {
       "@type": "Organization",
@@ -81,22 +120,36 @@ export function buildArticleSchema(title: string, description: string, pathname:
   };
 }
 
-export function buildReviewSchema(review: ReviewRecord) {
+export function buildReviewSchema(
+  review: ReviewRecord,
+  options?: {
+    shopperRating?: number;
+    shopperReviewCount?: number;
+  }
+) {
   return {
     "@context": "https://schema.org",
     "@type": "Review",
     name: `${review.name} Review`,
-    reviewBody: review.summary,
+    reviewBody: `${review.summary} ${review.quickVerdict}`.trim(),
     itemReviewed: {
       "@type": "Product",
       name: review.name,
-      image: resolveReviewImageUrl(review),
+      image: resolveReviewImageUrls(review),
       brand: {
         "@type": "Brand",
         name: review.brand
       },
       category: review.category,
-      sku: review.asin
+      sku: review.asin,
+      aggregateRating:
+        options?.shopperRating && options?.shopperReviewCount
+          ? {
+              "@type": "AggregateRating",
+              ratingValue: options.shopperRating.toFixed(1),
+              reviewCount: String(options.shopperReviewCount)
+            }
+          : undefined
     },
     reviewRating: {
       "@type": "Rating",
@@ -117,42 +170,65 @@ export function buildReviewSchema(review: ReviewRecord) {
   };
 }
 
-export function buildProductSchema(review: ReviewRecord) {
+export function buildProductSchema(
+  review: ReviewRecord,
+  options?: {
+    shopperRating?: number;
+    shopperReviewCount?: number;
+  }
+) {
   const topOffer = review.retailerOffers.slice().sort((left, right) => left.priority - right.priority)[0];
   const hasPrice = review.priceMin > 0 && review.priceMax > 0;
+  const reviewPageUrl = absoluteUrl(`/reviews/${review.slug}`);
+  const inferredAvailability =
+    topOffer?.stockNote && /(in stock|available|ships soon)/i.test(topOffer.stockNote)
+      ? "https://schema.org/InStock"
+      : undefined;
+  const aggregateRating =
+    options?.shopperRating && options?.shopperReviewCount
+      ? {
+          "@type": "AggregateRating",
+          ratingValue: options.shopperRating.toFixed(1),
+          reviewCount: String(options.shopperReviewCount)
+        }
+      : {
+          "@type": "AggregateRating",
+          ratingValue: review.editorScore.toFixed(1),
+          reviewCount: "1"
+        };
 
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     name: review.name,
     sku: review.asin,
-    image: resolveReviewImageUrl(review),
-    url: review.canonicalProductUrl ?? absoluteUrl(`/reviews/${review.slug}`),
+    image: resolveReviewImageUrls(review),
+    url: reviewPageUrl,
     brand: {
       "@type": "Brand",
       name: review.brand
     },
     description: review.summary,
     category: review.category,
-    offers: topOffer && hasPrice
+    offers: topOffer
       ? {
           "@type": "Offer",
           url: topOffer.affiliateUrl,
+          availability: inferredAvailability,
           priceCurrency: "USD",
-          price: review.priceMin.toFixed(2),
-          priceSpecification: {
-            "@type": "PriceSpecification",
-            minPrice: review.priceMin.toFixed(2),
-            maxPrice: review.priceMax.toFixed(2),
-            priceCurrency: "USD"
-          }
+          price: hasPrice ? review.priceMin.toFixed(2) : undefined,
+          priceSpecification: hasPrice
+            ? {
+                "@type": "PriceSpecification",
+                minPrice: review.priceMin.toFixed(2),
+                maxPrice: review.priceMax.toFixed(2),
+                priceCurrency: "USD"
+              }
+            : undefined,
+          itemCondition: "https://schema.org/NewCondition"
         }
       : undefined,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: review.editorScore.toFixed(1),
-      reviewCount: "1"
-    }
+    aggregateRating
   };
 }
 

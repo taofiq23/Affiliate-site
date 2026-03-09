@@ -21,10 +21,11 @@ export function generateMetadata({ params }: Props): Metadata {
   }
 
   return buildMetadata({
-    title: `${review.name} Review`,
-    description: review.summary,
+    title: `${review.name} Review: Price, Pros & Cons`,
+    description: `${review.name} review covering price range ${review.priceText}, key pros and cons, performance, and who should buy it.`,
     pathname: `/reviews/${review.slug}`,
     imagePath: resolveReviewImageUrl(review),
+    keywords: [review.name, `${review.name} review`, `${review.brand} ${review.category}`, `${review.category} review`],
     openGraphType: "article"
   });
 }
