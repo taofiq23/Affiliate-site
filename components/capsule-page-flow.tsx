@@ -16,52 +16,52 @@ function HeroImageRail({ products }: { products: ProductRecord[] }) {
   const lowerRail = [...leadProducts.slice().reverse(), ...leadProducts.slice().reverse()];
 
   return (
-    <div className="pointer-events-none absolute inset-y-7 right-4 hidden w-[42%] overflow-hidden md:block lg:right-6 lg:w-[44%]">
-      <div className="absolute inset-0 rounded-[28px] border border-white/12 bg-white/6 backdrop-blur-[2px]" />
+    <div className="pointer-events-none absolute inset-y-4 right-3 w-[44%] overflow-hidden sm:inset-y-6 sm:right-4 sm:w-[40%] md:inset-y-7 md:right-4 md:w-[42%] lg:right-6 lg:w-[44%]">
+      <div className="absolute inset-0 rounded-[22px] border border-white/12 bg-white/6 backdrop-blur-[2px] md:rounded-[28px]" />
       <div className="absolute inset-0 bg-[linear-gradient(to_left,rgba(20,19,17,0.12),rgba(20,19,17,0)_18%,rgba(20,19,17,0)_82%,rgba(20,19,17,0.2))]" />
 
-      <div className="absolute left-5 right-5 top-7">
+      <div className="absolute left-3 right-3 top-4 sm:left-4 sm:right-4 sm:top-5 md:left-5 md:right-5 md:top-7">
         <div className="hero-rail-track hero-rail-track-top">
           {upperRail.map((product, index) => (
             <article
               key={`top-${product.slug}-${index}`}
-              className="hero-rail-card w-[182px] shrink-0 rounded-[26px] border border-white/15 bg-[rgba(255,255,255,0.1)] p-4 shadow-[0_24px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+              className="hero-rail-card w-[96px] shrink-0 rounded-[16px] border border-white/15 bg-[rgba(255,255,255,0.1)] p-2 shadow-[0_16px_34px_rgba(0,0,0,0.24)] backdrop-blur-sm sm:w-[128px] sm:rounded-[20px] sm:p-3 md:w-[182px] md:rounded-[26px] md:p-4 md:shadow-[0_24px_60px_rgba(0,0,0,0.25)]"
             >
-              <div className={`relative aspect-[4/4.5] overflow-hidden rounded-[20px] bg-gradient-to-br ${product.tone}`}>
+              <div className={`relative aspect-[4/4.5] overflow-hidden rounded-[12px] bg-gradient-to-br ${product.tone} sm:rounded-[15px] md:rounded-[20px]`}>
                 <Image
                   src={resolveProductImageUrl(product)}
                   alt={product.name}
                   fill
-                  sizes="182px"
+                  sizes="(min-width: 768px) 182px, (min-width: 640px) 128px, 96px"
                   quality={95}
-                  className="object-contain p-4"
+                  className="object-contain p-2 sm:p-3 md:p-4"
                 />
               </div>
-              <p className="mt-3 truncate text-[10px] uppercase tracking-[0.18em] text-white/70">{product.category}</p>
-              <p className="mt-2 line-clamp-2 text-sm leading-snug text-white">{product.name}</p>
+              <p className="mt-2 truncate text-[7px] uppercase tracking-[0.16em] text-white/70 sm:text-[8px] md:mt-3 md:text-[10px] md:tracking-[0.18em]">{product.category}</p>
+              <p className="mt-1 line-clamp-2 text-[10px] leading-[1.1] text-white sm:text-[11px] md:mt-2 md:text-sm md:leading-snug">{product.name}</p>
             </article>
           ))}
         </div>
       </div>
 
-      <div className="absolute bottom-7 left-5 right-5">
+      <div className="absolute bottom-4 left-3 right-3 sm:bottom-5 sm:left-4 sm:right-4 md:bottom-7 md:left-5 md:right-5">
         <div className="hero-rail-track hero-rail-track-bottom">
           {lowerRail.map((product, index) => (
             <article
               key={`bottom-${product.slug}-${index}`}
-              className="hero-rail-card w-[168px] shrink-0 rounded-[24px] border border-white/12 bg-[rgba(255,255,255,0.08)] p-3 shadow-[0_18px_46px_rgba(0,0,0,0.22)] backdrop-blur-sm"
+              className="hero-rail-card w-[88px] shrink-0 rounded-[14px] border border-white/12 bg-[rgba(255,255,255,0.08)] p-2 shadow-[0_12px_28px_rgba(0,0,0,0.22)] backdrop-blur-sm sm:w-[116px] sm:rounded-[18px] sm:p-2.5 md:w-[168px] md:rounded-[24px] md:p-3 md:shadow-[0_18px_46px_rgba(0,0,0,0.22)]"
             >
-              <div className="relative aspect-[4/4] overflow-hidden rounded-[18px] bg-white/90">
+              <div className="relative aspect-[4/4] overflow-hidden rounded-[10px] bg-white/90 sm:rounded-[14px] md:rounded-[18px]">
                 <Image
                   src={resolveProductImageUrl(product)}
                   alt={product.name}
                   fill
-                  sizes="168px"
+                  sizes="(min-width: 768px) 168px, (min-width: 640px) 116px, 88px"
                   quality={95}
-                  className="object-contain p-3"
+                  className="object-contain p-2 sm:p-2.5 md:p-3"
                 />
               </div>
-              <p className="mt-3 truncate text-[10px] uppercase tracking-[0.18em] text-white/70">{product.brand}</p>
+              <p className="mt-2 truncate text-[7px] uppercase tracking-[0.16em] text-white/70 sm:text-[8px] md:mt-3 md:text-[10px] md:tracking-[0.18em]">{product.brand}</p>
             </article>
           ))}
         </div>
@@ -71,12 +71,10 @@ function HeroImageRail({ products }: { products: ProductRecord[] }) {
 }
 
 export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription, products }: Props) {
-  const mobileLeadProducts = products.slice(0, 2);
-
   return (
     <>
       <section className="relative border-b border-black/10">
-        <div className="relative h-[78svh] min-h-[620px] w-full sm:h-[68vh] sm:min-h-[540px] md:h-[68vh] md:min-h-[530px]">
+        <div className="relative h-[68svh] min-h-[500px] w-full sm:h-[68vh] sm:min-h-[540px] md:h-[68vh] md:min-h-[530px]">
           <div className="hero-surface absolute inset-0" />
           <HeroImageRail products={products} />
           <div className="hero-overlay absolute inset-0" />
@@ -84,40 +82,17 @@ export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription, produc
         <div className="absolute bottom-5 left-0 right-0 sm:bottom-6 md:bottom-10">
           <div className="container-luxe">
             <p className="kicker-inverse">{heroKicker}</p>
-            <h1 className="mt-3 max-w-4xl font-display text-[33px] leading-[0.96] text-base sm:mt-4 sm:text-[40px] md:text-[86px]">{heroTitle}</h1>
-            <p className="mt-4 max-w-xl text-[10px] uppercase leading-relaxed tracking-[0.18em] text-white/80 sm:max-w-2xl sm:text-[11px] sm:tracking-[0.22em] md:text-[12px]">
+            <h1 className="mt-3 max-w-[60%] font-display text-[25px] leading-[0.98] text-base sm:mt-4 sm:max-w-2xl sm:text-[40px] md:max-w-4xl md:text-[86px]">{heroTitle}</h1>
+            <p className="mt-4 max-w-[60%] text-[9px] uppercase leading-relaxed tracking-[0.16em] text-white/80 sm:max-w-2xl sm:text-[11px] sm:tracking-[0.22em] md:max-w-xl md:text-[12px]">
               Product reviews, best lists, comparison pages, and buying guides for coffee gear, kitchen appliances, and everyday home upgrades.
             </p>
-            <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center">
+            <div className="mt-6 flex max-w-[60%] flex-col gap-3 sm:mt-7 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center">
               <Link href="/best/top-picks" className="btn-hero-primary w-full sm:w-auto">
                 Explore Top Picks
               </Link>
               <Link href="/guides/product-buying-guide" className="btn-hero-secondary w-full sm:w-auto">
                 Open Buying Guide
               </Link>
-            </div>
-            <div className="mt-5 grid grid-cols-2 gap-3 md:hidden">
-              {mobileLeadProducts.map((product) => (
-                <article
-                  key={`mobile-hero-${product.slug}`}
-                  className="overflow-hidden rounded-[20px] border border-white/16 bg-[rgba(255,255,255,0.08)] backdrop-blur-sm"
-                >
-                  <div className={`relative aspect-[4/4.25] bg-gradient-to-br ${product.tone}`}>
-                    <Image
-                      src={resolveProductImageUrl(product)}
-                      alt={product.name}
-                      fill
-                      sizes="50vw"
-                      quality={92}
-                      className="object-contain p-3"
-                    />
-                  </div>
-                  <div className="p-3">
-                    <p className="truncate text-[9px] uppercase tracking-[0.16em] text-white/68">{product.category}</p>
-                    <p className="mt-1 line-clamp-2 text-[12px] leading-[1.2] text-white">{product.name}</p>
-                  </div>
-                </article>
-              ))}
             </div>
           </div>
         </div>
