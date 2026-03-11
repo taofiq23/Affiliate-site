@@ -6,7 +6,11 @@
   --base: #f5f6f8;
   --base-2: #ffffff;
   --secondary: #0f1111;
-  --accent: #ff9900;
+  --accent: #ffd814;
+  --accent-hover: #f7ca00;
+  --button-border: #fcd200;
+  --button-neutral: #f0f2f2;
+  --button-neutral-border: #d5d9d9;
 }
 
 * {
@@ -62,16 +66,20 @@ a {
 
 .btn-primary:hover {
   opacity: 1;
-  filter: brightness(0.92);
+  background-color: var(--accent-hover);
+  border-color: var(--button-border);
+  filter: none;
 }
 
 .btn-outline {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--button-neutral-border);
+  background-color: var(--button-neutral);
+  color: var(--secondary);
 }
 
 .btn-outline:hover {
-  background-color: var(--accent);
+  background-color: #e3e6e6;
+  border-color: #c7cccc;
   color: var(--secondary);
 }
 
@@ -93,20 +101,44 @@ a {
 }
 
 .btn-hero-primary:hover {
-  filter: brightness(0.94);
+  background-color: var(--accent-hover);
+  border-color: var(--button-border);
+  filter: none;
 }
 
 .btn-hero-secondary {
   @apply inline-flex min-h-[46px] items-center justify-center border px-5 py-3 text-[10px] font-medium uppercase tracking-[0.2em] transition duration-300 sm:px-6 sm:text-[11px] sm:tracking-[0.23em];
-  border-color: rgb(255 255 255 / 0.22);
-  background-color: rgb(255 255 255 / 0.08);
-  color: rgb(255 255 255 / 0.96);
-  backdrop-filter: blur(10px);
+  border-color: var(--button-neutral-border);
+  background-color: var(--button-neutral);
+  color: var(--secondary);
 }
 
 .btn-hero-secondary:hover {
-  border-color: rgb(255 255 255 / 0.34);
-  background-color: rgb(255 255 255 / 0.14);
+  background-color: #e3e6e6;
+  border-color: #c7cccc;
+}
+
+.btn-commerce-primary {
+  @apply inline-flex items-center justify-center border text-center font-medium uppercase transition-colors;
+  border-color: var(--accent);
+  background-color: var(--accent);
+  color: var(--secondary);
+}
+
+.btn-commerce-primary:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--button-border);
+}
+
+.btn-commerce-secondary {
+  @apply inline-flex items-center justify-center border bg-white text-center font-medium uppercase transition-colors;
+  border-color: var(--button-neutral-border);
+  color: var(--secondary);
+}
+
+.btn-commerce-secondary:hover {
+  background-color: var(--button-neutral);
+  border-color: #c7cccc;
 }
 
 .hero-overlay {

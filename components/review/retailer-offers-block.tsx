@@ -42,7 +42,7 @@ export function RetailerOffersBlock({ review }: Props) {
                 href={offer.affiliateUrl}
                 rel={affiliateLinkRel}
                 target="_blank"
-                className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center border border-accent bg-accent px-4 py-3.5 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-secondary transition-colors hover:brightness-95"
+                className="btn-commerce-primary mt-5 min-h-[48px] w-full px-4 py-3.5 text-[11px] tracking-[0.18em]"
               >
                 {offer.ctaLabel}
               </a>

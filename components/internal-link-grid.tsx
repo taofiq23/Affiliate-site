@@ -138,7 +138,7 @@ export function InternalLinkGrid({ title, kicker, items }: Props) {
                       {item.reviewCount ? <p className="text-xs leading-5 text-black/68">{reviewCountFormatter.format(item.reviewCount)} reviews</p> : null}
                     </div>
                   ) : null}
-                  <span className="mt-4 inline-flex min-h-[44px] items-center justify-center border border-accent bg-accent px-5 py-3 text-center text-[10px] font-medium uppercase tracking-[0.14em] text-secondary transition-colors group-hover:brightness-95 sm:min-h-[46px] sm:text-[11px] sm:tracking-[0.16em]">
+                  <span className="btn-commerce-primary mt-4 min-h-[44px] px-5 py-3 text-[10px] tracking-[0.14em] sm:min-h-[46px] sm:text-[11px] sm:tracking-[0.16em]">
                     {ctaLabelForItem(item.label)}
                   </span>
                 </div>

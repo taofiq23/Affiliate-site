@@ -237,7 +237,7 @@ export function ReviewPageTemplate({ review }: Props) {
                           ) : null}
                           {item.reviewCount ? <p className="text-xs leading-5 text-black/68">{item.reviewCount.toLocaleString("en-US")} reviews</p> : null}
                         </div>
-                        <span className="mt-4 inline-flex min-h-[50px] w-full items-center justify-center border border-accent bg-accent px-6 py-3.5 text-center text-[12px] font-semibold uppercase tracking-[0.16em] text-secondary transition-colors group-hover:brightness-95">
+                        <span className="btn-commerce-primary mt-4 min-h-[50px] w-full px-6 py-3.5 text-[12px] font-semibold tracking-[0.16em]">
                           Read Review
                         </span>
                       </div>
@@ -265,7 +265,7 @@ export function ReviewPageTemplate({ review }: Props) {
                 href={lowerPageOffer.affiliateUrl}
                 rel="nofollow sponsored noopener noreferrer"
                 target="_blank"
-                className="inline-flex min-h-[52px] items-center justify-center border border-accent bg-accent px-6 text-center text-[10px] uppercase tracking-[0.22em] text-secondary transition-colors hover:brightness-95"
+                className="btn-commerce-primary min-h-[52px] px-6 text-[10px] tracking-[0.22em]"
               >
                 {lowerPageOffer.ctaLabel} | {lowerPageOffer.priceText}
               </a>
@@ -289,7 +289,7 @@ export function ReviewPageTemplate({ review }: Props) {
                     <p className="text-xs uppercase tracking-[0.16em] text-black/60">Comparison</p>
                     <h3 className="mt-3 font-display text-2xl leading-[0.98]">{item.title}</h3>
                     <p className="mt-3 text-[15px] leading-7 text-black/78">{item.summary}</p>
-                    <span className="mt-5 inline-flex min-h-[50px] w-full items-center justify-center border border-accent bg-accent px-6 py-3.5 text-center text-[12px] font-semibold uppercase tracking-[0.16em] text-secondary transition-colors group-hover:brightness-95">
+                    <span className="btn-commerce-primary mt-5 min-h-[50px] w-full px-6 py-3.5 text-[12px] font-semibold tracking-[0.16em]">
                       Open Comparison
                     </span>
                   </article>

@@ -71,10 +71,12 @@ function HeroImageRail({ products }: { products: ProductRecord[] }) {
 }
 
 export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription, products }: Props) {
+  const mobileLeadProducts = products.slice(0, 2);
+
   return (
     <>
       <section className="relative border-b border-black/10">
-        <div className="relative h-[66svh] min-h-[440px] w-full sm:h-[64vh] sm:min-h-[480px] md:h-[68vh] md:min-h-[530px]">
+        <div className="relative h-[78svh] min-h-[620px] w-full sm:h-[68vh] sm:min-h-[540px] md:h-[68vh] md:min-h-[530px]">
           <div className="hero-surface absolute inset-0" />
           <HeroImageRail products={products} />
           <div className="hero-overlay absolute inset-0" />
@@ -93,6 +95,29 @@ export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription, produc
               <Link href="/guides/product-buying-guide" className="btn-hero-secondary w-full sm:w-auto">
                 Open Buying Guide
               </Link>
+            </div>
+            <div className="mt-5 grid grid-cols-2 gap-3 md:hidden">
+              {mobileLeadProducts.map((product) => (
+                <article
+                  key={`mobile-hero-${product.slug}`}
+                  className="overflow-hidden rounded-[20px] border border-white/16 bg-[rgba(255,255,255,0.08)] backdrop-blur-sm"
+                >
+                  <div className={`relative aspect-[4/4.25] bg-gradient-to-br ${product.tone}`}>
+                    <Image
+                      src={resolveProductImageUrl(product)}
+                      alt={product.name}
+                      fill
+                      sizes="50vw"
+                      quality={92}
+                      className="object-contain p-3"
+                    />
+                  </div>
+                  <div className="p-3">
+                    <p className="truncate text-[9px] uppercase tracking-[0.16em] text-white/68">{product.category}</p>
+                    <p className="mt-1 line-clamp-2 text-[12px] leading-[1.2] text-white">{product.name}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </div>

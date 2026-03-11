@@ -94,7 +94,7 @@ export function ProductBuyPanel({ review, shopperRating, shopperReviewCount }: P
                     href={primaryOffer.affiliateUrl}
                     rel={affiliateLinkRel}
                     target="_blank"
-                    className="border border-accent bg-accent px-4 py-4 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-secondary transition-colors duration-200 hover:brightness-95"
+                    className="btn-commerce-primary px-4 py-4 text-[11px] tracking-[0.18em]"
                   >
                     {primaryLabel}
                   </a>
@@ -104,7 +104,7 @@ export function ProductBuyPanel({ review, shopperRating, shopperReviewCount }: P
                     href={secondaryOffer.affiliateUrl}
                     rel={affiliateLinkRel}
                     target="_blank"
-                    className="border border-secondary/18 bg-base-2 px-4 py-4 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-secondary transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-base-2"
+                    className="btn-commerce-secondary px-4 py-4 text-[11px] tracking-[0.18em]"
                   >
                     {secondaryLabel}
                   </a>
