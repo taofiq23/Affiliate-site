@@ -79,7 +79,7 @@ export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription, produc
           <HeroImageRail products={products} />
           <div className="hero-overlay absolute inset-0" />
         </div>
-        <div className="absolute bottom-3 left-0 right-0 sm:bottom-6 md:bottom-10">
+        <div className="absolute bottom-1.5 left-0 right-0 sm:bottom-6 md:bottom-10">
           <div className="container-luxe">
             <p className="kicker-inverse">{heroKicker}</p>
             <h1 className="mt-2 max-w-[50%] font-display text-[15px] leading-[0.98] text-base sm:mt-4 sm:max-w-2xl sm:text-[40px] md:max-w-4xl md:text-[86px]">{heroTitle}</h1>
