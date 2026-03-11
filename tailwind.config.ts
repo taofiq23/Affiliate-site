@@ -15,8 +15,8 @@ const config: Config = {
         soft: "#EDE9E3"
       },
       fontFamily: {
-        display: ["'Cormorant Garamond'", "serif"],
-        sans: ["'Inter'", "system-ui", "sans-serif"]
+        display: ["var(--font-display)", "serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"]
       },
       boxShadow: {
         luxe: "0 20px 50px rgba(0,0,0,0.08)"

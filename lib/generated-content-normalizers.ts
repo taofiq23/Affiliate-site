@@ -110,6 +110,37 @@ function normalizeImageGallery(values?: string[]) {
   return gallery.filter((value) => value !== fallbackImage || gallery.length === 1);
 }
 
+function isAmazonAssociateUrl(value?: string) {
+  if (!value) {
+    return false;
+  }
+
+  try {
+    const url = new URL(value);
+    const hostname = url.hostname.toLowerCase();
+
+    if (hostname === "amzn.to" || hostname.endsWith(".amzn.to")) {
+      return true;
+    }
+
+    if (!hostname.includes("amazon.")) {
+      return false;
+    }
+
+    return url.searchParams.has("tag");
+  } catch {
+    return false;
+  }
+}
+
+function sanitizeAffiliateLinks(values?: ProductRecord["affiliateLinks"]) {
+  return (values ?? []).filter((item) => isAmazonAssociateUrl(item.affiliateUrl));
+}
+
+function sanitizeRetailerOffers(values?: ReviewRecord["retailerOffers"]) {
+  return (values ?? []).filter((item) => isAmazonAssociateUrl(item.affiliateUrl));
+}
+
 export function resolveProductImageUrl(product: Pick<ProductRecord, "imageUrl" | "image" | "imageGallery">) {
   return normalizeImageValue(product.imageGallery?.[0] ?? product.imageUrl ?? product.image);
 }
@@ -130,6 +161,7 @@ export function normalizeProductRecord<T extends ProductRecord | (Partial<Produc
     cons: sanitizeList(product.cons),
     category: cleanPublicText(product.category),
     tags: sanitizeList(product.tags),
+    affiliateLinks: sanitizeAffiliateLinks(product.affiliateLinks),
     performance: cleanPublicText(product.performance),
     bestFor: cleanPublicText(product.bestFor),
     avoidIf: cleanPublicText(product.avoidIf),
@@ -146,6 +178,9 @@ export function normalizeReviewRecord<T extends ReviewRecord | (Partial<ReviewRe
     name: cleanPublicText(review.name),
     brand: cleanPublicText(review.brand),
     category: cleanPublicText(review.category),
+    canonicalAffiliateUrl: isAmazonAssociateUrl(review.canonicalAffiliateUrl) ? review.canonicalAffiliateUrl : undefined,
+    shortAffiliateUrl: isAmazonAssociateUrl(review.shortAffiliateUrl) ? review.shortAffiliateUrl : undefined,
+    preferredAffiliateUrl: isAmazonAssociateUrl(review.preferredAffiliateUrl) ? review.preferredAffiliateUrl : undefined,
     summary: cleanPublicText(review.summary),
     quickVerdict: cleanPublicText(review.quickVerdict),
     bestFor: cleanPublicText(review.bestFor),
@@ -159,6 +194,7 @@ export function normalizeReviewRecord<T extends ReviewRecord | (Partial<ReviewRe
     performanceText: cleanPublicText(review.performanceText),
     whoShouldBuy: cleanPublicText(review.whoShouldBuy),
     whoShouldSkip: cleanPublicText(review.whoShouldSkip),
+    retailerOffers: sanitizeRetailerOffers(review.retailerOffers),
     alternatives: (review.alternatives ?? []).map((item) => ({
       ...item,
       label: cleanPublicText(item.label),

@@ -15,6 +15,12 @@ export function ProductBuyPanel({ review, shopperRating, shopperReviewCount }: P
   const secondaryOffer = sortedOffers[1];
   const ratingPercent = Math.max(0, Math.min(100, (review.editorScore / 5) * 100));
   const reviewCountText = shopperReviewCount ? new Intl.NumberFormat("en-US").format(shopperReviewCount) : undefined;
+  const primaryLabel = primaryOffer
+    ? primaryOffer.ctaLabel.toLowerCase().includes("amazon")
+      ? "See Deal"
+      : "Check Price"
+    : undefined;
+  const secondaryLabel = secondaryOffer ? "View on Amazon" : undefined;
 
   return (
     <div className="border-t border-black/10 bg-white">
@@ -88,9 +94,9 @@ export function ProductBuyPanel({ review, shopperRating, shopperReviewCount }: P
                     href={primaryOffer.affiliateUrl}
                     rel={affiliateLinkRel}
                     target="_blank"
-                    className="border border-black bg-black px-4 py-4 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-white transition-colors duration-200 hover:bg-[#1a1a1a]"
+                    className="border border-accent bg-accent px-4 py-4 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-secondary transition-colors duration-200 hover:brightness-95"
                   >
-                    {primaryOffer.ctaLabel} | {primaryOffer.priceText}
+                    {primaryLabel}
                   </a>
                 ) : null}
                 {secondaryOffer ? (
@@ -98,12 +104,21 @@ export function ProductBuyPanel({ review, shopperRating, shopperReviewCount }: P
                     href={secondaryOffer.affiliateUrl}
                     rel={affiliateLinkRel}
                     target="_blank"
-                    className="border border-black px-4 py-4 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-black transition-colors duration-200 hover:bg-black hover:text-white"
+                    className="border border-secondary/18 bg-base-2 px-4 py-4 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-secondary transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-base-2"
                   >
-                    {secondaryOffer.ctaLabel} | {secondaryOffer.priceText}
+                    {secondaryLabel}
                   </a>
                 ) : null}
               </div>
+
+              {primaryOffer ? (
+                <div className="mt-4 space-y-1 text-[12px] leading-5 text-black/62">
+                  <p>
+                    <span className="font-medium text-black/82">Latest price:</span> {primaryOffer.priceText.replace(/^Current listing around\s*/i, "")}
+                  </p>
+                  {secondaryOffer ? <p>Direct Amazon product page available.</p> : null}
+                </div>
+              ) : null}
 
               <div className="mt-5 space-y-3 border-t border-black/10 pt-5 text-sm leading-6 text-black/72">
                 <p>

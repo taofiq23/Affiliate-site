@@ -12,11 +12,11 @@ type Props = {
 
 function HeroImageRail({ products }: { products: ProductRecord[] }) {
   const leadProducts = products.slice(0, 6);
-  const upperRail = [...leadProducts, ...leadProducts.slice(0, 3)];
-  const lowerRail = [...leadProducts.slice().reverse(), ...leadProducts.slice(0, 3).reverse()];
+  const upperRail = [...leadProducts, ...leadProducts];
+  const lowerRail = [...leadProducts.slice().reverse(), ...leadProducts.slice().reverse()];
 
   return (
-    <div className="pointer-events-none absolute inset-y-7 right-6 hidden w-[44%] overflow-hidden lg:block">
+    <div className="pointer-events-none absolute inset-y-7 right-4 hidden w-[42%] overflow-hidden md:block lg:right-6 lg:w-[44%]">
       <div className="absolute inset-0 rounded-[28px] border border-white/12 bg-white/6 backdrop-blur-[2px]" />
       <div className="absolute inset-0 bg-[linear-gradient(to_left,rgba(20,19,17,0.12),rgba(20,19,17,0)_18%,rgba(20,19,17,0)_82%,rgba(20,19,17,0.2))]" />
 
@@ -74,26 +74,23 @@ export function CapsulePageFlow({ heroKicker, heroTitle, heroDescription, produc
   return (
     <>
       <section className="relative border-b border-black/10">
-        <div className="relative h-[54vh] min-h-[380px] w-full sm:h-[58vh] sm:min-h-[420px] md:h-[68vh] md:min-h-[530px]">
+        <div className="relative h-[66svh] min-h-[440px] w-full sm:h-[64vh] sm:min-h-[480px] md:h-[68vh] md:min-h-[530px]">
           <div className="hero-surface absolute inset-0" />
           <HeroImageRail products={products} />
           <div className="hero-overlay absolute inset-0" />
         </div>
         <div className="absolute bottom-5 left-0 right-0 sm:bottom-6 md:bottom-10">
           <div className="container-luxe">
-            <p className="kicker text-base/82">{heroKicker}</p>
+            <p className="kicker-inverse">{heroKicker}</p>
             <h1 className="mt-3 max-w-4xl font-display text-[33px] leading-[0.96] text-base sm:mt-4 sm:text-[40px] md:text-[86px]">{heroTitle}</h1>
-            <p className="mt-4 max-w-xl text-[10px] uppercase leading-relaxed tracking-[0.18em] text-base/84 sm:max-w-2xl sm:text-[11px] sm:tracking-[0.22em] md:text-[12px]">
+            <p className="mt-4 max-w-xl text-[10px] uppercase leading-relaxed tracking-[0.18em] text-white/80 sm:max-w-2xl sm:text-[11px] sm:tracking-[0.22em] md:text-[12px]">
               Product reviews, best lists, comparison pages, and buying guides for coffee gear, kitchen appliances, and everyday home upgrades.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center">
-              <Link href="/best/top-picks" className="btn-primary w-full sm:w-auto">
+              <Link href="/best/top-picks" className="btn-hero-primary w-full sm:w-auto">
                 Explore Top Picks
               </Link>
-              <Link
-                href="/guides/product-buying-guide"
-                className="btn-outline w-full border-base-2/70 text-base-2 hover:border-base-2 hover:bg-base-2 hover:text-secondary sm:w-auto"
-              >
+              <Link href="/guides/product-buying-guide" className="btn-hero-secondary w-full sm:w-auto">
                 Open Buying Guide
               </Link>
             </div>

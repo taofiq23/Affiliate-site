@@ -126,14 +126,14 @@ export function BestListPageTemplate({ page }: Props) {
                     <p className="mt-2 text-2xl leading-none">{product.priceRange}</p>
                   </div>
                   <div className="grid gap-2">
-                    <Link href={`/reviews/${product.slug}`} className="border border-black bg-black px-4 py-3 text-center text-[10px] uppercase tracking-[0.18em] text-white transition-colors hover:bg-black/90 sm:tracking-[0.22em]">
+                    <Link href={`/reviews/${product.slug}`} className="border border-accent bg-accent px-4 py-3 text-center text-[10px] uppercase tracking-[0.18em] text-secondary transition-colors hover:brightness-95 sm:tracking-[0.22em]">
                       Read Review
                     </Link>
                     <a
                       href={product.affiliateLinks[0]?.affiliateUrl}
                       target="_blank"
                       rel="noreferrer sponsored"
-                      className="border border-black bg-white px-4 py-3 text-center text-[10px] uppercase tracking-[0.18em] text-black transition-colors hover:bg-black hover:text-white sm:tracking-[0.22em]"
+                      className="border border-secondary/18 bg-white px-4 py-3 text-center text-[10px] uppercase tracking-[0.18em] text-secondary transition-colors hover:border-secondary hover:bg-secondary hover:text-base-2 sm:tracking-[0.22em]"
                     >
                       {product.affiliateLinks[0]?.ctaLabel ?? "Check Deal"}
                     </a>

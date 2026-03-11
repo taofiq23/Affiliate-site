@@ -14,17 +14,17 @@ export function CapsuleMediaBreaks({ comparisons, guides, categories }: Props) {
     <>
       <section className="border-y border-black/10">
         <div className="relative h-[58vh] min-h-[400px] w-full sm:h-[64vh] sm:min-h-[460px] md:h-[84vh] md:min-h-[620px]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_18%,#7e6a46_0%,transparent_35%),linear-gradient(160deg,#161411_0%,#221f1b_35%,#5b4a34_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_18%,#2c5c8a_0%,transparent_35%),linear-gradient(160deg,#141821_0%,#1c2634_40%,#2c5c8a_100%)]" />
           <div className="media-overlay-soft absolute inset-0" />
           <div className="absolute bottom-7 left-0 right-0 sm:bottom-10 md:bottom-16">
             <div className="container-luxe">
-              <p className="kicker text-base/80">Start Here</p>
+              <p className="kicker-inverse">Start Here</p>
               <h2 className="mt-4 max-w-3xl font-display text-[2.3rem] leading-[0.94] text-base sm:text-5xl md:text-[96px]">
                 Start with guides.
                 <br className="hidden md:block" />
                 Narrow with top picks.
               </h2>
-              <Link href={leadComparisonHref} className="mt-6 inline-flex min-h-[46px] items-center justify-center border border-base/80 px-5 text-[10px] uppercase tracking-[0.2em] text-base sm:mt-8 sm:h-11 sm:px-6 sm:tracking-[0.24em]">
+              <Link href={leadComparisonHref} className="btn-hero-secondary mt-6 sm:mt-8 sm:h-11">
                 View Popular Comparison
               </Link>
             </div>

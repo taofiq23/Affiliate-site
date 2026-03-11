@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --base: #f7f3ee;
-  --base-2: #e6ded2;
-  --secondary: #151515;
-  --accent: #b56e2e;
+  --base: #f5f6f8;
+  --base-2: #ffffff;
+  --secondary: #0f1111;
+  --accent: #ff9900;
 }
 
 * {
@@ -21,7 +19,7 @@ body {
   padding: 0;
   background: var(--base);
   color: var(--secondary);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   line-height: 1.35;
@@ -56,9 +54,59 @@ a {
   @apply inline-flex min-h-[46px] items-center justify-center border border-secondary px-5 py-3 text-[10px] font-medium uppercase tracking-[0.2em] transition duration-300 hover:bg-secondary hover:text-base-2 sm:px-6 sm:text-[11px] sm:tracking-[0.23em];
 }
 
+.btn-primary {
+  border-color: var(--accent);
+  background-color: var(--accent);
+  color: var(--secondary);
+}
+
+.btn-primary:hover {
+  opacity: 1;
+  filter: brightness(0.92);
+}
+
+.btn-outline {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: var(--secondary);
+}
+
 .kicker {
   @apply text-[10px] uppercase tracking-[0.32em];
   color: rgb(16 16 16 / 0.74);
+}
+
+.kicker-inverse {
+  @apply text-[10px] uppercase tracking-[0.32em];
+  color: rgb(255 255 255 / 0.76);
+}
+
+.btn-hero-primary {
+  @apply inline-flex min-h-[46px] items-center justify-center border px-5 py-3 text-[10px] font-medium uppercase tracking-[0.2em] transition duration-300 sm:px-6 sm:text-[11px] sm:tracking-[0.23em];
+  border-color: var(--accent);
+  background-color: var(--accent);
+  color: var(--secondary);
+}
+
+.btn-hero-primary:hover {
+  filter: brightness(0.94);
+}
+
+.btn-hero-secondary {
+  @apply inline-flex min-h-[46px] items-center justify-center border px-5 py-3 text-[10px] font-medium uppercase tracking-[0.2em] transition duration-300 sm:px-6 sm:text-[11px] sm:tracking-[0.23em];
+  border-color: rgb(255 255 255 / 0.22);
+  background-color: rgb(255 255 255 / 0.08);
+  color: rgb(255 255 255 / 0.96);
+  backdrop-filter: blur(10px);
+}
+
+.btn-hero-secondary:hover {
+  border-color: rgb(255 255 255 / 0.34);
+  background-color: rgb(255 255 255 / 0.14);
 }
 
 .hero-overlay {
@@ -69,8 +117,10 @@ a {
 
 .hero-surface {
   background:
-    radial-gradient(circle at 76% 14%, rgba(255, 255, 255, 0.92) 0%, rgba(247, 243, 238, 0.55) 32%, transparent 62%),
-    linear-gradient(135deg, #f7f3ee 0%, #f7f3ee 54%, #e6ded2 80%, #b56e2e 100%);
+    radial-gradient(circle at 20% 18%, rgba(44, 92, 138, 0.95) 0%, rgba(44, 92, 138, 0.22) 35%, transparent 52%),
+    linear-gradient(160deg, #141821 0%, #1c2634 40%, #2c5c8a 100%);
+  background-size: 140% 140%;
+  animation: heroSurfaceShift 28s ease-in-out infinite;
 }
 
 .hero-rail-track {
@@ -78,14 +128,17 @@ a {
   gap: 1rem;
   width: max-content;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
 
 .hero-rail-track-top {
-  animation: heroMarqueeLeft 26s linear infinite;
+  animation: heroMarqueeRight 18s linear infinite;
+  animation-play-state: running;
 }
 
 .hero-rail-track-bottom {
-  animation: heroMarqueeRight 30s linear infinite;
+  animation: heroMarqueeRight 22s linear infinite;
+  animation-play-state: running;
 }
 
 .hero-rail-card {
@@ -94,8 +147,8 @@ a {
 
 .media-overlay-soft {
   background:
-    linear-gradient(to top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0) 70%),
-    linear-gradient(to right, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0) 55%);
+    linear-gradient(to top, rgba(15, 17, 17, 0.62) 0%, rgba(15, 17, 17, 0.24) 40%, rgba(15, 17, 17, 0) 70%),
+    linear-gradient(to right, rgba(15, 17, 17, 0.32) 0%, rgba(15, 17, 17, 0) 55%);
 }
 
 .capsule-heading {
@@ -139,19 +192,31 @@ a {
 
 @keyframes heroMarqueeLeft {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-240px);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 @keyframes heroMarqueeRight {
   from {
-    transform: translateX(-180px);
+    transform: translate3d(-50%, 0, 0);
   }
   to {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heroSurfaceShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 40% 20%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
 
@@ -162,6 +227,10 @@ a {
 
   .hero-rail-track-top,
   .hero-rail-track-bottom {
+    animation: none;
+  }
+
+  .hero-surface {
     animation: none;
   }
 

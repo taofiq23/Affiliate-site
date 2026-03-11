@@ -97,14 +97,14 @@ export function ComparisonPageTemplate({ page }: Props) {
                 ))}
               </div>
               <div className="mt-6 grid gap-2 sm:grid-cols-2">
-                <Link href={`/reviews/${product.slug}`} className="border border-black bg-black px-4 py-3 text-center text-[10px] uppercase tracking-[0.22em] text-white transition-colors hover:bg-black/90">
+                <Link href={`/reviews/${product.slug}`} className="border border-accent bg-accent px-4 py-3 text-center text-[10px] uppercase tracking-[0.22em] text-secondary transition-colors hover:brightness-95">
                   Read Review
                 </Link>
                 <a
                   href={product.affiliateLinks[0]?.affiliateUrl}
                   target="_blank"
                   rel="noreferrer sponsored"
-                  className="border border-black px-4 py-3 text-center text-[10px] uppercase tracking-[0.22em] text-black transition-colors hover:bg-black hover:text-white"
+                  className="border border-secondary/18 bg-white px-4 py-3 text-center text-[10px] uppercase tracking-[0.22em] text-secondary transition-colors hover:border-secondary hover:bg-secondary hover:text-base-2"
                 >
                   {product.affiliateLinks[0]?.ctaLabel ?? "Check Deal"}
                 </a>

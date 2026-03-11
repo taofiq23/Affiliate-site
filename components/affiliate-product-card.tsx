@@ -40,7 +40,7 @@ export function AffiliateProductCard({ product, href = `/reviews/${product.slug}
             </div>
             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 md:group-hover:bg-black/8" />
             <div className="absolute inset-x-0 bottom-4 hidden justify-center opacity-0 transition-all duration-300 md:flex md:translate-y-2 md:group-hover:translate-y-0 md:group-hover:opacity-100">
-              <span className="inline-flex min-h-[46px] items-center justify-center border border-white/70 bg-black/70 px-5 py-3 text-[11px] font-medium uppercase tracking-[0.16em] text-white backdrop-blur-sm">
+              <span className="inline-flex min-h-[46px] items-center justify-center border border-accent/70 bg-accent/95 px-5 py-3 text-[11px] font-medium uppercase tracking-[0.16em] text-secondary backdrop-blur-sm">
                 {ctaLabel}
               </span>
             </div>
@@ -79,7 +79,7 @@ export function AffiliateProductCard({ product, href = `/reviews/${product.slug}
           </div>
 
           <div className="mt-4 md:hidden">
-            <Link href={href} className="block min-h-[46px] w-full rounded-[14px] bg-black px-4 py-3.5 text-center text-[10px] font-medium uppercase tracking-[0.14em] text-white sm:text-[11px] sm:tracking-[0.16em]">
+            <Link href={href} className="block min-h-[46px] w-full rounded-[14px] border border-accent bg-accent px-4 py-3.5 text-center text-[10px] font-medium uppercase tracking-[0.14em] text-secondary sm:text-[11px] sm:tracking-[0.16em]">
               {ctaLabel}
             </Link>
           </div>

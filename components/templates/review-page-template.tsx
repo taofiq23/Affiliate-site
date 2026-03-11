@@ -237,7 +237,7 @@ export function ReviewPageTemplate({ review }: Props) {
                           ) : null}
                           {item.reviewCount ? <p className="text-xs leading-5 text-black/68">{item.reviewCount.toLocaleString("en-US")} reviews</p> : null}
                         </div>
-                        <span className="mt-4 inline-flex min-h-[50px] w-full items-center justify-center border border-black bg-black px-6 py-3.5 text-center text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors group-hover:bg-black/92">
+                        <span className="mt-4 inline-flex min-h-[50px] w-full items-center justify-center border border-accent bg-accent px-6 py-3.5 text-center text-[12px] font-semibold uppercase tracking-[0.16em] text-secondary transition-colors group-hover:brightness-95">
                           Read Review
                         </span>
                       </div>
@@ -265,7 +265,7 @@ export function ReviewPageTemplate({ review }: Props) {
                 href={lowerPageOffer.affiliateUrl}
                 rel="nofollow sponsored noopener noreferrer"
                 target="_blank"
-                className="inline-flex min-h-[52px] items-center justify-center border border-black bg-black px-6 text-center text-[10px] uppercase tracking-[0.22em] text-white transition-colors hover:bg-black/90"
+                className="inline-flex min-h-[52px] items-center justify-center border border-accent bg-accent px-6 text-center text-[10px] uppercase tracking-[0.22em] text-secondary transition-colors hover:brightness-95"
               >
                 {lowerPageOffer.ctaLabel} | {lowerPageOffer.priceText}
               </a>
@@ -289,7 +289,7 @@ export function ReviewPageTemplate({ review }: Props) {
                     <p className="text-xs uppercase tracking-[0.16em] text-black/60">Comparison</p>
                     <h3 className="mt-3 font-display text-2xl leading-[0.98]">{item.title}</h3>
                     <p className="mt-3 text-[15px] leading-7 text-black/78">{item.summary}</p>
-                    <span className="mt-5 inline-flex min-h-[50px] w-full items-center justify-center border border-black bg-black px-6 py-3.5 text-center text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors group-hover:bg-black/92">
+                    <span className="mt-5 inline-flex min-h-[50px] w-full items-center justify-center border border-accent bg-accent px-6 py-3.5 text-center text-[12px] font-semibold uppercase tracking-[0.16em] text-secondary transition-colors group-hover:brightness-95">
                       Open Comparison
                     </span>
                   </article>
