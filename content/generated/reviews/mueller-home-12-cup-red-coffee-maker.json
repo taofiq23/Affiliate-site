@@ -36,11 +36,11 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Coffee Gear"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
-      "value": "Coffee Makers"
+      "value": "Blenders"
     },
     {
       "label": "Price range",
@@ -52,23 +52,7 @@
     },
     {
       "label": "Use case",
-      "value": "Everyday home brewing for drip coffee and simple countertop setups."
-    },
-    {
-      "label": "Buyer intent",
-      "value": "Mid Ticket"
-    },
-    {
-      "label": "Trend type",
-      "value": "Evergreen"
-    },
-    {
-      "label": "Price band",
-      "value": "Budget"
-    },
-    {
-      "label": "Affiliate link",
-      "value": "Manual affiliate link verified"
+      "value": "Smoothies, frozen drinks, sauces, and quick daily blending."
     },
     {
       "label": "Best alternative",
@@ -114,23 +98,23 @@
   ],
   "alternatives": [
     {
-      "label": "Premium alternative",
+      "label": "Alternative to compare",
       "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker",
-      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is a better fit if you want a stronger overall shortlist score in coffee makers.",
+      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$119-$161",
       "reviewUrl": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
     },
     {
-      "label": "Premium alternative",
+      "label": "Value alternative",
       "title": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup",
-      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is a better fit if you want a stronger overall shortlist score in coffee makers.",
+      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$76-$102",
       "reviewUrl": "/reviews/hamilton-beach-2-way-programmable-coffee-maker"
     },
     {
-      "label": "Cheaper alternative",
+      "label": "Another option",
       "title": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket",
-      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is a better fit if you want a lower starting price in coffee makers.",
+      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$29-$41",
       "reviewUrl": "/reviews/black-decker-12-cup-digital-coffee-maker-washable"
     }
@@ -165,17 +149,17 @@
   "relatedReviews": [
     {
       "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker Review",
-      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is a relevant alternative if you want a different price band or buying tradeoff in coffee makers.",
+      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
     },
     {
       "title": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup Review",
-      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is a relevant alternative if you want a different price band or buying tradeoff in coffee makers.",
+      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/hamilton-beach-2-way-programmable-coffee-maker"
     },
     {
       "title": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket Review",
-      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is a relevant alternative if you want a different price band or buying tradeoff in coffee makers.",
+      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/black-decker-12-cup-digital-coffee-maker-washable"
     }
   ],

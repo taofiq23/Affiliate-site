@@ -13,8 +13,8 @@ const footerSections = [
   {
     title: "Guides",
     links: [
+      { href: "/guides", label: "Guides Hub" },
       { href: "/guides/product-buying-guide", label: "Buying Guide" },
-      { href: "/story", label: "Guide Overview" },
       { href: "/contact", label: "Contact" }
     ]
   },

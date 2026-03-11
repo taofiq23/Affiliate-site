@@ -36,11 +36,11 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Kitchen Appliances"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
-      "value": "Magnetic Spice Racks"
+      "value": "Blenders"
     },
     {
       "label": "Price range",
@@ -51,28 +51,12 @@
       "value": "4.4/5"
     },
     {
-      "label": "Install style",
-      "value": "Tool-free magnetic mount"
-    },
-    {
-      "label": "Best for",
-      "value": "Small kitchens, renters, and quick-access cooking zones"
-    },
-    {
-      "label": "Footprint",
-      "value": "Uses appliance side space instead of cabinet shelves"
-    },
-    {
-      "label": "Cleanup",
-      "value": "Simple wipe-clean metal baskets"
-    },
-    {
       "label": "Use case",
-      "value": "Keep everyday spices and wraps within reach while cooking."
+      "value": "Smoothies, frozen drinks, sauces, and quick daily blending."
     },
     {
       "label": "Best alternative",
-      "value": "Extra Large Expandable Silverware Organizer BPA-Free Food-Safe"
+      "value": "Magic Bullet Blender Small, Silver,"
     }
   ],
   "pros": [
@@ -114,23 +98,23 @@
   ],
   "alternatives": [
     {
-      "label": "Drawer-first alternative",
-      "title": "Extra Large Expandable Silverware Organizer BPA-Free Food-Safe",
-      "summary": "A better fit if your main frustration is messy drawers rather than hard-to-reach spices near the stove.",
-      "priceText": "$10-$18",
-      "reviewUrl": "/reviews/extra-large-expandable-silverware-organizer-bpa-free"
+      "label": "Alternative to compare",
+      "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
+      "priceText": "$39-$57",
+      "reviewUrl": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
-      "label": "Prep-focused alternative",
-      "title": "Fullstar Original Pro Chopper",
-      "summary": "Worth more attention if you want to reduce prep time instead of improving kitchen storage.",
-      "priceText": "$24-$30",
-      "reviewUrl": "/reviews/fullstar-original-pro-chopper"
+      "label": "Value alternative",
+      "title": "Nostalgia 3-in-1 Breakfast Station",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
+      "priceText": "$68-$92",
+      "reviewUrl": "/reviews/nostalgia-3-in-1-breakfast-station"
     },
     {
-      "label": "Cooking-station alternative",
+      "label": "Another option",
       "title": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking",
-      "summary": "Useful if your bigger goal is a neater, faster stovetop setup rather than more spice storage.",
+      "summary": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$10-$18",
       "reviewUrl": "/reviews/trendplain-16oz-470ml-glass-olive-oil-sprayer"
     }
@@ -164,18 +148,18 @@
   ],
   "relatedReviews": [
     {
-      "title": "Fullstar Original Pro Chopper Review",
-      "summary": "Useful if you are also trying to speed up prep work while organizing a crowded kitchen.",
-      "url": "/reviews/fullstar-original-pro-chopper"
+      "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel Review",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
-      "title": "Extra Large Expandable Silverware Organizer BPA-Free Food-Safe Review",
-      "summary": "A better next click if drawers, not spice access, are the real source of kitchen frustration.",
-      "url": "/reviews/extra-large-expandable-silverware-organizer-bpa-free"
+      "title": "Nostalgia 3-in-1 Breakfast Station Review",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/nostalgia-3-in-1-breakfast-station"
     },
     {
       "title": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking Review",
-      "summary": "Relevant if you want another low-cost kitchen upgrade that improves day-to-day cooking workflow.",
+      "summary": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/trendplain-16oz-470ml-glass-olive-oil-sprayer"
     }
   ],

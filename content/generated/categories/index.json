@@ -16,14 +16,19 @@
     ],
     "bestSlugs": [
       "top-picks",
-      "best-coffee-gear"
+      "best-coffee-gear",
+      "best-coffee-makers-for-home"
     ],
     "guideSlugs": [
       "product-buying-guide",
-      "how-to-choose-coffee-gear"
+      "how-to-choose-coffee-gear",
+      "how-to-choose-a-coffee-maker",
+      "how-to-choose-a-coffee-grinder",
+      "single-serve-vs-drip-coffee-maker"
     ],
     "comparisonSlugs": [
-      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
+      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker",
+      "keurig-k-duo-hot-and-iced-coffee-maker-vs-keurig-k-mini-single-serve-coffee-maker"
     ],
     "faq": [
       {
@@ -65,13 +70,22 @@
     ],
     "bestSlugs": [
       "top-picks",
-      "best-kitchen-appliances"
+      "best-kitchen-appliances",
+      "best-air-fryers-for-home",
+      "best-blenders-for-smoothies"
     ],
     "guideSlugs": [
       "product-buying-guide",
-      "how-to-choose-kitchen-appliances"
+      "how-to-choose-kitchen-appliances",
+      "how-to-choose-an-air-fryer",
+      "how-to-choose-a-blender",
+      "personal-blender-vs-full-size-blender",
+      "basket-air-fryer-vs-air-fryer-oven"
     ],
-    "comparisonSlugs": [],
+    "comparisonSlugs": [
+      "ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt",
+      "ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz"
+    ],
     "faq": [
       {
         "question": "Why have a kitchen appliances category page at all?",

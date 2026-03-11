@@ -36,7 +36,7 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Kitchen Appliances"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
@@ -52,27 +52,11 @@
     },
     {
       "label": "Use case",
-      "value": "Fast countertop cooking with crisping."
-    },
-    {
-      "label": "Buyer intent",
-      "value": "Mid Ticket"
-    },
-    {
-      "label": "Trend type",
-      "value": "Evergreen"
-    },
-    {
-      "label": "Price band",
-      "value": "Budget"
-    },
-    {
-      "label": "Affiliate link",
-      "value": "Manual affiliate link verified"
+      "value": "Fast crisp cooking, reheating, and weeknight meals with less oil."
     },
     {
       "label": "Best alternative",
-      "value": "Magic Bullet Blender Small, Silver,"
+      "value": "COSORI TurboBlaze Air Fryer 6-Qt"
     }
   ],
   "pros": [
@@ -114,30 +98,23 @@
   ],
   "alternatives": [
     {
-      "label": "Premium alternative",
-      "title": "Magic Bullet Blender Small, Silver,",
-      "summary": "Magic Bullet Blender Small, Silver, is a better fit if you want a stronger overall shortlist score in air fryers.",
-      "priceText": "$29-$41",
-      "reviewUrl": "/reviews/magic-bullet-blender-small-silver"
-    },
-    {
-      "label": "Premium alternative",
+      "label": "Alternative to compare",
       "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel",
-      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is a better fit if you want a stronger overall shortlist score in air fryers.",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$39-$57",
       "reviewUrl": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
-      "label": "Premium alternative",
+      "label": "Value alternative",
       "title": "Nostalgia 3-in-1 Breakfast Station",
-      "summary": "Nostalgia 3-in-1 Breakfast Station is a better fit if you want a stronger overall shortlist score in air fryers.",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$68-$92",
       "reviewUrl": "/reviews/nostalgia-3-in-1-breakfast-station"
     },
     {
-      "label": "Premium alternative",
+      "label": "Another option",
       "title": "Bella 2 Slice Slim Toaster Kitchenware, 6",
-      "summary": "Bella 2 Slice Slim Toaster Kitchenware, 6 is a better fit if you want a different buying tradeoff in air fryers.",
+      "summary": "Bella 2 Slice Slim Toaster Kitchenware, 6 is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$20-$29",
       "reviewUrl": "/reviews/bella-2-slice-slim-toaster-kitchenware"
     }
@@ -171,19 +148,19 @@
   ],
   "relatedReviews": [
     {
-      "title": "Magic Bullet Blender Small, Silver, Review",
-      "summary": "Magic Bullet Blender Small, Silver, is a relevant alternative if you want a different price band or buying tradeoff in air fryers.",
-      "url": "/reviews/magic-bullet-blender-small-silver"
-    },
-    {
       "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel Review",
-      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is a relevant alternative if you want a different price band or buying tradeoff in air fryers.",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
       "title": "Nostalgia 3-in-1 Breakfast Station Review",
-      "summary": "Nostalgia 3-in-1 Breakfast Station is a relevant alternative if you want a different price band or buying tradeoff in air fryers.",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/nostalgia-3-in-1-breakfast-station"
+    },
+    {
+      "title": "Bella 2 Slice Slim Toaster Kitchenware, 6 Review",
+      "summary": "Bella 2 Slice Slim Toaster Kitchenware, 6 is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/bella-2-slice-slim-toaster-kitchenware"
     }
   ],
   "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",

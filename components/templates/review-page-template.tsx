@@ -8,7 +8,7 @@ import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { FeatureSnapshotTable } from "@/components/review/feature-snapshot-table";
 import { RetailerOffersBlock } from "@/components/review/retailer-offers-block";
 import { getProduct } from "@/lib/content-store";
-import { resolveProductImageUrl, resolveReviewImageUrl } from "@/lib/generated-content-normalizers";
+import { dedupeImageGallery, resolveProductImageUrl, resolveReviewImageUrl } from "@/lib/generated-content-normalizers";
 import { buildBreadcrumbSchema, buildFaqSchema, buildProductSchema, buildReviewSchema } from "@/lib/seo";
 import type { ReviewRecord } from "@/lib/review-data";
 import { sortRetailerOffers } from "@/lib/review-utils";
@@ -22,7 +22,7 @@ export function ReviewPageTemplate({ review }: Props) {
   const lowerPageOffer = sortedOffers[0];
   const imageUrl = resolveReviewImageUrl(review);
   const currentProduct = getProduct(review.slug);
-  const galleryImages = review.imageGallery && review.imageGallery.length > 0 ? review.imageGallery : [imageUrl];
+  const galleryImages = dedupeImageGallery([imageUrl, ...(review.imageGallery ?? [])]);
   const compactAlternativeSummary = (summary: string) => {
     const sentences = summary.split(/(?<=[.!?])\s+/).filter(Boolean);
     let result = "";

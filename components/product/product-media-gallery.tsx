@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { dedupeImageGallery } from "@/lib/generated-content-normalizers";
 
 type Props = {
   tone: string;
@@ -13,7 +14,7 @@ export function ProductMediaGallery({ tone: _tone, title, images }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [imageUnavailable, setImageUnavailable] = useState(false);
   const [isAutoPaused, setIsAutoPaused] = useState(false);
-  const uniqueImages = Array.from(new Set((images.length > 0 ? images : [""]).filter(Boolean)));
+  const uniqueImages = dedupeImageGallery(images.length > 0 ? images : [""]);
   const gallery = (uniqueImages.length > 0 ? uniqueImages : [""]).slice(0, 5).map((image, index) => ({
     image,
     title: index === 0 ? "Main image" : `Gallery image ${index + 1}`,

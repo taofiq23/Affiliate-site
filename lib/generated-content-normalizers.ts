@@ -104,10 +104,49 @@ function normalizeImageValue(value?: string) {
   return imageValue;
 }
 
-function normalizeImageGallery(values?: string[]) {
-  const gallery = Array.from(new Set((values ?? []).map((value) => normalizeImageValue(value)).filter(Boolean)));
+function getImageDedupKey(value?: string) {
+  const normalized = normalizeImageValue(value);
+
+  if (!normalized) {
+    return "";
+  }
+
+  try {
+    const url = new URL(normalized, "https://example.com");
+    const pathname = decodeURIComponent(url.pathname).toLowerCase();
+    const canonicalPath = pathname.replace(/\._[^/]+?\./g, ".").replace(/\.(jpg|jpeg|png|webp)$/i, "");
+    return `${url.hostname.toLowerCase()}${canonicalPath}`;
+  } catch {
+    return normalized.toLowerCase().replace(/\?.*$/, "").replace(/\._[^.]+?\./g, ".");
+  }
+}
+
+export function dedupeImageGallery(values?: string[]) {
+  const seen = new Set<string>();
+  const gallery: string[] = [];
+
+  for (const rawValue of values ?? []) {
+    const normalized = normalizeImageValue(rawValue);
+
+    if (!normalized) {
+      continue;
+    }
+
+    const dedupeKey = getImageDedupKey(normalized);
+
+    if (seen.has(dedupeKey)) {
+      continue;
+    }
+
+    seen.add(dedupeKey);
+    gallery.push(normalized);
+  }
 
   return gallery.filter((value) => value !== fallbackImage || gallery.length === 1);
+}
+
+function normalizeImageGallery(values?: string[]) {
+  return dedupeImageGallery(values);
 }
 
 function isAmazonAssociateUrl(value?: string) {

@@ -36,11 +36,11 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Coffee Gear"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
-      "value": "Mug Warmers"
+      "value": "Blenders"
     },
     {
       "label": "Price range",
@@ -52,23 +52,7 @@
     },
     {
       "label": "Use case",
-      "value": "Keeping coffee and tea warm at a desk or home workspace."
-    },
-    {
-      "label": "Buyer intent",
-      "value": "Low Ticket"
-    },
-    {
-      "label": "Trend type",
-      "value": "Evergreen"
-    },
-    {
-      "label": "Price band",
-      "value": "Budget"
-    },
-    {
-      "label": "Affiliate link",
-      "value": "Manual affiliate link verified"
+      "value": "Smoothies, frozen drinks, sauces, and quick daily blending."
     },
     {
       "label": "Best alternative",
@@ -114,32 +98,11 @@
   ],
   "alternatives": [
     {
-      "label": "Premium alternative",
-      "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker",
-      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is a better fit if you want a stronger overall shortlist score in mug warmers.",
-      "priceText": "$119-$161",
-      "reviewUrl": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
-    },
-    {
-      "label": "Premium alternative",
-      "title": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup",
-      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is a better fit if you want a stronger overall shortlist score in mug warmers.",
-      "priceText": "$76-$102",
-      "reviewUrl": "/reviews/hamilton-beach-2-way-programmable-coffee-maker"
-    },
-    {
-      "label": "Premium alternative",
-      "title": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket",
-      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is a better fit if you want a stronger overall shortlist score in mug warmers.",
-      "priceText": "$29-$41",
-      "reviewUrl": "/reviews/black-decker-12-cup-digital-coffee-maker-washable"
-    },
-    {
-      "label": "Premium alternative",
-      "title": "MUELLER HOME 12-Cup Red Coffee Maker Perfect",
-      "summary": "MUELLER HOME 12-Cup Red Coffee Maker Perfect is a better fit if you want a stronger overall shortlist score in mug warmers.",
-      "priceText": "$33-$47",
-      "reviewUrl": "/reviews/mueller-home-12-cup-red-coffee-maker"
+      "label": "Alternative to compare",
+      "title": "BLACK+DECKER One Touch Coffee Grinder 2/3 Cup",
+      "summary": "BLACK+DECKER One Touch Coffee Grinder 2/3 Cup is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
+      "priceText": "$21-$31",
+      "reviewUrl": "/reviews/black-decker-one-touch-coffee-grinder-2-3"
     }
   ],
   "comparisons": [],
@@ -171,19 +134,9 @@
   ],
   "relatedReviews": [
     {
-      "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker Review",
-      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is a relevant alternative if you want a different price band or buying tradeoff in mug warmers.",
-      "url": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
-    },
-    {
-      "title": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup Review",
-      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is a relevant alternative if you want a different price band or buying tradeoff in mug warmers.",
-      "url": "/reviews/hamilton-beach-2-way-programmable-coffee-maker"
-    },
-    {
-      "title": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket Review",
-      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is a relevant alternative if you want a different price band or buying tradeoff in mug warmers.",
-      "url": "/reviews/black-decker-12-cup-digital-coffee-maker-washable"
+      "title": "BLACK+DECKER One Touch Coffee Grinder 2/3 Cup Review",
+      "summary": "BLACK+DECKER One Touch Coffee Grinder 2/3 Cup is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/black-decker-one-touch-coffee-grinder-2-3"
     }
   ],
   "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",

@@ -119,7 +119,13 @@
       "reviewUrl": "/reviews/chefman-turbofry-air-fryer-8qt"
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "title": "Ninja Air Fryer Pro 5-Qt vs COSORI TurboBlaze Air Fryer 6-Qt: Which Air Fryer Is Better For Home Use?",
+      "summary": "A direct comparison of two popular basket air fryers.",
+      "url": "/compare/ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt"
+    }
+  ],
   "faq": [
     {
       "question": "Is Ninja Air Fryer Pro 5-Qt worth it at the current price?",
@@ -144,6 +150,16 @@
       "title": "How To Choose Kitchen Appliances: What Matters Before You Buy",
       "summary": "A simple buyer's guide for kitchen gear, countertop appliances, and everyday-use tools.",
       "url": "/guides/how-to-choose-kitchen-appliances"
+    },
+    {
+      "title": "How To Choose An Air Fryer: Basket Size, Cleanup, and Everyday Value",
+      "summary": "A practical air fryer guide for basket size, cleanup, and daily fit.",
+      "url": "/guides/how-to-choose-an-air-fryer"
+    },
+    {
+      "title": "Basket Air Fryer vs Air Fryer Oven: Which Style Makes More Sense?",
+      "summary": "A guide to choosing between basket air fryers and oven-style models.",
+      "url": "/guides/basket-air-fryer-vs-air-fryer-oven"
     }
   ],
   "relatedReviews": [

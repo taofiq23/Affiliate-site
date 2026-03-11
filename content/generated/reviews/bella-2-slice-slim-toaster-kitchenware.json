@@ -36,11 +36,11 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Kitchen Appliances"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
-      "value": "Toasters"
+      "value": "Blenders"
     },
     {
       "label": "Price range",
@@ -52,23 +52,7 @@
     },
     {
       "label": "Use case",
-      "value": "Fast breakfast prep and everyday countertop toast routines."
-    },
-    {
-      "label": "Buyer intent",
-      "value": "Mid Ticket"
-    },
-    {
-      "label": "Trend type",
-      "value": "Evergreen"
-    },
-    {
-      "label": "Price band",
-      "value": "Budget"
-    },
-    {
-      "label": "Affiliate link",
-      "value": "Manual affiliate link verified"
+      "value": "Smoothies, frozen drinks, sauces, and quick daily blending."
     },
     {
       "label": "Best alternative",
@@ -114,30 +98,23 @@
   ],
   "alternatives": [
     {
-      "label": "Premium alternative",
-      "title": "Magic Bullet Blender Small, Silver,",
-      "summary": "Magic Bullet Blender Small, Silver, is a better fit if you want a stronger overall shortlist score in toasters.",
-      "priceText": "$29-$41",
-      "reviewUrl": "/reviews/magic-bullet-blender-small-silver"
-    },
-    {
-      "label": "Premium alternative",
+      "label": "Alternative to compare",
       "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel",
-      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is a better fit if you want a stronger overall shortlist score in toasters.",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$39-$57",
       "reviewUrl": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
-      "label": "Premium alternative",
+      "label": "Value alternative",
       "title": "Nostalgia 3-in-1 Breakfast Station",
-      "summary": "Nostalgia 3-in-1 Breakfast Station is a better fit if you want a stronger overall shortlist score in toasters.",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$68-$92",
       "reviewUrl": "/reviews/nostalgia-3-in-1-breakfast-station"
     },
     {
-      "label": "Cheaper alternative",
+      "label": "Another option",
       "title": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking",
-      "summary": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking is a better fit if you want a lower starting price in toasters.",
+      "summary": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$10-$18",
       "reviewUrl": "/reviews/trendplain-16oz-470ml-glass-olive-oil-sprayer"
     }
@@ -171,19 +148,19 @@
   ],
   "relatedReviews": [
     {
-      "title": "Magic Bullet Blender Small, Silver, Review",
-      "summary": "Magic Bullet Blender Small, Silver, is a relevant alternative if you want a different price band or buying tradeoff in toasters.",
-      "url": "/reviews/magic-bullet-blender-small-silver"
-    },
-    {
       "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel Review",
-      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is a relevant alternative if you want a different price band or buying tradeoff in toasters.",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
       "title": "Nostalgia 3-in-1 Breakfast Station Review",
-      "summary": "Nostalgia 3-in-1 Breakfast Station is a relevant alternative if you want a different price band or buying tradeoff in toasters.",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/nostalgia-3-in-1-breakfast-station"
+    },
+    {
+      "title": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking Review",
+      "summary": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/trendplain-16oz-470ml-glass-olive-oil-sprayer"
     }
   ],
   "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",

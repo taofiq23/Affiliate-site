@@ -119,7 +119,13 @@
       "reviewUrl": "/reviews/ninja-nutri-pro-personal-blender"
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "title": "Ninja Nutri-Blender Plus vs NutriBullet Personal Blender 24-Oz: Which Smoothie Blender Should You Buy?",
+      "summary": "A side-by-side comparison of two strong smoothie blenders.",
+      "url": "/compare/ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz"
+    }
+  ],
   "faq": [
     {
       "question": "Is NutriBullet Personal Blender 24-Oz worth it at the current price?",
@@ -144,6 +150,16 @@
       "title": "How To Choose Kitchen Appliances: What Matters Before You Buy",
       "summary": "A simple buyer's guide for kitchen gear, countertop appliances, and everyday-use tools.",
       "url": "/guides/how-to-choose-kitchen-appliances"
+    },
+    {
+      "title": "How To Choose A Blender: Personal, Countertop, and Everyday Prep Needs",
+      "summary": "A blender guide that focuses on serving size, cleanup, and real kitchen use.",
+      "url": "/guides/how-to-choose-a-blender"
+    },
+    {
+      "title": "Personal Blender vs Full-Size Blender: Which One Should You Buy?",
+      "summary": "A comparison guide for personal vs full-size blenders.",
+      "url": "/guides/personal-blender-vs-full-size-blender"
     }
   ],
   "relatedReviews": [

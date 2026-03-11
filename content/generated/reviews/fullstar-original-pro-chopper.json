@@ -36,11 +36,11 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Kitchen Appliances"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
-      "value": "Vegetable Choppers"
+      "value": "Blenders"
     },
     {
       "label": "Price range",
@@ -51,24 +51,8 @@
       "value": "4.5/5"
     },
     {
-      "label": "Prep style",
-      "value": "Manual push-down chopper with catch container"
-    },
-    {
-      "label": "Best for",
-      "value": "Weeknight cooking, onions, salads, and batch prep"
-    },
-    {
-      "label": "Cleanup",
-      "value": "Several removable parts to rinse and dry"
-    },
-    {
-      "label": "Footprint",
-      "value": "Smaller than a food processor but larger than a hand tool"
-    },
-    {
       "label": "Use case",
-      "value": "Speed up repetitive chopping jobs without setting up a large appliance."
+      "value": "Smoothies, frozen drinks, sauces, and quick daily blending."
     },
     {
       "label": "Best alternative",
@@ -114,25 +98,25 @@
   ],
   "alternatives": [
     {
-      "label": "Blending alternative",
-      "title": "Magic Bullet Blender Small, Silver,",
-      "summary": "A better fit if you mainly want faster smoothies, sauces, or soft-ingredient prep instead of dicing vegetables.",
-      "priceText": "$29-$41",
-      "reviewUrl": "/reviews/magic-bullet-blender-small-silver"
-    },
-    {
-      "label": "Slow-cook alternative",
+      "label": "Alternative to compare",
       "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel",
-      "summary": "Worth considering if your real goal is easier low-effort dinners rather than faster knife work.",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$39-$57",
       "reviewUrl": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
-      "label": "Organization alternative",
-      "title": "HuggieGems Magnetic Spice Rack Organizer",
-      "summary": "A better first purchase if prep time is manageable but your kitchen workflow still feels cluttered and slow.",
-      "priceText": "$18-$24",
-      "reviewUrl": "/reviews/huggiegems-magnetic-spice-rack-organizer"
+      "label": "Value alternative",
+      "title": "Nostalgia 3-in-1 Breakfast Station",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
+      "priceText": "$68-$92",
+      "reviewUrl": "/reviews/nostalgia-3-in-1-breakfast-station"
+    },
+    {
+      "label": "Another option",
+      "title": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking",
+      "summary": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
+      "priceText": "$10-$18",
+      "reviewUrl": "/reviews/trendplain-16oz-470ml-glass-olive-oil-sprayer"
     }
   ],
   "comparisons": [],
@@ -164,19 +148,19 @@
   ],
   "relatedReviews": [
     {
-      "title": "Magic Bullet Blender Small, Silver, Review",
-      "summary": "Relevant if you want a different kind of prep shortcut focused on smoothies, sauces, and small blended jobs.",
-      "url": "/reviews/magic-bullet-blender-small-silver"
-    },
-    {
       "title": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel Review",
-      "summary": "Useful if your bigger goal is easier dinners with less hands-on cooking, not faster chopping.",
+      "summary": "Crock-Pot 7 Quart Oval Manual Slow Cooker Stainless Steel is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/crock-pot-7-quart-oval-manual-slow"
     },
     {
-      "title": "HuggieGems Magnetic Spice Rack Organizer Review",
-      "summary": "A helpful next read if kitchen clutter is hurting your workflow as much as prep time.",
-      "url": "/reviews/huggiegems-magnetic-spice-rack-organizer"
+      "title": "Nostalgia 3-in-1 Breakfast Station Review",
+      "summary": "Nostalgia 3-in-1 Breakfast Station is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/nostalgia-3-in-1-breakfast-station"
+    },
+    {
+      "title": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking Review",
+      "summary": "TrendPlain 16oz/470ml Glass Olive Oil Sprayer Cooking is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/trendplain-16oz-470ml-glass-olive-oil-sprayer"
     }
   ],
   "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",

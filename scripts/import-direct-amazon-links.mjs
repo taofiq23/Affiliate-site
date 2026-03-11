@@ -177,10 +177,33 @@ function avoidIfLine(subcategory) {
 }
 
 function cleanImages(images) {
-  return [...new Set(images)]
-    .filter((image) => /^https:\/\/(m\.media-amazon\.com|images-na\.ssl-images-amazon\.com)\//.test(image))
-    .filter((image) => !/grey-pixel|play-button/i.test(image))
-    .slice(0, 5);
+  const seen = new Set();
+  const cleaned = [];
+
+  for (const image of images) {
+    if (!/^https:\/\/(m\.media-amazon\.com|images-na\.ssl-images-amazon\.com)\//.test(image)) {
+      continue;
+    }
+
+    if (/grey-pixel|play-button/i.test(image)) {
+      continue;
+    }
+
+    const dedupeKey = image
+      .replace(/\?.*$/, "")
+      .replace(/\._[^/]+?\./g, ".")
+      .replace(/\.(jpg|jpeg|png|webp)$/i, "")
+      .toLowerCase();
+
+    if (seen.has(dedupeKey)) {
+      continue;
+    }
+
+    seen.add(dedupeKey);
+    cleaned.push(image);
+  }
+
+  return cleaned.slice(0, 5);
 }
 
 function shortProductSummary(name, subcategory, usdPrice, rating, reviews) {

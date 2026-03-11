@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site-data";
 const links = [
   { href: "/", label: "Home" },
   { href: "/best/top-picks", label: "Best" },
-  { href: "/guides/product-buying-guide", label: "Guides" },
+  { href: "/guides", label: "Guides" },
   { href: "/disclosure", label: "Disclosure" }
 ];
 
@@ -175,11 +175,11 @@ export function SiteHeader() {
             <p className="text-xs uppercase tracking-[0.16em] text-black/50">Quick Access</p>
             <div className="mt-3 grid gap-2">
               <Link
-                href="/guides/product-buying-guide"
+                href="/guides"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm uppercase tracking-[0.12em] text-black/88 hover:text-black"
               >
-                Buying Guide
+                Guides Hub
               </Link>
               <Link
                 href="/contact"

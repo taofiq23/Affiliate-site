@@ -36,11 +36,11 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Coffee Gear"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
-      "value": "Coffee Makers"
+      "value": "Blenders"
     },
     {
       "label": "Price range",
@@ -51,28 +51,12 @@
       "value": "4.3/5"
     },
     {
-      "label": "Brew size",
-      "value": "6 to 12 ounces per cup"
-    },
-    {
-      "label": "Reservoir",
-      "value": "Single-cup refill design"
-    },
-    {
-      "label": "Best for",
-      "value": "Dorms, apartments, offices, and compact counters"
-    },
-    {
-      "label": "Footprint",
-      "value": "Very small and easy to tuck into narrow spaces"
-    },
-    {
       "label": "Use case",
-      "value": "Make simple single cups without sacrificing precious counter space."
+      "value": "Smoothies, frozen drinks, sauces, and quick daily blending."
     },
     {
       "label": "Best alternative",
-      "value": "Keurig K-Duo Hot & Iced Coffee Maker"
+      "value": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker"
     }
   ],
   "pros": [
@@ -114,25 +98,25 @@
   ],
   "alternatives": [
     {
-      "label": "Feature-rich alternative",
+      "label": "Alternative to compare",
       "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker",
-      "summary": "A better fit if you want a stronger single-serve setup and have enough room for a larger machine.",
+      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$119-$161",
       "reviewUrl": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
     },
     {
-      "label": "Flexible household alternative",
-      "title": "Keurig K-Duo Hot & Iced Coffee Maker",
-      "summary": "The smarter move if your kitchen needs both single cups and larger-batch brewing from the same machine.",
-      "priceText": "$130-$170",
-      "reviewUrl": "/reviews/keurig-k-duo-hot-and-iced-coffee-maker"
-    },
-    {
-      "label": "Value brewing alternative",
+      "label": "Value alternative",
       "title": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup",
-      "summary": "Worth comparing if you want a less compact but more flexible coffee routine at a competitive price.",
+      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
       "priceText": "$76-$102",
       "reviewUrl": "/reviews/hamilton-beach-2-way-programmable-coffee-maker"
+    },
+    {
+      "label": "Another option",
+      "title": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket",
+      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is worth opening next if you want a different take on this category pricing, size, or everyday fit.",
+      "priceText": "$29-$41",
+      "reviewUrl": "/reviews/black-decker-12-cup-digital-coffee-maker-washable"
     }
   ],
   "comparisons": [
@@ -140,6 +124,11 @@
       "title": "Keurig K-Elite vs Hamilton Beach 2-Way Programmable Coffee Maker",
       "summary": "Use this existing coffee-maker comparison as a category benchmark if you still need help choosing between convenience, capacity, and daily workflow.",
       "url": "/compare/keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
+    },
+    {
+      "title": "Keurig K-Duo Hot & Iced Coffee Maker vs Keurig K-Mini: Which Coffee Maker Fits Better?",
+      "summary": "A comparison of flexible brewing versus compact single-serve convenience.",
+      "url": "/compare/keurig-k-duo-hot-and-iced-coffee-maker-vs-keurig-k-mini-single-serve-coffee-maker"
     }
   ],
   "faq": [
@@ -166,23 +155,33 @@
       "title": "How To Choose Coffee Gear: What Matters Before You Buy",
       "summary": "A practical guide for coffee buyers who want to narrow the field before opening full reviews.",
       "url": "/guides/how-to-choose-coffee-gear"
+    },
+    {
+      "title": "How To Choose A Coffee Maker For Home: What Actually Matters Before You Buy",
+      "summary": "A practical coffee maker guide covering brew style, capacity, cleanup, and value.",
+      "url": "/guides/how-to-choose-a-coffee-maker"
+    },
+    {
+      "title": "Single-Serve vs Drip Coffee Maker: Which Setup Fits Your Routine Better?",
+      "summary": "A clear comparison of single-serve and drip machines by routine and value.",
+      "url": "/guides/single-serve-vs-drip-coffee-maker"
     }
   ],
   "relatedReviews": [
     {
       "title": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker Review",
-      "summary": "Open this next if you like the Keurig ecosystem but want a stronger single-serve machine with more room to grow.",
+      "summary": "Keurig K-Elite Single Serve K-Cup Pod Coffee Maker is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
       "url": "/reviews/keurig-k-elite-single-serve-k-cup-pod"
     },
     {
-      "title": "Keurig K-Duo Hot & Iced Coffee Maker Review",
-      "summary": "Read this if you are deciding whether extra size and multi-format brewing are worth the step up from the K-Mini.",
-      "url": "/reviews/keurig-k-duo-hot-and-iced-coffee-maker"
+      "title": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup Review",
+      "summary": "Hamilton Beach 2-Way Programmable Coffee Maker 12 Cup is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/hamilton-beach-2-way-programmable-coffee-maker"
     },
     {
-      "title": "BLACK+DECKER One Touch Coffee Grinder 2/3 Cup Review",
-      "summary": "A useful companion read if you are building a simple coffee setup and still need a low-cost grinder.",
-      "url": "/reviews/black-decker-one-touch-coffee-grinder-2-3"
+      "title": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket Review",
+      "summary": "BLACK+DECKER 12-Cup Digital Coffee Maker Washable Basket is another practical option if you want to compare buyer fit, daily use, and price before checkout.",
+      "url": "/reviews/black-decker-12-cup-digital-coffee-maker-washable"
     }
   ],
   "disclosureText": "Affiliate links on this page may earn a commission if a reader clicks through and completes a purchase.",

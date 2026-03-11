@@ -36,11 +36,11 @@
   "featureSnapshot": [
     {
       "label": "Category",
-      "value": "Air Treatment"
+      "value": "Kitchen"
     },
     {
       "label": "Subcategory",
-      "value": "Air Purifiers"
+      "value": "Blenders"
     },
     {
       "label": "Price range",
@@ -52,27 +52,11 @@
     },
     {
       "label": "Use case",
-      "value": "Indoor air quality improvement and odor reduction."
-    },
-    {
-      "label": "Buyer intent",
-      "value": "Mid Ticket"
-    },
-    {
-      "label": "Trend type",
-      "value": "Evergreen"
-    },
-    {
-      "label": "Price band",
-      "value": "Mid Range"
-    },
-    {
-      "label": "Affiliate link",
-      "value": "Manual affiliate link verified"
+      "value": "Smoothies, frozen drinks, sauces, and quick daily blending."
     },
     {
       "label": "Best alternative",
-      "value": "the next shortlisted option"
+      "value": "Another top-rated option in this category"
     }
   ],
   "pros": [
