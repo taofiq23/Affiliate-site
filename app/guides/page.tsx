@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { buildMetadata } from "@/lib/seo";
+import { getGuideImageUrl } from "@/lib/guide-images";
 import { bestLists, categories, guides } from "@/lib/content-store";
 
 const primaryGuideSlugs = [
@@ -60,7 +61,8 @@ export default function GuidesIndexPage() {
           title: guide.title,
           description: guide.description,
           href: `/guides/${guide.slug}`,
-          label: "Guide"
+          label: "Guide",
+          imageUrl: getGuideImageUrl(guide.slug)
         }))}
       />
 
@@ -71,7 +73,8 @@ export default function GuidesIndexPage() {
           title: guide.title,
           description: guide.description,
           href: `/guides/${guide.slug}`,
-          label: "Guide"
+          label: "Guide",
+          imageUrl: getGuideImageUrl(guide.slug)
         }))}
       />
 

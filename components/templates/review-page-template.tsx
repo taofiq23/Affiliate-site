@@ -5,6 +5,7 @@ import { ProductMediaGallery } from "@/components/product/product-media-gallery"
 import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
+import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link";
 import { FeatureSnapshotTable } from "@/components/review/feature-snapshot-table";
 import { RetailerOffersBlock } from "@/components/review/retailer-offers-block";
 import { getProduct } from "@/lib/content-store";
@@ -261,14 +262,15 @@ export function ReviewPageTemplate({ review }: Props) {
                   If this review matches what you need, use the current lead offer to confirm the latest price, stock, and shipping details.
                 </p>
               </div>
-              <a
+              <TrackedAffiliateLink
                 href={lowerPageOffer.affiliateUrl}
                 rel="nofollow sponsored noopener noreferrer"
                 target="_blank"
                 className="btn-commerce-primary min-h-[52px] px-6 text-[10px] tracking-[0.22em]"
+                signal={{ slug: review.slug, slot: "review-lower-cta", destination: lowerPageOffer.retailerName }}
               >
                 {lowerPageOffer.ctaLabel} | {lowerPageOffer.priceText}
-              </a>
+              </TrackedAffiliateLink>
             </div>
           </div>
         </section>

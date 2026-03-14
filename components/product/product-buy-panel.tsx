@@ -1,5 +1,6 @@
 "use client";
 
+import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link";
 import { affiliateLinkRel, sortRetailerOffers } from "@/lib/review-utils";
 import type { ReviewRecord } from "@/lib/review-data";
 
@@ -90,24 +91,26 @@ export function ProductBuyPanel({ review, shopperRating, shopperReviewCount }: P
               <p className="text-[10px] uppercase tracking-[0.2em] text-black/55">Buy Now</p>
               <div className="mt-4 grid gap-3">
                 {primaryOffer ? (
-                  <a
+                  <TrackedAffiliateLink
                     href={primaryOffer.affiliateUrl}
                     rel={affiliateLinkRel}
                     target="_blank"
                     className="btn-commerce-primary px-4 py-4 text-[11px] tracking-[0.18em]"
+                    signal={{ slug: review.slug, slot: "review-buy-panel-primary", destination: primaryOffer.retailerName }}
                   >
                     {primaryLabel}
-                  </a>
+                  </TrackedAffiliateLink>
                 ) : null}
                 {secondaryOffer ? (
-                  <a
+                  <TrackedAffiliateLink
                     href={secondaryOffer.affiliateUrl}
                     rel={affiliateLinkRel}
                     target="_blank"
                     className="btn-commerce-secondary px-4 py-4 text-[11px] tracking-[0.18em]"
+                    signal={{ slug: review.slug, slot: "review-buy-panel-secondary", destination: secondaryOffer.retailerName }}
                   >
                     {secondaryLabel}
-                  </a>
+                  </TrackedAffiliateLink>
                 ) : null}
               </div>
 

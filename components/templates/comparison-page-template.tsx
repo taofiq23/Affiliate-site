@@ -2,6 +2,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { SiteBreadcrumbs } from "@/components/site-breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
+import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link";
 import { buildArticleSchema, buildBreadcrumbSchema, buildFaqSchema } from "@/lib/seo";
 import { resolveProductImageUrl } from "@/lib/generated-content-normalizers";
 import { getGuides, getProducts, type ComparisonRecord } from "@/lib/content-store";
@@ -100,14 +101,15 @@ export function ComparisonPageTemplate({ page }: Props) {
                 <Link href={`/reviews/${product.slug}`} className="btn-commerce-primary px-4 py-3 text-[10px] tracking-[0.22em]">
                   Read Review
                 </Link>
-                <a
+                <TrackedAffiliateLink
                   href={product.affiliateLinks[0]?.affiliateUrl}
                   target="_blank"
                   rel="noreferrer sponsored"
                   className="btn-commerce-secondary px-4 py-3 text-[10px] tracking-[0.22em]"
+                  signal={{ slug: page.slug, slot: `comparison-card-${product.slug}`, destination: product.affiliateLinks[0]?.retailerName }}
                 >
                   {product.affiliateLinks[0]?.ctaLabel ?? "Check Deal"}
-                </a>
+                </TrackedAffiliateLink>
               </div>
             </article>
           ))}

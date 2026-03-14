@@ -1,3 +1,4 @@
+import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link";
 import { affiliateLinkRel, sortRetailerOffers } from "@/lib/review-utils";
 import type { ReviewRecord } from "@/lib/review-data";
 
@@ -38,14 +39,15 @@ export function RetailerOffersBlock({ review }: Props) {
               {offer.shippingNote ? <p className="mt-2 text-[15px] leading-7 text-black/78">Shipping: {offer.shippingNote}</p> : null}
               <p className="mt-2 text-sm leading-relaxed text-black/66">Last checked: {review.lastChecked}</p>
 
-              <a
+              <TrackedAffiliateLink
                 href={offer.affiliateUrl}
                 rel={affiliateLinkRel}
                 target="_blank"
                 className="btn-commerce-primary mt-5 min-h-[48px] w-full px-4 py-3.5 text-[11px] tracking-[0.18em]"
+                signal={{ slug: review.slug, slot: `retailer-offer-${offer.offerSlug}`, destination: offer.retailerName }}
               >
                 {offer.ctaLabel}
-              </a>
+              </TrackedAffiliateLink>
             </article>
           ))}
         </div>

@@ -1,323 +1,373 @@
 [
-    {
-        "slug":  "top-picks",
-        "title":  "Best Home Appliances and Coffee Gear: Top Picks",
-        "description":  "A ranked shortlist of home appliances, coffee gear, air treatment devices, and comfort picks built to help buyers narrow the field faster.",
-        "intro":  "This page is the main shortlist for the site. It is built around home appliances, kitchen gear, coffee tools, air treatment products, and comfort devices that show a strong blend of bestseller proof, search demand, evergreen appeal, and realistic affiliate upside. It is meant for buyers who want the fastest path from broad product research into a tighter shortlist of pages worth opening next.",
-        "highlights":  [
-                           "Primary niche only: home appliances, coffee gear, air treatment, comfort, and cleaning devices",
-                           "Rankings blend bestseller proof, trend velocity, Google demand, evergreen value, and affiliate potential",
-                           "Use this page to narrow the field before opening individual review pages"
-                       ],
-        "productSlugs":  [
-                             "levoit-air-purifier",
-                             "keurig-k-elite-single-serve-k-cup-pod",
-                             "keurig-k-duo-hot-and-iced-coffee-maker",
-                             "hamilton-beach-2-way-programmable-coffee-maker",
-                             "keurig-k-mini-single-serve-coffee-maker",
-                             "black-decker-12-cup-digital-coffee-maker-washable",
-                             "mueller-home-12-cup-red-coffee-maker",
-                             "magic-bullet-blender-small-silver",
-                             "fullstar-original-pro-chopper",
-                             "black-decker-one-touch-coffee-grinder-2-3",
-                             "etekcity-food-kitchen-scale",
-                             "crock-pot-7-quart-oval-manual-slow",
-                             "nostalgia-3-in-1-breakfast-station",
-                             "huggiegems-magnetic-spice-rack-organizer",
-                             "trendplain-16oz-470ml-glass-olive-oil-sprayer",
-                             "coffee-mug-warmer-fastest-heating",
-                             "bella-2-slice-slim-toaster-kitchenware",
-                             "extra-large-expandable-silverware-organizer-bpa-free",
-                             "cosori-turboblaze-air-fryer-6qt",
-                             "ninja-air-fryer-pro-5qt",
-                             "ninja-foodi-dualzone-air-fryer-8qt",
-                             "chefman-turbofry-air-fryer-8qt",
-                             "chefman-multifunction-air-fryer-oven-10l",
-                             "emeril-lagasse-french-door-air-fryer-oven-26qt",
-                             "ninja-crispi-glass-air-fryer",
-                             "ninja-nutri-blender-plus",
-                             "ninja-nutri-pro-personal-blender",
-                             "ninja-professional-blender-72oz",
-                             "nutribullet-personal-blender-24oz"
-                         ],
-        "faq":  [
-                    {
-                        "question":  "How are products ranked on this page?",
-                        "answer":  "Each product is scored on trend strength, bestseller position, Google demand signals, evergreen stability, profit potential, and niche fit."
-                    },
-                    {
-                        "question":  "Why are health and skincare products not leading this list?",
-                        "answer":  "Those products exist only as a small test bucket. The site is primarily optimized around home appliances, coffee, kitchen, air, and comfort products."
-                    }
-                ],
-        "relatedGuides":  [
-                              "product-buying-guide",
-                              "how-to-choose-coffee-gear",
-                              "how-to-choose-kitchen-appliances",
-                              "how-to-choose-a-coffee-maker",
-                              "how-to-choose-a-coffee-grinder",
-                              "how-to-choose-an-air-fryer",
-                              "how-to-choose-a-blender",
-                              "single-serve-vs-drip-coffee-maker",
-                              "personal-blender-vs-full-size-blender",
-                              "basket-air-fryer-vs-air-fryer-oven"
-                          ],
-        "relatedReviews":  [
-                               "levoit-air-purifier",
-                               "keurig-k-elite-single-serve-k-cup-pod",
-                               "hamilton-beach-2-way-programmable-coffee-maker",
-                               "black-decker-12-cup-digital-coffee-maker-washable",
-                               "mueller-home-12-cup-red-coffee-maker"
-                           ],
-        "relatedComparisons":  [
-                                   "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
-                               ]
-    },
-    {
-        "slug":  "best-coffee-gear",
-        "title":  "Best Coffee Gear: Reviews, Value Picks, and Buying Advice",
-        "description":  "A shortlist of the best coffee gear with buyer-focused recommendations and links into full reviews.",
-        "intro":  "This page is built for searchers who already know the category they want but still need help narrowing the field. It focuses on coffee gear that combine strong marketplace proof, clearer buyer fit, better value positioning, and a cleaner path into individual review pages.",
-        "highlights":  [
-                           "Built around coffee gear with the strongest current niche-fit scores",
-                           "Designed to send readers into review pages and direct product comparisons",
-                           "Optimized for shortlist traffic, not broad generic browsing"
-                       ],
-        "productSlugs":  [
-                             "keurig-k-elite-single-serve-k-cup-pod",
-                             "keurig-k-duo-hot-and-iced-coffee-maker",
-                             "hamilton-beach-2-way-programmable-coffee-maker",
-                             "keurig-k-mini-single-serve-coffee-maker",
-                             "black-decker-12-cup-digital-coffee-maker-washable",
-                             "mueller-home-12-cup-red-coffee-maker",
-                             "black-decker-one-touch-coffee-grinder-2-3",
-                             "coffee-mug-warmer-fastest-heating"
-                         ],
-        "faq":  [
-                    {
-                        "question":  "What makes a strong coffee gear shortlist?",
-                        "answer":  "A strong shortlist balances buyer fit, price comfort, review proof, and whether the product solves a real use-case problem."
-                    },
-                    {
-                        "question":  "What should readers open after this coffee gear list?",
-                        "answer":  "Open the top review page first, then one cheaper or more premium alternative before deciding."
-                    }
-                ],
-        "relatedGuides":  [
-                              "how-to-choose-coffee-gear",
-                              "product-buying-guide",
-                              "how-to-choose-a-coffee-maker",
-                              "how-to-choose-a-coffee-grinder",
-                              "how-to-choose-an-air-fryer",
-                              "how-to-choose-a-blender",
-                              "single-serve-vs-drip-coffee-maker",
-                              "personal-blender-vs-full-size-blender",
-                              "basket-air-fryer-vs-air-fryer-oven"
-                          ],
-        "relatedReviews":  [
-                               "keurig-k-elite-single-serve-k-cup-pod",
-                               "hamilton-beach-2-way-programmable-coffee-maker",
-                               "black-decker-12-cup-digital-coffee-maker-washable",
-                               "mueller-home-12-cup-red-coffee-maker"
-                           ],
-        "relatedComparisons":  [
-                                   "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
-                               ]
-    },
-    {
-        "slug":  "best-kitchen-appliances",
-        "title":  "Best Kitchen Appliances: Reviews, Value Picks, and Buying Advice",
-        "description":  "A shortlist of the best kitchen appliances with buyer-focused recommendations and links into full reviews.",
-        "intro":  "This page is built for searchers who already know the category they want but still need help narrowing the field. It focuses on kitchen appliances that combine strong marketplace proof, clearer buyer fit, better value positioning, and a cleaner path into individual review pages.",
-        "highlights":  [
-                           "Built around kitchen appliances with the strongest current niche-fit scores",
-                           "Designed to send readers into review pages and direct product comparisons",
-                           "Optimized for shortlist traffic, not broad generic browsing"
-                       ],
-        "productSlugs":  [
-                             "cosori-turboblaze-air-fryer-6qt",
-                             "ninja-air-fryer-pro-5qt",
-                             "ninja-foodi-dualzone-air-fryer-8qt",
-                             "chefman-turbofry-air-fryer-8qt",
-                             "chefman-multifunction-air-fryer-oven-10l",
-                             "emeril-lagasse-french-door-air-fryer-oven-26qt",
-                             "ninja-crispi-glass-air-fryer",
-                             "ninja-nutri-blender-plus",
-                             "ninja-nutri-pro-personal-blender",
-                             "ninja-professional-blender-72oz",
-                             "nutribullet-personal-blender-24oz",
-                             "magic-bullet-blender-small-silver",
-                             "fullstar-original-pro-chopper",
-                             "crock-pot-7-quart-oval-manual-slow",
-                             "nostalgia-3-in-1-breakfast-station",
-                             "etekcity-food-kitchen-scale",
-                             "huggiegems-magnetic-spice-rack-organizer",
-                             "trendplain-16oz-470ml-glass-olive-oil-sprayer",
-                             "bella-2-slice-slim-toaster-kitchenware",
-                             "extra-large-expandable-silverware-organizer-bpa-free"
-                         ],
-        "faq":  [
-                    {
-                        "question":  "What makes a strong kitchen appliances shortlist?",
-                        "answer":  "A strong shortlist balances buyer fit, price comfort, review proof, and whether the product solves a real use-case problem."
-                    },
-                    {
-                        "question":  "What should readers open after this kitchen appliances list?",
-                        "answer":  "Open the top review page first, then one cheaper or more premium alternative before deciding."
-                    }
-                ],
-        "relatedGuides":  [
-                              "how-to-choose-kitchen-appliances",
-                              "product-buying-guide",
-                              "how-to-choose-a-coffee-maker",
-                              "how-to-choose-a-coffee-grinder",
-                              "how-to-choose-an-air-fryer",
-                              "how-to-choose-a-blender",
-                              "single-serve-vs-drip-coffee-maker",
-                              "personal-blender-vs-full-size-blender",
-                              "basket-air-fryer-vs-air-fryer-oven"
-                          ],
-        "relatedReviews":  [
-                               "cosori-turboblaze-air-fryer-6qt",
-                               "ninja-air-fryer-pro-5qt",
-                               "ninja-nutri-blender-plus",
-                               "ninja-professional-blender-72oz"
-                           ],
-        "relatedComparisons":  [
-
-                               ]
-    },
-    {
-        "slug":  "best-coffee-makers-for-home",
-        "title":  "Best Coffee Makers For Home: Smart Picks For Convenience, Value, and Daily Use",
-        "description":  "A buyer-focused shortlist of the best coffee makers for home, built to help you compare convenience, flexibility, and daily value.",
-        "intro":  "This page is for shoppers who already know they want a coffee maker and need a cleaner shortlist of the options most worth comparing. It focuses on home use value, workflow comfort, and whether the machine still feels right after the first few weeks.",
-        "highlights":  [
-                           "Built around real home routines, not generic marketplace sorting",
-                           "Balances convenience, capacity, cleanup, and price comfort",
-                           "Best used to move into review pages and final comparisons"
-                       ],
-        "productSlugs":  [
-                             "keurig-k-elite-single-serve-k-cup-pod",
-                             "keurig-k-duo-hot-and-iced-coffee-maker",
-                             "hamilton-beach-2-way-programmable-coffee-maker",
-                             "keurig-k-mini-single-serve-coffee-maker",
-                             "black-decker-12-cup-digital-coffee-maker-washable",
-                             "mueller-home-12-cup-red-coffee-maker"
-                         ],
-        "faq":  [
-                    {
-                        "question":  "How should readers use this best coffee makers page?",
-                        "answer":  "Use it to narrow the field by routine first, then open two or three review pages that match your budget and space."
-                    },
-                    {
-                        "question":  "What matters most after reading this shortlist?",
-                        "answer":  "Compare cleanup, cup style, and whether you want one-cup convenience or multi-cup flexibility."
-                    }
-                ],
-        "relatedGuides":  [
-                              "how-to-choose-a-coffee-maker",
-                              "single-serve-vs-drip-coffee-maker",
-                              "how-to-choose-coffee-gear",
-                              "how-to-choose-a-coffee-grinder",
-                              "how-to-choose-an-air-fryer",
-                              "how-to-choose-a-blender",
-                              "personal-blender-vs-full-size-blender",
-                              "basket-air-fryer-vs-air-fryer-oven"
-                          ],
-        "relatedReviews":  [
-                               "keurig-k-elite-single-serve-k-cup-pod",
-                               "keurig-k-duo-hot-and-iced-coffee-maker",
-                               "hamilton-beach-2-way-programmable-coffee-maker"
-                           ],
-        "relatedComparisons":  [
-                                   "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
-                               ]
-    },
-    {
-        "slug":  "best-air-fryers-for-home",
-        "title":  "Best Air Fryers For Home: Fast, Practical Picks Worth Comparing",
-        "description":  "A shortlist of the best air fryers for home use, built around cleanup, cooking style, capacity, and daily value.",
-        "intro":  "This page is for buyers who already know an air fryer belongs on the shortlist and want the clearest path to a smarter final decision.",
-        "highlights":  [
-                           "Focused on real home use, not just feature inflation",
-                           "Helps buyers compare basket models and oven-style options",
-                           "Designed to move readers into reviews and comparisons"
-                       ],
-        "productSlugs":  [
-                             "ninja-air-fryer-pro-5qt",
-                             "cosori-turboblaze-air-fryer-6qt",
-                             "ninja-foodi-dualzone-air-fryer-8qt",
-                             "chefman-turbofry-air-fryer-8qt",
-                             "chefman-multifunction-air-fryer-oven-10l",
-                             "emeril-lagasse-french-door-air-fryer-oven-26qt",
-                             "ninja-crispi-glass-air-fryer"
-                         ],
-        "faq":  [
-                    {
-                        "question":  "What should buyers compare first on this air fryer shortlist?",
-                        "answer":  "Start with basket size and format. Decide whether you want a basket model or an oven-style model first."
-                    }
-                ],
-        "relatedGuides":  [
-                              "how-to-choose-an-air-fryer",
-                              "basket-air-fryer-vs-air-fryer-oven",
-                              "how-to-choose-kitchen-appliances",
-                              "how-to-choose-a-coffee-maker",
-                              "how-to-choose-a-coffee-grinder",
-                              "how-to-choose-a-blender",
-                              "single-serve-vs-drip-coffee-maker",
-                              "personal-blender-vs-full-size-blender"
-                          ],
-        "relatedReviews":  [
-                               "ninja-air-fryer-pro-5qt",
-                               "cosori-turboblaze-air-fryer-6qt",
-                               "ninja-foodi-dualzone-air-fryer-8qt"
-                           ],
-        "relatedComparisons":  [
-                                   "ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt"
-                               ]
-    },
-    {
-        "slug":  "best-blenders-for-smoothies",
-        "title":  "Best Blenders For Smoothies: Smart Picks For Daily Drinks and Quick Prep",
-        "description":  "A buyer-focused shortlist of the best blenders for smoothies, sauces, and everyday kitchen prep.",
-        "intro":  "This page is built for shoppers who already know they want a smoothie-friendly blender and now need a tighter shortlist of the models most worth reviewing next.",
-        "highlights":  [
-                           "Focused on smoothie-friendly blenders with strong review proof",
-                           "Separates personal blenders from larger countertop options",
-                           "Best used as a bridge into review pages and final comparisons"
-                       ],
-        "productSlugs":  [
-                             "ninja-nutri-blender-plus",
-                             "nutribullet-personal-blender-24oz",
-                             "ninja-nutri-pro-personal-blender",
-                             "ninja-professional-blender-72oz",
-                             "magic-bullet-blender-small-silver"
-                         ],
-        "faq":  [
-                    {
-                        "question":  "How should readers use this best blenders shortlist?",
-                        "answer":  "Start by deciding whether you want a personal blender or a full-size blender, then open the review pages that match your serving size."
-                    }
-                ],
-        "relatedGuides":  [
-                              "how-to-choose-a-blender",
-                              "personal-blender-vs-full-size-blender",
-                              "how-to-choose-kitchen-appliances",
-                              "how-to-choose-a-coffee-maker",
-                              "how-to-choose-a-coffee-grinder",
-                              "how-to-choose-an-air-fryer",
-                              "single-serve-vs-drip-coffee-maker",
-                              "basket-air-fryer-vs-air-fryer-oven"
-                          ],
-        "relatedReviews":  [
-                               "ninja-nutri-blender-plus",
-                               "nutribullet-personal-blender-24oz",
-                               "ninja-professional-blender-72oz"
-                           ],
-        "relatedComparisons":  [
-                                   "ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz"
-                               ]
-    }
+  {
+    "slug": "top-picks",
+    "title": "Best Home Kitchen Products Worth Opening Next",
+    "description": "A buyer-first shortlist of standout coffee makers, air fryers, blenders, and home upgrades worth comparing next.",
+    "intro": "This is the site's main shortlist for readers who want the fastest route from broad browsing into the pages most likely to help them make a confident purchase. It keeps the focus on products with useful review proof, practical daily-use fit, and clear next-step pages to open before the final retailer click.",
+    "highlights": [
+      "Built to move readers from broad product research into the strongest money pages on the site",
+      "Prioritizes everyday home use, cleaner buying decisions, and products with real review depth",
+      "Best used as the first shortlist before opening a best page, comparison page, or full review"
+    ],
+    "productSlugs": [
+      "keurig-k-elite-single-serve-k-cup-pod",
+      "keurig-k-duo-hot-and-iced-coffee-maker",
+      "ninja-air-fryer-pro-5qt",
+      "cosori-turboblaze-air-fryer-6qt",
+      "ninja-nutri-blender-plus",
+      "nutribullet-personal-blender-24oz",
+      "levoit-air-purifier",
+      "hamilton-beach-2-way-programmable-coffee-maker",
+      "ninja-foodi-dualzone-air-fryer-8qt",
+      "ninja-professional-blender-72oz",
+      "black-decker-12-cup-digital-coffee-maker-washable",
+      "chefman-multifunction-air-fryer-oven-10l"
+    ],
+    "faq": [
+      {
+        "question": "How should readers use this top picks page?",
+        "answer": "Use it to narrow the field fast, then open the best page or comparison that matches the category you are actually buying in."
+      },
+      {
+        "question": "What matters most after the first shortlist?",
+        "answer": "Move quickly into the category-specific best pages and same-type comparisons instead of comparing unrelated products."
+      }
+    ],
+    "relatedGuides": [
+      "product-buying-guide",
+      "how-to-choose-a-coffee-maker",
+      "how-to-choose-an-air-fryer",
+      "how-to-choose-a-blender"
+    ],
+    "relatedReviews": [
+      "keurig-k-elite-single-serve-k-cup-pod",
+      "ninja-air-fryer-pro-5qt",
+      "ninja-nutri-blender-plus",
+      "levoit-air-purifier"
+    ],
+    "relatedComparisons": [
+      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker",
+      "ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt",
+      "ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz"
+    ]
+  },
+  {
+    "slug": "best-coffee-gear",
+    "title": "Best Coffee Gear For Home: Smart Picks For Daily Brewing",
+    "description": "A cleaner shortlist of coffee makers, grinders, and countertop coffee tools worth comparing for home use.",
+    "intro": "This page is for readers who know they are buying coffee gear and want a tighter shortlist before diving into individual reviews. It keeps the focus on day-to-day convenience, brew routine fit, and the models most worth comparing side by side.",
+    "highlights": [
+      "Built around coffee routines, not generic marketplace sorting",
+      "Prioritizes home use, cleanup, counter fit, and price comfort",
+      "Best used as the bridge into coffee maker reviews and same-category comparisons"
+    ],
+    "productSlugs": [
+      "keurig-k-elite-single-serve-k-cup-pod",
+      "keurig-k-duo-hot-and-iced-coffee-maker",
+      "hamilton-beach-2-way-programmable-coffee-maker",
+      "keurig-k-mini-single-serve-coffee-maker",
+      "black-decker-12-cup-digital-coffee-maker-washable",
+      "mueller-home-12-cup-red-coffee-maker",
+      "black-decker-one-touch-coffee-grinder-2-3",
+      "coffee-mug-warmer-fastest-heating"
+    ],
+    "faq": [
+      {
+        "question": "What should readers compare first in coffee gear?",
+        "answer": "Start with brew style and routine. Decide whether you want single-serve convenience, drip capacity, or a supporting coffee tool before comparing prices."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-coffee-gear",
+      "how-to-choose-a-coffee-maker",
+      "how-to-choose-a-coffee-grinder",
+      "single-serve-vs-drip-coffee-maker"
+    ],
+    "relatedReviews": [
+      "keurig-k-elite-single-serve-k-cup-pod",
+      "keurig-k-duo-hot-and-iced-coffee-maker",
+      "hamilton-beach-2-way-programmable-coffee-maker"
+    ],
+    "relatedComparisons": [
+      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker",
+      "keurig-k-duo-hot-and-iced-coffee-maker-vs-keurig-k-mini-single-serve-coffee-maker",
+      "black-decker-12-cup-digital-coffee-maker-washable-vs-mueller-home-12-cup-red-coffee-maker"
+    ]
+  },
+  {
+    "slug": "best-kitchen-appliances",
+    "title": "Best Kitchen Appliances For Daily Use: Smart Countertop Picks",
+    "description": "A shortlist of kitchen appliances worth comparing for faster prep, easier cleanup, and everyday use.",
+    "intro": "This page is built for readers who already know they want a kitchen appliance and need a cleaner shortlist of the models most worth opening next. It stays focused on products that solve a real daily-use problem instead of bloating the page with random add-ons.",
+    "highlights": [
+      "Prioritizes products that earn their footprint in a real kitchen",
+      "Keeps the list focused on everyday appliances and prep tools with clear use cases",
+      "Designed to move readers into appliance-specific best pages and comparisons"
+    ],
+    "productSlugs": [
+      "ninja-air-fryer-pro-5qt",
+      "cosori-turboblaze-air-fryer-6qt",
+      "ninja-foodi-dualzone-air-fryer-8qt",
+      "chefman-multifunction-air-fryer-oven-10l",
+      "ninja-nutri-blender-plus",
+      "ninja-professional-blender-72oz",
+      "fullstar-original-pro-chopper",
+      "crock-pot-7-quart-oval-manual-slow",
+      "bella-2-slice-slim-toaster-kitchenware",
+      "etekcity-food-kitchen-scale"
+    ],
+    "faq": [
+      {
+        "question": "What should readers open after this kitchen shortlist?",
+        "answer": "Open the category-specific page next. Air fryers, blenders, and prep tools make more sense once you separate them by real kitchen job."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-kitchen-appliances",
+      "how-to-choose-an-air-fryer",
+      "how-to-choose-a-blender",
+      "product-buying-guide"
+    ],
+    "relatedReviews": [
+      "ninja-air-fryer-pro-5qt",
+      "cosori-turboblaze-air-fryer-6qt",
+      "ninja-nutri-blender-plus",
+      "fullstar-original-pro-chopper"
+    ],
+    "relatedComparisons": [
+      "ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt",
+      "ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz"
+    ]
+  },
+  {
+    "slug": "best-coffee-makers-for-home",
+    "title": "Best Coffee Makers For Home: Strong Daily Picks Worth Comparing",
+    "description": "A practical shortlist of coffee makers built around daily convenience, brew style, and countertop fit.",
+    "intro": "This shortlist is for readers who already know they want a coffee maker and now need the cleanest route to a smarter final decision. It focuses on real daily use, brew style, cleanup, and whether the machine feels right after the first few weeks.",
+    "highlights": [
+      "Built around routine fit and ease of use, not spec chasing",
+      "Separates single-serve convenience from larger-capacity home brewing",
+      "Best used before opening side-by-side coffee maker comparisons"
+    ],
+    "productSlugs": [
+      "keurig-k-elite-single-serve-k-cup-pod",
+      "keurig-k-duo-hot-and-iced-coffee-maker",
+      "hamilton-beach-2-way-programmable-coffee-maker",
+      "keurig-k-mini-single-serve-coffee-maker",
+      "black-decker-12-cup-digital-coffee-maker-washable",
+      "mueller-home-12-cup-red-coffee-maker"
+    ],
+    "faq": [
+      {
+        "question": "What matters most after reading this coffee maker shortlist?",
+        "answer": "Compare brew format, cleanup, counter space, and whether you need one-cup convenience or a machine that handles larger home routines."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-a-coffee-maker",
+      "single-serve-vs-drip-coffee-maker",
+      "how-to-choose-coffee-gear"
+    ],
+    "relatedReviews": [
+      "keurig-k-elite-single-serve-k-cup-pod",
+      "keurig-k-duo-hot-and-iced-coffee-maker",
+      "hamilton-beach-2-way-programmable-coffee-maker"
+    ],
+    "relatedComparisons": [
+      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker",
+      "keurig-k-duo-hot-and-iced-coffee-maker-vs-keurig-k-mini-single-serve-coffee-maker",
+      "black-decker-12-cup-digital-coffee-maker-washable-vs-mueller-home-12-cup-red-coffee-maker"
+    ]
+  },
+  {
+    "slug": "best-air-fryers-for-home",
+    "title": "Best Air Fryers For Home: Smart Picks For Faster Weeknight Cooking",
+    "description": "A shortlist of air fryers worth comparing for capacity, cleanup, countertop fit, and day-to-day value.",
+    "intro": "This page is for shoppers who already know an air fryer belongs on the shortlist and want the clearest path to a confident final decision. It compares basket models, larger-capacity options, and oven-style alternatives by how they work in a real kitchen.",
+    "highlights": [
+      "Focused on everyday use, not feature inflation",
+      "Helps buyers separate basket styles from oven-style formats",
+      "Built to move readers into focused comparisons before checkout"
+    ],
+    "productSlugs": [
+      "ninja-air-fryer-pro-5qt",
+      "cosori-turboblaze-air-fryer-6qt",
+      "ninja-foodi-dualzone-air-fryer-8qt",
+      "chefman-turbofry-air-fryer-8qt",
+      "chefman-multifunction-air-fryer-oven-10l",
+      "emeril-lagasse-french-door-air-fryer-oven-26qt",
+      "ninja-crispi-glass-air-fryer"
+    ],
+    "faq": [
+      {
+        "question": "What should buyers decide first on this air fryer page?",
+        "answer": "Start with format. Decide whether you want a classic basket model, a dual-zone layout, or an oven-style appliance before comparing small feature gaps."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-an-air-fryer",
+      "basket-air-fryer-vs-air-fryer-oven",
+      "how-to-choose-kitchen-appliances"
+    ],
+    "relatedReviews": [
+      "ninja-air-fryer-pro-5qt",
+      "cosori-turboblaze-air-fryer-6qt",
+      "ninja-foodi-dualzone-air-fryer-8qt"
+    ],
+    "relatedComparisons": [
+      "ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt",
+      "ninja-foodi-dualzone-air-fryer-8qt-vs-chefman-turbofry-air-fryer-8qt",
+      "chefman-multifunction-air-fryer-oven-10l-vs-emeril-lagasse-french-door-air-fryer-oven-26qt"
+    ]
+  },
+  {
+    "slug": "best-blenders-for-smoothies",
+    "title": "Best Blenders For Smoothies: Smart Picks For Daily Drinks and Prep",
+    "description": "A shortlist of smoothie-friendly blenders built around serving size, cleanup, and everyday convenience.",
+    "intro": "This page is for buyers who already know they want a smoothie-friendly blender and now need a tighter shortlist of the models most worth reviewing next. It focuses on cup workflow, cleanup, and how the machine fits a real daily routine.",
+    "highlights": [
+      "Separates personal blenders from larger countertop machines",
+      "Built around real smoothie and prep routines, not listing fluff",
+      "Best used before opening the final same-category comparison"
+    ],
+    "productSlugs": [
+      "ninja-nutri-blender-plus",
+      "nutribullet-personal-blender-24oz",
+      "ninja-nutri-pro-personal-blender",
+      "ninja-professional-blender-72oz",
+      "magic-bullet-blender-small-silver"
+    ],
+    "faq": [
+      {
+        "question": "How should readers use this blender shortlist?",
+        "answer": "Start by deciding whether you want a personal blender or a full-size countertop blender, then compare the models that fit that routine."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-a-blender",
+      "personal-blender-vs-full-size-blender",
+      "how-to-choose-kitchen-appliances"
+    ],
+    "relatedReviews": [
+      "ninja-nutri-blender-plus",
+      "nutribullet-personal-blender-24oz",
+      "ninja-professional-blender-72oz"
+    ],
+    "relatedComparisons": [
+      "ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz",
+      "ninja-professional-blender-72oz-vs-ninja-nutri-pro-personal-blender",
+      "magic-bullet-blender-small-silver-vs-nutribullet-personal-blender-24oz"
+    ]
+  },
+  {
+    "slug": "best-drip-coffee-makers-for-home",
+    "title": "Best Drip Coffee Makers For Home: Better Daily Picks At Different Price Points",
+    "description": "A shortlist of drip-style coffee makers worth comparing for daily brewing, cleanup, and price comfort.",
+    "intro": "This page narrows the field for buyers who want a classic home coffee maker instead of a pod machine or multi-format brewer. The focus is simple: reliable brewing, easy cleanup, and which model gives the best value for the way you actually make coffee.",
+    "highlights": [
+      "Focused on classic home coffee makers instead of pod-only systems",
+      "Helps buyers compare budget and mid-range drip options cleanly",
+      "Best used before opening the lower-price coffee maker reviews"
+    ],
+    "productSlugs": [
+      "hamilton-beach-2-way-programmable-coffee-maker",
+      "black-decker-12-cup-digital-coffee-maker-washable",
+      "mueller-home-12-cup-red-coffee-maker",
+      "keurig-k-duo-hot-and-iced-coffee-maker"
+    ],
+    "faq": [
+      {
+        "question": "What matters most on a drip coffee maker shortlist?",
+        "answer": "Think about brew size, timer convenience, cleanup, and whether you need a simple carafe machine or a model that also covers single-serve use."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-a-coffee-maker",
+      "single-serve-vs-drip-coffee-maker",
+      "how-to-choose-coffee-gear"
+    ],
+    "relatedReviews": [
+      "hamilton-beach-2-way-programmable-coffee-maker",
+      "black-decker-12-cup-digital-coffee-maker-washable",
+      "mueller-home-12-cup-red-coffee-maker"
+    ],
+    "relatedComparisons": [
+      "black-decker-12-cup-digital-coffee-maker-washable-vs-mueller-home-12-cup-red-coffee-maker",
+      "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
+    ]
+  },
+  {
+    "slug": "best-basket-air-fryers-for-home",
+    "title": "Best Basket Air Fryers For Home: Compact Picks With Strong Everyday Value",
+    "description": "A shortlist of basket-style air fryers worth comparing for weeknight cooking, cleanup, and kitchen fit.",
+    "intro": "This page narrows the air fryer category down to basket models for buyers who want a faster decision. It helps you compare capacity, size, cleanup, and whether the model makes sense for smaller everyday routines or bigger batches.",
+    "highlights": [
+      "Focused only on basket-style air fryers",
+      "Helps buyers compare compact and family-size models without oven-style noise",
+      "Best used before opening the core basket air fryer comparisons"
+    ],
+    "productSlugs": [
+      "ninja-air-fryer-pro-5qt",
+      "cosori-turboblaze-air-fryer-6qt",
+      "chefman-turbofry-air-fryer-8qt",
+      "ninja-foodi-dualzone-air-fryer-8qt"
+    ],
+    "faq": [
+      {
+        "question": "What matters most when comparing basket air fryers?",
+        "answer": "Basket size, cleanup, counter fit, and how often you cook for more than one or two people usually matter more than minor feature gaps."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-an-air-fryer",
+      "basket-air-fryer-vs-air-fryer-oven",
+      "how-to-choose-kitchen-appliances"
+    ],
+    "relatedReviews": [
+      "ninja-air-fryer-pro-5qt",
+      "cosori-turboblaze-air-fryer-6qt",
+      "chefman-turbofry-air-fryer-8qt"
+    ],
+    "relatedComparisons": [
+      "ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt",
+      "ninja-foodi-dualzone-air-fryer-8qt-vs-chefman-turbofry-air-fryer-8qt"
+    ]
+  },
+  {
+    "slug": "best-personal-blenders-for-smoothies",
+    "title": "Best Personal Blenders For Smoothies: Compact Picks For Fast Daily Use",
+    "description": "A shortlist of personal blenders worth comparing for quick smoothies, cleanup, and counter-friendly storage.",
+    "intro": "This page is for shoppers who already know a personal blender is the right format and now want the cleanest shortlist of the models most worth comparing. It prioritizes cup workflow, cleanup, storage, and whether the machine makes fast daily use easier.",
+    "highlights": [
+      "Focused on cup-style blenders, not full-size pitchers",
+      "Built around fast smoothie routines and easy cleanup",
+      "Best used before opening the final personal blender comparisons"
+    ],
+    "productSlugs": [
+      "ninja-nutri-blender-plus",
+      "nutribullet-personal-blender-24oz",
+      "ninja-nutri-pro-personal-blender",
+      "magic-bullet-blender-small-silver"
+    ],
+    "faq": [
+      {
+        "question": "What matters most on a personal blender shortlist?",
+        "answer": "Cup size, ease of cleanup, noise, and whether the blender is built for one quick serving or slightly heavier daily use."
+      }
+    ],
+    "relatedGuides": [
+      "how-to-choose-a-blender",
+      "personal-blender-vs-full-size-blender",
+      "how-to-choose-kitchen-appliances"
+    ],
+    "relatedReviews": [
+      "ninja-nutri-blender-plus",
+      "nutribullet-personal-blender-24oz",
+      "magic-bullet-blender-small-silver"
+    ],
+    "relatedComparisons": [
+      "ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz",
+      "magic-bullet-blender-small-silver-vs-nutribullet-personal-blender-24oz"
+    ]
+  }
 ]

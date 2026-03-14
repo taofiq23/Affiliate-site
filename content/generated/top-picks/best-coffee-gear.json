@@ -1,41 +1,43 @@
 {
   "slug": "best-coffee-gear",
-  "title": "Best Coffee Gear: Reviews, Value Picks, and Buying Advice",
-  "description": "A shortlist of the best coffee gear with buyer-focused recommendations and links into full reviews.",
-  "intro": "This page is built for searchers who already know the category they want but still need help narrowing the field. It focuses on coffee gear that combine strong marketplace proof, clearer buyer fit, better value positioning, and a cleaner path into individual review pages.",
+  "title": "Best Coffee Gear For Home: Smart Picks For Daily Brewing",
+  "description": "A cleaner shortlist of coffee makers, grinders, and countertop coffee tools worth comparing for home use.",
+  "intro": "This page is for readers who know they are buying coffee gear and want a tighter shortlist before diving into individual reviews. It keeps the focus on day-to-day convenience, brew routine fit, and the models most worth comparing side by side.",
   "highlights": [
-    "Built around coffee gear with the strongest current niche-fit scores",
-    "Designed to send readers into review pages and direct product comparisons",
-    "Optimized for shortlist traffic, not broad generic browsing"
+    "Built around coffee routines, not generic marketplace sorting",
+    "Prioritizes home use, cleanup, counter fit, and price comfort",
+    "Best used as the bridge into coffee maker reviews and same-category comparisons"
   ],
   "productSlugs": [
     "keurig-k-elite-single-serve-k-cup-pod",
+    "keurig-k-duo-hot-and-iced-coffee-maker",
     "hamilton-beach-2-way-programmable-coffee-maker",
+    "keurig-k-mini-single-serve-coffee-maker",
     "black-decker-12-cup-digital-coffee-maker-washable",
     "mueller-home-12-cup-red-coffee-maker",
-    "black-decker-one-touch-coffee-grinder-2-3"
+    "black-decker-one-touch-coffee-grinder-2-3",
+    "coffee-mug-warmer-fastest-heating"
   ],
   "faq": [
     {
-      "question": "What makes a strong coffee gear shortlist?",
-      "answer": "A strong shortlist balances buyer fit, price comfort, review proof, and whether the product solves a real use-case problem."
-    },
-    {
-      "question": "What should readers open after this coffee gear list?",
-      "answer": "Open the top review page first, then one cheaper or more premium alternative before deciding."
+      "question": "What should readers compare first in coffee gear?",
+      "answer": "Start with brew style and routine. Decide whether you want single-serve convenience, drip capacity, or a supporting coffee tool before comparing prices."
     }
   ],
   "relatedGuides": [
     "how-to-choose-coffee-gear",
-    "product-buying-guide"
+    "how-to-choose-a-coffee-maker",
+    "how-to-choose-a-coffee-grinder",
+    "single-serve-vs-drip-coffee-maker"
   ],
   "relatedReviews": [
     "keurig-k-elite-single-serve-k-cup-pod",
-    "hamilton-beach-2-way-programmable-coffee-maker",
-    "black-decker-12-cup-digital-coffee-maker-washable",
-    "mueller-home-12-cup-red-coffee-maker"
+    "keurig-k-duo-hot-and-iced-coffee-maker",
+    "hamilton-beach-2-way-programmable-coffee-maker"
   ],
   "relatedComparisons": [
-    "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
+    "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker",
+    "keurig-k-duo-hot-and-iced-coffee-maker-vs-keurig-k-mini-single-serve-coffee-maker",
+    "black-decker-12-cup-digital-coffee-maker-washable-vs-mueller-home-12-cup-red-coffee-maker"
   ]
 }

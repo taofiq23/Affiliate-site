@@ -84,21 +84,24 @@ export function InternalLinkGrid({ title, kicker, items }: Props) {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {items.map((item) => (
+          {items.map((item) => {
+            const isGuide = (item.label ?? "").toLowerCase() === "guide";
+
+            return (
             <Link key={item.href} href={item.href} className="group block h-full">
               <article className="flex h-full flex-col overflow-hidden border border-black/10 bg-white transition-colors duration-200 hover:bg-[#fbfaf6]">
                 {item.imageUrl ? (
                   <div className="relative overflow-hidden border-b border-black/10 bg-[#f7f3ec]">
                     <div className={`absolute inset-0 bg-gradient-to-br ${item.tone ?? "from-[#ece5d9] to-[#cab59a]"} opacity-[0.22]`} />
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.92),transparent_38%),linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.64))]" />
-                    <div className="relative aspect-[16/10]">
+                    <div className="relative aspect-[4/3] md:aspect-[16/10]">
                       <Image
                         src={item.imageUrl}
                         alt={item.title}
                         fill
                         sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 100vw"
                         quality={95}
-                        className="object-contain p-4 transition-transform duration-500 group-hover:scale-[1.03]"
+                        className={isGuide ? "object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]" : "object-contain p-4 transition-transform duration-500 group-hover:scale-[1.03]"}
                       />
                     </div>
                     <div className="absolute left-4 top-4">
@@ -144,7 +147,8 @@ export function InternalLinkGrid({ title, kicker, items }: Props) {
                 </div>
               </article>
             </Link>
-          ))}
+          );
+          })}
         </div>
       </div>
     </section>

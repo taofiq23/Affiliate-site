@@ -1,51 +1,52 @@
 {
   "slug": "top-picks",
-  "title": "Best Home Appliances and Coffee Gear: Top Picks",
-  "description": "A ranked shortlist of home appliances, coffee gear, air treatment devices, and comfort picks built to help buyers narrow the field faster.",
-  "intro": "This page is the main shortlist for the site. It is built around home appliances, kitchen gear, coffee tools, air treatment products, and comfort devices that show a strong blend of bestseller proof, search demand, evergreen appeal, and realistic affiliate upside. It is meant for buyers who want the fastest path from broad product research into a tighter shortlist of pages worth opening next.",
+  "title": "Best Home Kitchen Products Worth Opening Next",
+  "description": "A buyer-first shortlist of standout coffee makers, air fryers, blenders, and home upgrades worth comparing next.",
+  "intro": "This is the site's main shortlist for readers who want the fastest route from broad browsing into the pages most likely to help them make a confident purchase. It keeps the focus on products with useful review proof, practical daily-use fit, and clear next-step pages to open before the final retailer click.",
   "highlights": [
-    "Primary niche only: home appliances, coffee gear, air treatment, comfort, and cleaning devices",
-    "Rankings blend bestseller proof, trend velocity, Google demand, evergreen value, and affiliate potential",
-    "Use this page to narrow the field before opening individual review pages"
+    "Built to move readers from broad product research into the strongest money pages on the site",
+    "Prioritizes everyday home use, cleaner buying decisions, and products with real review depth",
+    "Best used as the first shortlist before opening a best page, comparison page, or full review"
   ],
   "productSlugs": [
-    "levoit-air-purifier",
     "keurig-k-elite-single-serve-k-cup-pod",
+    "keurig-k-duo-hot-and-iced-coffee-maker",
+    "ninja-air-fryer-pro-5qt",
+    "cosori-turboblaze-air-fryer-6qt",
+    "ninja-nutri-blender-plus",
+    "nutribullet-personal-blender-24oz",
+    "levoit-air-purifier",
     "hamilton-beach-2-way-programmable-coffee-maker",
+    "ninja-foodi-dualzone-air-fryer-8qt",
+    "ninja-professional-blender-72oz",
     "black-decker-12-cup-digital-coffee-maker-washable",
-    "mueller-home-12-cup-red-coffee-maker",
-    "magic-bullet-blender-small-silver",
-    "black-decker-one-touch-coffee-grinder-2-3",
-    "crock-pot-7-quart-oval-manual-slow",
-    "nostalgia-3-in-1-breakfast-station",
-    "trendplain-16oz-470ml-glass-olive-oil-sprayer",
-    "coffee-mug-warmer-fastest-heating",
-    "bella-2-slice-slim-toaster-kitchenware",
-    "extra-large-expandable-silverware-organizer-bpa-free"
+    "chefman-multifunction-air-fryer-oven-10l"
   ],
   "faq": [
     {
-      "question": "How are products ranked on this page?",
-      "answer": "Each product is scored on trend strength, bestseller position, Google demand signals, evergreen stability, profit potential, and niche fit."
+      "question": "How should readers use this top picks page?",
+      "answer": "Use it to narrow the field fast, then open the best page or comparison that matches the category you are actually buying in."
     },
     {
-      "question": "Why are health and skincare products not leading this list?",
-      "answer": "Those products exist only as a small test bucket. The site is primarily optimized around home appliances, coffee, kitchen, air, and comfort products."
+      "question": "What matters most after the first shortlist?",
+      "answer": "Move quickly into the category-specific best pages and same-type comparisons instead of comparing unrelated products."
     }
   ],
   "relatedGuides": [
     "product-buying-guide",
-    "how-to-choose-coffee-gear",
-    "how-to-choose-kitchen-appliances"
+    "how-to-choose-a-coffee-maker",
+    "how-to-choose-an-air-fryer",
+    "how-to-choose-a-blender"
   ],
   "relatedReviews": [
-    "levoit-air-purifier",
     "keurig-k-elite-single-serve-k-cup-pod",
-    "hamilton-beach-2-way-programmable-coffee-maker",
-    "black-decker-12-cup-digital-coffee-maker-washable",
-    "mueller-home-12-cup-red-coffee-maker"
+    "ninja-air-fryer-pro-5qt",
+    "ninja-nutri-blender-plus",
+    "levoit-air-purifier"
   ],
   "relatedComparisons": [
-    "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker"
+    "keurig-k-elite-single-serve-k-cup-pod-vs-hamilton-beach-2-way-programmable-coffee-maker",
+    "ninja-air-fryer-pro-5qt-vs-cosori-turboblaze-air-fryer-6qt",
+    "ninja-nutri-blender-plus-vs-nutribullet-personal-blender-24oz"
   ]
 }
